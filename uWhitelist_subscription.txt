@@ -1,0 +1,6 @@
+*://*/*
+@*://github.com/*
+@*://gitee.com/*
+@*://zh.wikipedia.org/*
+@*://*.zhihu.com/*
+@*://*.cnblogs.com/*
