@@ -6,3 +6,6 @@
 @*://runnoob.com/*
 @*://*.cnblogs.com/*
 @*://StackOverflow.com/*
+@*://segmentfault.com/*
+@*://*.autoahk.com/*
+@*://*.v2ex.com/*

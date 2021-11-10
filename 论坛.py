@@ -1,6 +1,6 @@
 Whitelist = {
         'StackOverflow':['','com'],
-        'segmentfault':['','com']
+        'segmentfault':['','com'],
         'autoahk':['*','com'],       # AHK 脚本
-        'v2ex':['','com']
+        'v2ex':['*','com']
 }
