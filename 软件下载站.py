@@ -1,3 +1,3 @@
 Whitelist = {
-        'dayanzai':['*','me'],
+        'dayanzai':['','me'],
 }

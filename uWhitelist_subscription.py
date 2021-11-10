@@ -6,10 +6,14 @@ import 软件下载站
 
 lis = ['*://*/*']
 
+# @*://*.v2ex.com 与 @*://v2ex.com/* 的拦截效果不同，后者没效果
+# 规则 @*://前缀.域名.后缀/* 有时没效果
+# 所以将所有的规则改为 @*://*.前缀.域名.后缀/*
+# 如果前缀是 www. 就不要写在 Whitelist 的 value[0] 中 
 
 def gen_urls(dic):
     for k,v in dic.items(): 
-        url = '@*://'
+        url = '@*://*.'
         # 前缀
         if v[0] != '':
             url+=v[0] + '.'
@@ -18,8 +22,6 @@ def gen_urls(dic):
         # 后缀
         if v[1] != '':    
             url+='.'+v[1]+'/*'
-        else:
-            ...
 
         #print(url) #    # @*://*.name.com/* 
         lis.append(url)
