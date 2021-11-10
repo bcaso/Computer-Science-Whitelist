@@ -4,8 +4,14 @@
 @*://zh.wikipedia.org/*
 @*://*.zhihu.com/*
 @*://runnoob.com/*
+@*://*.python.org/*
+@*://*.gitee.io/*
+@*://*.github.io/*
 @*://*.cnblogs.com/*
+@*://*.liaoxuefeng.com/*
 @*://StackOverflow.com/*
 @*://segmentfault.com/*
 @*://*.autoahk.com/*
-@*://*.v2ex.com/*
+@*://v2ex.com/*
+@*://*.52pojie.cn/*
+@*://*.dayanzai.me/*
