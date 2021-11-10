@@ -2,6 +2,7 @@ import 仓库
 import wiki
 import 博客
 import 论坛
+import 软件下载站
 
 lis = ['*://*/*']
 
@@ -28,6 +29,7 @@ gen_urls(仓库.Whitelist)
 gen_urls(wiki.Whitelist)
 gen_urls(博客.Whitelist)
 gen_urls(论坛.Whitelist)
+gen_urls(软件下载站.Whitelist)
 
 # 得到结果
 for each in lis:

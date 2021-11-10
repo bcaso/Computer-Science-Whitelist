@@ -1,0 +1,3 @@
+Whitelist = {
+        'dayanzai':['*','me'],
+}

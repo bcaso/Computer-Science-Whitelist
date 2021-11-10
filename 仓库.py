@@ -1,3 +1,4 @@
-Whitelist = {'github': ['','com'], 
+Whitelist = {
+        'github': ['','com'], 
         'gitee':['','com'],
 }
