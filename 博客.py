@@ -1,1 +1,2 @@
-Whitelist = {'cnblogs':['*','com']}
+Whitelist = {'cnblogs':['*','com'],
+}
