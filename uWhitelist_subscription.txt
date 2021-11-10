@@ -3,4 +3,6 @@
 @*://gitee.com/*
 @*://zh.wikipedia.org/*
 @*://*.zhihu.com/*
+@*://runnoob.com/*
 @*://*.cnblogs.com/*
+@*://StackOverflow.com/*

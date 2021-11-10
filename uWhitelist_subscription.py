@@ -1,6 +1,7 @@
 import 仓库
 import wiki
 import 博客
+import 论坛
 
 lis = ['*://*/*']
 
@@ -26,13 +27,14 @@ def gen_urls(dic):
 gen_urls(仓库.Whitelist)
 gen_urls(wiki.Whitelist)
 gen_urls(博客.Whitelist)
+gen_urls(论坛.Whitelist)
 
 # 得到结果
 for each in lis:
     print(each)
 
 # 写入 uWhitelist_subscription.txt
-f = open('uWhitelist_subscription.txt', 'w')
+f = open('./uWhitelist_subscription.txt', 'w')
 for each in lis:
     f.write(each+'\n')
 
