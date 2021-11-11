@@ -9,6 +9,7 @@
 @*://*.github.io/*
 @*://*.cnblogs.com/*
 @*://*.liaoxuefeng.com/*
+@*://*.ruanyifeng.com/*
 @*://*.StackOverflow.com/*
 @*://*.segmentfault.com/*
 @*://*.autoahk.com/*
