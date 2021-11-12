@@ -5,6 +5,7 @@
 @*://*.zhihu.com/*
 @*://*.runnoob.com/*
 @*://*.python.org/*
+@*://*.gitbooks.io/*
 @*://*.gitee.io/*
 @*://*.github.io/*
 @*://*.cnblogs.com/*
