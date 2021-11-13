@@ -12,8 +12,11 @@
 @*://*.liaoxuefeng.com/*
 @*://*.ruanyifeng.com/*
 @*://*.StackOverflow.com/*
+@*://*.askubuntu.com/*
 @*://*.segmentfault.com/*
 @*://*.autoahk.com/*
 @*://*.v2ex.com/*
 @*://*.52pojie.cn/*
+@*://*.github.community/*
+@*://*.medium.com/*
 @*://*.dayanzai.me/*
