@@ -1,5 +1,5 @@
 Whitelist = {
-        'StackOverflow':['','com'],
+        'stackoverflow':['','com'],
         'askubuntu':['','com'],     # about linux
         'segmentfault':['','com'],
         'autoahk':['','com'],       # AHK 脚本

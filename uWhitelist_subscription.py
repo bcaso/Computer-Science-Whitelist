@@ -18,7 +18,7 @@ def gen_urls(dic):
         if v[0] != '':
             url+=v[0] + '.'
         # 加域名
-        url += k
+        url += k.lower() # uBlacklist 对域名区分大小写 @*://*.stackoverflow.com/* 与 @*://*.StackOverflow.com/* 拦截效果不同
         # 后缀
         if v[1] != '':    
             url+='.'+v[1]+'/*'

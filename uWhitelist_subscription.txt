@@ -11,7 +11,7 @@
 @*://*.cnblogs.com/*
 @*://*.liaoxuefeng.com/*
 @*://*.ruanyifeng.com/*
-@*://*.StackOverflow.com/*
+@*://*.stackoverflow.com/*
 @*://*.askubuntu.com/*
 @*://*.segmentfault.com/*
 @*://*.autoahk.com/*
