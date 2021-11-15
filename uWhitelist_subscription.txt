@@ -6,6 +6,7 @@
 @*://*.runnoob.com/*
 @*://*.python.org/*
 @*://*.gitbooks.io/*
+@*://*.zh.wikihow.com/*
 @*://*.gitee.io/*
 @*://*.github.io/*
 @*://*.cnblogs.com/*
