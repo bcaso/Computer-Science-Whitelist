@@ -20,3 +20,4 @@
 @*://*.github.community/*
 @*://*.medium.com/*
 @*://*.dayanzai.me/*
+@*://*.apkpure.com/*
