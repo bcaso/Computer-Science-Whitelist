@@ -3,7 +3,7 @@
 @*://*.gitee.com/*
 @*://*.zh.wikipedia.org/*
 @*://*.zhihu.com/*
-@*://*.runnoob.com/*
+@*://*.runoob.com/*
 @*://*.python.org/*
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
