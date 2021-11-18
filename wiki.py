@@ -5,4 +5,5 @@ Whitelist = {'wikipedia':['zh','org'], # 中文维基
         'gitbooks':['','io'],          # gitbook
         'wikihow':['zh','com'],        # wikihow, about health
         'shuxuele':['','com'],         # 数学乐
+        'math001':['','com'],          # 数学网站
 }

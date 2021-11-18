@@ -8,6 +8,7 @@
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
 @*://*.shuxuele.com/*
+@*://*.math001.com/*
 @*://*.gitee.io/*
 @*://*.github.io/*
 @*://*.cnblogs.com/*
