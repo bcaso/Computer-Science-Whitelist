@@ -7,6 +7,7 @@
 @*://*.python.org/*
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
+@*://*.shuxuele.com/*
 @*://*.gitee.io/*
 @*://*.github.io/*
 @*://*.cnblogs.com/*
