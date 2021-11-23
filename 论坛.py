@@ -6,6 +6,7 @@ Whitelist = {
         'segmentfault':['','com'],
         'autoahk':['','com'],       # AHK 脚本
         'v2ex':['','com'],
+        'appinn':['meta','net'],    # 小众论坛
         '52pojie':['','cn'],        # 吾爱
         'github':['','community'],  # github 社区
         'medium':['','com'],

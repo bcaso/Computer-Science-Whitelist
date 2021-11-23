@@ -21,6 +21,7 @@
 @*://*.segmentfault.com/*
 @*://*.autoahk.com/*
 @*://*.v2ex.com/*
+@*://*.meta.appinn.net/*
 @*://*.52pojie.cn/*
 @*://*.github.community/*
 @*://*.medium.com/*
