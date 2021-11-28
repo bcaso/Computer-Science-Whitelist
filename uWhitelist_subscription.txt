@@ -2,6 +2,7 @@
 @*://*.github.com/*
 @*://*.gitee.com/*
 @*://*.zh.wikipedia.org/*
+@*://*.quora.com/*
 @*://*.zhihu.com/*
 @*://*.runoob.com/*
 @*://*.python.org/*
