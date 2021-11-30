@@ -1,7 +1,7 @@
 *://*/*
 @*://*.github.com/*
 @*://*.gitee.com/*
-@*://*.zh.wikipedia.org/*
+@*://*.wikipedia.org/*
 @*://*.quora.com/*
 @*://*.zhihu.com/*
 @*://*.runoob.com/*
@@ -9,6 +9,7 @@
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
 @*://*.shuxuele.com/*
+@*://*.mathsisfun.com/*
 @*://*.math001.com/*
 @*://*.gitee.io/*
 @*://*.github.io/*
