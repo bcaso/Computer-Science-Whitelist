@@ -19,6 +19,7 @@
 @*://*.stackoverflow.com/*
 @*://*.superuser.com/*
 @*://*.stackexchange.com/*
+@*://*.serverfault.com/*
 @*://*.askubuntu.com/*
 @*://*.segmentfault.com/*
 @*://*.autoahk.com/*
