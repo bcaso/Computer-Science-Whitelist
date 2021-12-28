@@ -5,6 +5,7 @@
 @*://*.quora.com/*
 @*://*.zhihu.com/*
 @*://*.runoob.com/*
+@*://*.c.biancheng.net/*
 @*://*.python.org/*
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
