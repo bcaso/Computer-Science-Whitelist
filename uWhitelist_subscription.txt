@@ -28,6 +28,7 @@
 @*://*.meta.appinn.net/*
 @*://*.52pojie.cn/*
 @*://*.github.community/*
+@*://*.nowcoder.com/questionTerminal/*
 @*://*.medium.com/*
 @*://*.dayanzai.me/*
 @*://*.apkpure.com/*

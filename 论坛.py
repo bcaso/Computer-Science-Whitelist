@@ -10,5 +10,6 @@ Whitelist = {
         'appinn':['meta','net'],    # 小众论坛
         '52pojie':['','cn'],        # 吾爱
         'github':['','community'],  # github 社区
+        'nowcoder':['','com/questionTerminal'],  # 牛客网试题广场
         'medium':['','com'],
 }
