@@ -14,7 +14,7 @@
 @*://*.math001.com/*
 @*://*.gitee.io/*
 @*://*.github.io/*
-@*://*.cnblogs.com/*
+@*://*.www.cnblogs.com/*
 @*://*.liaoxuefeng.com/*
 @*://*.ruanyifeng.com/*
 @*://*.stackoverflow.com/*
