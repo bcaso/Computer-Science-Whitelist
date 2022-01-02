@@ -15,6 +15,7 @@
 @*://*.gitee.io/*
 @*://*.github.io/*
 @*://*.www.cnblogs.com/*
+@*://*.my.oschina.net/*
 @*://*.liaoxuefeng.com/*
 @*://*.ruanyifeng.com/*
 @*://*.stackoverflow.com/*
@@ -26,6 +27,7 @@
 @*://*.autoahk.com/*
 @*://*.v2ex.com/*
 @*://*.meta.appinn.net/*
+@*://*.oschina.net/question/*
 @*://*.52pojie.cn/*
 @*://*.github.community/*
 @*://*.nowcoder.com/questionTerminal/*
