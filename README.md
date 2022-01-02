@@ -6,20 +6,20 @@
 
 ## 搜索引擎
 
-只要是支持自定义过滤搜索结果的浏览器，都是不错的选择。
+只要是支持自定义过滤搜索结果的搜索引擎，都是不错的选择。
 
-uBlacklist 目前支持 Google, Bing, DuckDuckgo, Ecosia, Startpage
+uBlacklist 目前支持搜索引擎有 Google, Bing, DuckDuckgo, Ecosia, Startpage
 
 * 就访问速度上看，Bing 最快。
 
 * 就样式上看，Bing 最好
-  * 在使用油猴本 <a href="https://www.ntaow.com/aboutscript.html">AC-重定向</a> 将搜索结果多列显示时，Bing 的样式要比 Google 好看。
-  * Google 显得有些乱，Bing 页面最底端没有相关搜索(几乎用不到，还占位置)，也没有搜索关键词对应的相关图片。
+  * 在使用油猴本 <a href="https://www.ntaow.com/aboutscript.html">AC-重定向</a> 将搜索结果多列显示时，Bing 的样式要比 Google 好看，Google 显得有些乱。
+  * Bing 页面最底端没有相关搜索(几乎用不到，还占位置)，也没有搜索关键词对应的相关图片。
 
 
 ## 原理：
 
-添加规则，`*://*/*` 以屏蔽所有网址。
+先添加规则 `*://*/*` 以屏蔽所有网址。
 
 对于白名单，这样添加： `@:*//*.前缀.域名.后缀/*`，如 `@:*//*.github.com/`, 区分大小写
 
