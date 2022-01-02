@@ -9,6 +9,7 @@
 @*://*.python.org/*
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
+@*://*.leetcode-cn.com/problems/*
 @*://*.shuxuele.com/*
 @*://*.mathsisfun.com/*
 @*://*.math001.com/*
