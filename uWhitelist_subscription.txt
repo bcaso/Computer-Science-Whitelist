@@ -31,6 +31,7 @@
 @*://*.52pojie.cn/*
 @*://*.github.community/*
 @*://*.nowcoder.com/questionTerminal/*
+@*://*.leetcode-cn.com/circle/discuss/*
 @*://*.medium.com/*
 @*://*.dayanzai.me/*
 @*://*.apkpure.com/*
