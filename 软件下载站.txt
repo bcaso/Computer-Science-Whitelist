@@ -1,0 +1,15 @@
+@*://*.dayanzai.me/*
+@*://*.getintopc.com/*
+@*://*.appinn.com/*
+@*://*.apprcn.com/*
+@*://*.softonic.com/*
+@*://*.portablesoft.org/*
+@*://*.software.informer.com/*
+@*://*.msdn.itellyou.cn/*
+@*://*.luochenzhimu.com/*
+@*://*.mpyit.com/*
+@*://*.nruan.com/*
+@*://*.xkonglong.com/*
+@*://*.jb51.net/*
+@*://*.apkpure.com/*
+@*://*.uptodown.com/*

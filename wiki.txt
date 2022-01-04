@@ -1,0 +1,9 @@
+@*://*.wikipedia.org/*
+@*://*.runoob.com/*
+@*://*.c.biancheng.net/*
+@*://*.python.org/*
+@*://*.gitbooks.io/*
+@*://*.zh.wikihow.com/*
+@*://*.shuxuele.com/*
+@*://*.mathsisfun.com/*
+@*://*.math001.com/*

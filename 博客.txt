@@ -1,0 +1,8 @@
+@*://*.gitee.io/*
+@*://*.github.io/*
+@*://*.www.cnblogs.com/*
+@*://*.my.oschina.net/*
+@*://*.zhuanlan.zhihu.com/*
+@*://*.liaoxuefeng.com/*
+@*://*.ruanyifeng.com/*
+@*://*.williamlong.info/*

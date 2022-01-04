@@ -4,15 +4,16 @@ import 博客
 import 论坛
 import 软件下载站
 
-lis = ['*://*/*']
+lis = []
+lis_total = []
 
 # 规则 @*://*.v2ex.com 与 @*://v2ex.com/* 的拦截效果不同，后者没效果
 # 规则 @*://前缀.域名.后缀/* 有时没效果
 # 所以将所有的规则改为 @*://*.前缀.域名.后缀/*
 # 如果前缀是 www. 就不要写在 Whitelist 的 value[0] 中 
 
-def gen_urls(dic):
-    for k,v in dic.items(): 
+def gen_urls(whitelist_dic):
+    for k,v in whitelist_dic.items(): 
         url = '@*://*.'
         # 前缀
         if v[0] != '':
@@ -25,21 +26,49 @@ def gen_urls(dic):
 
         #print(url) #    # @*://*.name.com/* 
         lis.append(url)
+        lis_total.append(url)
 
+def gen_subscription_txt(filename, lis):
+    f = open(filename, 'w')
+    for each in lis:
+        f.write(each+'\n')
+    f.close()
+
+def gen_whitelist_rule_txt():
+    f = open('whitelist.txt', 'w')
+    f.write(r'*://*/*')
       
+
+gen_whitelist_rule_txt()
+
 gen_urls(仓库.Whitelist)
+gen_subscription_txt('仓库.txt', lis)
+
+lis.clear()
+
 gen_urls(wiki.Whitelist)
+gen_subscription_txt('wiki.txt', lis)
+
+lis.clear()
+
 gen_urls(博客.Whitelist)
+gen_subscription_txt('博客.txt', lis)
+
+lis.clear()
+
 gen_urls(论坛.Whitelist)
+gen_subscription_txt('论坛.txt', lis)
+
+lis.clear()
+
 gen_urls(软件下载站.Whitelist)
+gen_subscription_txt('软件下载站.txt', lis)
 
-# 得到结果
-for each in lis:
-    print(each)
+lis.clear()
 
-# 写入 uWhitelist_subscription.txt
-f = open('./uWhitelist_subscription.txt', 'w')
-for each in lis:
+
+# 汇总列表，一般不用
+f = open('whitelists_combined.txt', 'w')
+for each in lis_total:
     f.write(each+'\n')
-
 f.close()

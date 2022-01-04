@@ -1,0 +1,17 @@
+@*://*.stackoverflow.com/*
+@*://*.superuser.com/*
+@*://*.stackexchange.com/*
+@*://*.serverfault.com/*
+@*://*.askubuntu.com/*
+@*://*.quora.com/*
+@*://*.zhihu.com/question/*
+@*://*.segmentfault.com/*
+@*://*.autoahk.com/*
+@*://*.v2ex.com/*
+@*://*.meta.appinn.net/*
+@*://*.oschina.net/question/*
+@*://*.52pojie.cn/*
+@*://*.github.community/*
+@*://*.nowcoder.com/questionTerminal/*
+@*://*.leetcode-cn.com/circle/discuss/*
+@*://*.medium.com/*
