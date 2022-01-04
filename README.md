@@ -39,6 +39,15 @@
 >
 > 浏览器插件 <a href="https://chrome.google.com/webstore/detail/uautopagerize/kdplapeciagkkjoignnkfpbfkebcfbpb" target="_blank">uAutoPagerize</a> 支持在自动翻页的同时过滤搜索结果。
 
+## 使用
+
+先订阅 whitelist.txt，再订阅其他列表。
+
+`whitelists_combined.txt` 是所有列表的汇总。
+
+我感觉分类订阅比订阅总列表的可控度高。
+
+<img src="subscription.jpg">
 
 ## 白名单与黑名单
 

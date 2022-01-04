@@ -29,6 +29,7 @@ def gen_urls(whitelist_dic):
         lis_total.append(url)
 
 def gen_subscription_txt(filename, lis):
+    filename = 'whitelists/' + filename
     f = open(filename, 'w')
     for each in lis:
         f.write(each+'\n')
