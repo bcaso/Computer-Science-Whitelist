@@ -36,7 +36,7 @@ def gen_subscription_txt(filename, lis):
     f.close()
 
 def gen_whitelist_rule_txt():
-    f = open('whitelist.txt', 'w')
+    f = open('whitelists/whitelist.txt', 'w')
     f.write(r'*://*/*')
       
 
@@ -69,7 +69,7 @@ lis.clear()
 
 
 # 汇总列表，一般不用
-f = open('whitelists_combined.txt', 'w')
+f = open('whitelists/whitelists_combined.txt', 'w')
 for each in lis_total:
     f.write(each+'\n')
 f.close()
