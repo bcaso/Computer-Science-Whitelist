@@ -17,6 +17,7 @@
 @*://*.liaoxuefeng.com/*
 @*://*.ruanyifeng.com/*
 @*://*.williamlong.info/*
+@*://*.leetcode-cn.com/problems/*
 @*://*.stackoverflow.com/*
 @*://*.superuser.com/*
 @*://*.stackexchange.com/*
