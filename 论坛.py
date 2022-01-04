@@ -14,7 +14,6 @@ Whitelist = {
         '52pojie':['','cn'],             # 吾爱论坛
         'github':['','community'],       # github 社区
         'nowcoder':['','com/questionTerminal'],  # 牛客网试题问答区
-        'leetcode-cn':['','com/problems'],       # 乐扣试题区
         'leetcode-cn':['','com/circle/discuss'], # 乐扣问答区
         'medium':['','com'],
 }

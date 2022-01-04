@@ -7,4 +7,6 @@ Whitelist = {
         'liaoxuefeng':['','com'],     # 廖雪峰的官方网站
         'ruanyifeng':['','com'],      # 阮一峰的网络日志
         'williamlong':['','info'],    # 月光博客
+        'leetcode-cn':['','com/problems'], # 乐扣试题区，不好分类的网址
+
 }
