@@ -48,5 +48,6 @@
 @*://*.nruan.com/*
 @*://*.xkonglong.com/*
 @*://*.jb51.net/*
+@*://*.sourceforge.net/*
 @*://*.apkpure.com/*
 @*://*.uptodown.com/*
