@@ -38,6 +38,7 @@ def gen_subscription_txt(filename, lis):
 def gen_whitelist_rule_txt():
     f = open('whitelists/whitelist.txt', 'w')
     f.write(r'*://*/*')
+    f.close()
       
 
 gen_whitelist_rule_txt()

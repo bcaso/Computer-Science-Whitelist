@@ -13,6 +13,7 @@ Whitelist = {
         'nruan':['','com'],                # N 软网
         'xkonglong':['','com'],            # 小恐龙
         'jb51':['','net'],                 # 脚本之家
+        'sourceforge':['','net'],          # 全球最大开源软件开发平台和仓库
 
 
         # Android
