@@ -10,7 +10,7 @@
 @*://*.mpyit.com/*
 @*://*.nruan.com/*
 @*://*.xkonglong.com/*
-@*://*.jb51.net/*
+@*://*.jb51.net/softs/*
 @*://*.shenzjd.com/*
 @*://*.sourceforge.net/*
 @*://*.apkpure.com/*

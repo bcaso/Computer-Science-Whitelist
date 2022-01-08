@@ -12,7 +12,7 @@ Whitelist = {
         'mpyit':['','com'],                # 老殁
         'nruan':['','com'],                # N 软网
         'xkonglong':['','com'],            # 小恐龙
-        'jb51':['','net'],                 # 脚本之家
+        'jb51':['','net/softs'],           # 脚本之家，只有软件
         'shenzjd':['','com'],              # siy 汉化博客
         'sourceforge':['','net'],          # 全球最大开源软件开发平台和仓库
 
