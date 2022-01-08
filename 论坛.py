@@ -1,4 +1,5 @@
 Whitelist = {
+        'medium':['','com'],
         'stackoverflow':['','com'],
         'superuser':['','com'],          # 类似 stackoverflow
         'stackexchange':['','com'],      # stack exchange
@@ -15,5 +16,5 @@ Whitelist = {
         'github':['','community'],       # github 社区
         'nowcoder':['','com/questionTerminal'],  # 牛客网试题问答区
         'leetcode-cn':['','com/circle/discuss'], # 乐扣问答区
-        'medium':['','com'],
+        'letitfly':['bbs','me'],         # Android 刷机，现在也有电脑方面的内容
 }

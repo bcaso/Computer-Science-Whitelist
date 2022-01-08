@@ -9,6 +9,7 @@
 @*://*.shuxuele.com/*
 @*://*.mathsisfun.com/*
 @*://*.math001.com/*
+@*://*.programcreek.com/*
 @*://*.gitee.io/*
 @*://*.github.io/*
 @*://*.www.cnblogs.com/*
@@ -18,6 +19,7 @@
 @*://*.ruanyifeng.com/*
 @*://*.williamlong.info/*
 @*://*.leetcode-cn.com/problems/*
+@*://*.medium.com/*
 @*://*.stackoverflow.com/*
 @*://*.superuser.com/*
 @*://*.stackexchange.com/*
@@ -34,10 +36,13 @@
 @*://*.github.community/*
 @*://*.nowcoder.com/questionTerminal/*
 @*://*.leetcode-cn.com/circle/discuss/*
-@*://*.medium.com/*
+@*://*.bbs.letitfly.me/*
 @*://*.sourceforge.net/*
 @*://*.softonic.com/*
 @*://*.getintopc.com/*
+@*://*.bicfic.com/*
+@*://*.cracksurl.com/*
+@*://*.msguides.com/*
 @*://*.software.informer.com/*
 @*://*.portableapps.com/apps/*
 @*://*.dayanzai.me/*
@@ -59,5 +64,7 @@
 @*://*.xiazaigang.com/*
 @*://*.zdfans.com/html/*
 @*://*.aixuefu.com/xiazai/*
+@*://*.j9p.com/down/*
+@*://*.ys168.com/*
 @*://*.apkpure.com/*
 @*://*.uptodown.com/*

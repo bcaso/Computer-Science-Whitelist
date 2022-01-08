@@ -7,4 +7,5 @@ Whitelist = {'wikipedia':['','org'],             # 维基
         'shuxuele':['','com'],                   # 数学乐
         'mathsisfun':['','com'],                 # 数学乐, 英文版
         'math001':['','com'],                    # 数学网站
+        'programcreek':['','com'],               # 函数代码示例
 }

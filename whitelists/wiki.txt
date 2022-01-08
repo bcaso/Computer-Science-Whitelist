@@ -7,3 +7,4 @@
 @*://*.shuxuele.com/*
 @*://*.mathsisfun.com/*
 @*://*.math001.com/*
+@*://*.programcreek.com/*

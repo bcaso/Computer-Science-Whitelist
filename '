@@ -7,7 +7,7 @@ Whitelist = {
         'cracksurl':['','com'],            # crack
         'msguides':['','com'],             # crack Microsoft software
         'informer':['software','com'],
-        'portableapps':['','com/apps'],    # 便携软件
+        'portableapps':['','com/apps'],   # 便携软件
         'dayanzai':['','me'],              # for download cracked exe program
         'appinn':['','com'],               # 小众软件
         'apprcn':['','com'],               # 反斗软件
@@ -28,7 +28,6 @@ Whitelist = {
         'zdfans':['','com/html'],          # zd423
         'aixuefu':['','com/xiazai'],       # 爱学府软件园
         'j9p':['','com/down'],             # 精品下载
-        'ys168':['','com'],                # 永硕盘，常被用作软件分享，如98五笔资源库
 
 
         # Android

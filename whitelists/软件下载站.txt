@@ -1,6 +1,9 @@
 @*://*.sourceforge.net/*
 @*://*.softonic.com/*
 @*://*.getintopc.com/*
+@*://*.bicfic.com/*
+@*://*.cracksurl.com/*
+@*://*.msguides.com/*
 @*://*.software.informer.com/*
 @*://*.portableapps.com/apps/*
 @*://*.dayanzai.me/*
@@ -22,5 +25,7 @@
 @*://*.xiazaigang.com/*
 @*://*.zdfans.com/html/*
 @*://*.aixuefu.com/xiazai/*
+@*://*.j9p.com/down/*
+@*://*.ys168.com/*
 @*://*.apkpure.com/*
 @*://*.uptodown.com/*
