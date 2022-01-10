@@ -4,6 +4,7 @@
 @*://*.runoob.com/*
 @*://*.c.biancheng.net/*
 @*://*.python.org/*
+@*://*.cisco.com/c/zh_cn/support/docs/*
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
 @*://*.shuxuele.com/*
@@ -33,6 +34,7 @@
 @*://*.meta.appinn.net/*
 @*://*.oschina.net/question/*
 @*://*.52pojie.cn/*
+@*://*.community.cisco.com/*
 @*://*.github.community/*
 @*://*.nowcoder.com/questionTerminal/*
 @*://*.leetcode-cn.com/circle/discuss/*

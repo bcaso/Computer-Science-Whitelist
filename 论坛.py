@@ -13,6 +13,7 @@ Whitelist = {
         'appinn':['meta','net'],         # 小众论坛
         'oschina':['','net/question'],   # 开源中国问答区
         '52pojie':['','cn'],             # 吾爱论坛
+        'cisco':['community','com'],        # cisco 社区
         'github':['','community'],       # github 社区
         'nowcoder':['','com/questionTerminal'],  # 牛客网试题问答区
         'leetcode-cn':['','com/circle/discuss'], # 乐扣问答区

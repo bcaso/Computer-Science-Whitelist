@@ -12,6 +12,7 @@
 @*://*.meta.appinn.net/*
 @*://*.oschina.net/question/*
 @*://*.52pojie.cn/*
+@*://*.community.cisco.com/*
 @*://*.github.community/*
 @*://*.nowcoder.com/questionTerminal/*
 @*://*.leetcode-cn.com/circle/discuss/*

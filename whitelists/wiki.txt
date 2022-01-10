@@ -2,6 +2,7 @@
 @*://*.runoob.com/*
 @*://*.c.biancheng.net/*
 @*://*.python.org/*
+@*://*.cisco.com/c/zh_cn/support/docs/*
 @*://*.gitbooks.io/*
 @*://*.zh.wikihow.com/*
 @*://*.shuxuele.com/*
