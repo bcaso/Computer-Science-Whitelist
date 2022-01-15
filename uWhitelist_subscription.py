@@ -87,3 +87,9 @@ f = open('whitelists/whitelists_combined.txt', 'w')
 for each in lis_total:
     f.write(each+'\n')
 f.close()
+
+# 汇总域名列表，为了给其他插件使用，如油猴脚本拦载
+f = open('whitelists/domain_name.txt', 'w')
+for each in lis_total:
+    f.write(each[5:][:-2]+'\n') # *.prefix.domain_name.suffix
+f.close()
