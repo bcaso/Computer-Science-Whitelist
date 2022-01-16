@@ -3,6 +3,7 @@
 @*://*.wikipedia.org/*
 @*://*.runoob.com/*
 @*://*.c.biancheng.net/*
+@*://*.kb.cnblogs.com/page/*
 @*://*.python.org/*
 @*://*.cisco.com/c/zh_cn/support/docs/*
 @*://*.gitbooks.io/*
