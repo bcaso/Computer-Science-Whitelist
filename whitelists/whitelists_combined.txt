@@ -72,3 +72,7 @@
 @*://*.ys168.com/*
 @*://*.apkpure.com/*
 @*://*.uptodown.com/*
+@*://*.wenku.baidu.com/view/*
+@*://*.docin.com/p-/*
+@*://*.doc88.com/p-/*
+@*://*.taodocs.com/p-/*

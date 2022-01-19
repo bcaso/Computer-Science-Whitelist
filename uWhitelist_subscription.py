@@ -3,6 +3,7 @@ import wiki
 import 博客
 import 论坛
 import 软件下载站
+import 文库
 
 lis = []
 lis_total = []
@@ -81,6 +82,10 @@ gen_subscription_txt('软件下载站.txt', lis)
 
 lis.clear()
 
+gen_urls(文库.Whitelist)
+gen_subscription_txt('文库.txt', lis)
+
+lis.clear()
 
 # 汇总列表，一般不用
 f = open('whitelists/whitelists_combined.txt', 'w')
