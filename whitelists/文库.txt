@@ -1,4 +1,4 @@
-@*://*.wenku.baidu.com/view/*
-@*://*.docin.com/p-/*
-@*://*.doc88.com/p-/*
-@*://*.taodocs.com/p-/*
+@*://*.wenku.baidu.com/view*
+@*://*.docin.com/p-*
+@*://*.doc88.com/p-*
+@*://*.taodocs.com/p-*

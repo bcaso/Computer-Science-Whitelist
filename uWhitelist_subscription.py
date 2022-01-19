@@ -36,7 +36,12 @@ def gen_urls(whitelist_dic):
 
         # 后缀
         if v[1] != '':    
-            url+='.'+v[1]+'/*'
+            # 添加不完全后缀, @*://*.docin.com/p-* , 多数文库的文章以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
+            if '/' in v[1]:
+                url+='.'+v[1]+'*'
+            # 添加完全后缀, @*://*.mathsisfun.com/*
+            else: 
+                url+='.'+v[1]+'/*'
 
         #print(url)
         lis.append(url)

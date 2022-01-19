@@ -7,4 +7,4 @@
 @*://*.liaoxuefeng.com/*
 @*://*.ruanyifeng.com/*
 @*://*.williamlong.info/*
-@*://*.leetcode-cn.com/problems/*
+@*://*.leetcode-cn.com/problems*
