@@ -1,6 +1,7 @@
 *.github.com
 *.gitee.com
 *.wikipedia.org
+*.developer.mozilla.org
 *.runoob.com
 *.c.biancheng.net
 *.kb.cnblogs.com/pag
