@@ -17,21 +17,35 @@
   * Bing 页面最底端没有相关搜索(几乎用不到，还占位置)，也没有搜索关键词对应的相关图片。
 
 * 就拦载能力上看，目前 (V7.0 版)，对于 Google 的拦载效果最好。
-  * Bing 下，常出现 3~5 个不在名单中的网站(百度知道，百度文库，)，以及视频卡片，新闻卡片。
+  * Bing 下，常出现 3~5 个不在名单中的网站，以及视频卡片，新闻卡片，相关搜索，可通过油猴插件写脚本进行过滤。
 
 
 ## 原理：
 
 先添加规则 `*://*/*` 以屏蔽所有网址。
 
-对于白名单，这样添加： `@:*//*.前缀.域名.后缀/*`，如 `@:*//*.github.com/`, 区分大小写
+对于白名单，这样添加： `@:*//前缀.域名.后缀`，如 `@:*//*.github.com/*`, 区分大小写
+
+规则举例：
+```
+# 有前缀
+@:*//*.github.com/*
+
+# 没前缀
+@:*//github.com/*
+
+# 不完整的后缀
+@*://*.docin.com/p-*
+@*://*.doc88.com/p-*
+@*://*.taodocs.com/p-*
+
+# 完整的后缀
+@*://*.appinn.com/*
+```
 
 对网站进行分类，然后统一生成符合 uBlacklist 规则的白名单。
 
-只获取网站下的博客部分，和问答交流部分，通过前后缀做区分，对应的网址不能放到同一个字典内，但可以把问答区的地址放入论坛名单，把博客放入到博客名单中。
-
-如对于博客园规则，`'cnblogs':['www','com']`，加上前缀 `www` 就能过滤 园荐`recomm.cnblogs.com`
-
+另外可通过前后缀区分一个地址的类型。
 
 最后生成的名单可以汇总到 `whitelists_combined.txt` 中。
 
@@ -41,6 +55,32 @@
 > 因此，要在设置中，把每页搜索结果数调得尽可能大。
 >
 > 浏览器插件 <a href="https://chrome.google.com/webstore/detail/uautopagerize/kdplapeciagkkjoignnkfpbfkebcfbpb" target="_blank">uAutoPagerize</a> 支持在自动翻页的同时过滤搜索结果。
+
+目录结构:
+
+```
+|   .gitignore
+|   README.md
+|   subscription.jpg
+|   uWhitelist_subscription.py
+|   wiki.py
+|   仓库.py
+|   博客.py
+|   文库.py
+|   论坛.py
+|   软件下载站.py
+|
+\---whitelists
+        domain_name.txt
+        whitelist.txt
+        whitelists_combined.txt
+        wiki.txt
+        仓库.txt
+        博客.txt
+        文库.txt
+        论坛.txt
+        软件下载站.txt
+```
 
 ## 使用
 
