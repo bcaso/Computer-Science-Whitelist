@@ -60,9 +60,9 @@
 
 ```
 |   .gitignore
+|   main.py
 |   README.md
 |   subscription.jpg
-|   uWhitelist_subscription.py
 |   wiki.py
 |   仓库.py
 |   博客.py
