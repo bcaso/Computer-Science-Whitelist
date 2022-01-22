@@ -5,6 +5,7 @@ Whitelist = {'wikipedia':['','org'],             # 维基
         'cnblogs':['kb','com/page'],             # cnblogs 博客园知识库
         'python':['','org'],                     # python 官方, 文档
         'cisco':['','com/c/zh_cn/support/docs'], # cisco 中文文档
+        'autohotkey':['','com/docs'],            # auto hotkey 文档
         'gitbooks':['','io'],                    # gitbook
         'wikihow':['zh','com'],                  # wikihow, about health
         'shuxuele':['','com'],                   # 数学乐
