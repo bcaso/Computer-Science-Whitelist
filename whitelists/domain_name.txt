@@ -7,6 +7,7 @@
 *.kb.cnblogs.com/pag
 *.python.org
 *.cisco.com/c/zh_cn/support/doc
+*.autohotkey.com/doc
 *.gitbooks.io
 *.zh.wikihow.com
 *.shuxuele.com
