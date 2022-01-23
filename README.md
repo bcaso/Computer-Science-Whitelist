@@ -59,27 +59,30 @@
 目录结构:
 
 ```
-|   .gitignore
-|   main.py
-|   README.md
-|   subscription.jpg
-|   wiki.py
-|   仓库.py
-|   博客.py
-|   文库.py
-|   论坛.py
-|   软件下载站.py
-|
-\---whitelists
-        domain_name.txt
-        whitelist.txt
-        whitelists_combined.txt
-        wiki.txt
-        仓库.txt
-        博客.txt
-        文库.txt
-        论坛.txt
-        软件下载站.txt
+│   .gitignore
+│   main.py
+│   README.md
+│   subscription.jpg
+│
+├───whitelists
+│       domain_name.txt
+│       whitelist.txt
+│       whitelists_combined.txt
+│       wiki.txt
+│       仓库.txt
+│       博客.txt
+│       文库.txt
+│       论坛.txt
+│       软件下载站.txt
+│
+\───whitelist_dics
+        bbs.py
+        blogs.py
+        library.py
+        repository.py
+        software_download.py
+        wiki.py
+        __init__.py
 ```
 
 ## 使用

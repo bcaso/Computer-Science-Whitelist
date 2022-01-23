@@ -1,9 +1,9 @@
-import 仓库
-import wiki
-import 博客
-import 论坛
-import 软件下载站
-import 文库
+import whitelist_dics.repository
+import whitelist_dics.wiki
+import whitelist_dics.blogs
+import whitelist_dics.bbs
+import whitelist_dics.software_download
+import whitelist_dics.library
 
 lis = []
 lis_total = []
@@ -62,32 +62,32 @@ def gen_whitelist_rule_txt():
 
 gen_whitelist_rule_txt()
 
-gen_urls(仓库.Whitelist)
+gen_urls(whitelist_dics.repository.Whitelist)
 gen_subscription_txt('仓库.txt', lis)
 
 lis.clear()
 
-gen_urls(wiki.Whitelist)
+gen_urls(whitelist_dics.wiki.Whitelist)
 gen_subscription_txt('wiki.txt', lis)
 
 lis.clear()
 
-gen_urls(博客.Whitelist)
+gen_urls(whitelist_dics.blogs.Whitelist)
 gen_subscription_txt('博客.txt', lis)
 
 lis.clear()
 
-gen_urls(论坛.Whitelist)
+gen_urls(whitelist_dics.bbs.Whitelist)
 gen_subscription_txt('论坛.txt', lis)
 
 lis.clear()
 
-gen_urls(软件下载站.Whitelist)
+gen_urls(whitelist_dics.software_download.Whitelist)
 gen_subscription_txt('软件下载站.txt', lis)
 
 lis.clear()
 
-gen_urls(文库.Whitelist)
+gen_urls(whitelist_dics.library.Whitelist)
 gen_subscription_txt('文库.txt', lis)
 
 lis.clear()

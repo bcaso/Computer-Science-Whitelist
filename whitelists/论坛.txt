@@ -7,7 +7,8 @@
 @*://*.quora.com/*
 @*://*.zhihu.com/question*
 @*://*.segmentfault.com/*
-@*://*.autoahk.com/*
+@*://*.autoahk.com/archives*
+@*://*.autohotkey.com/boards*
 @*://*.v2ex.com/*
 @*://*.meta.appinn.net/*
 @*://*.oschina.net/question*

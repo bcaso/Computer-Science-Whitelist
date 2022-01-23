@@ -8,7 +8,8 @@ Whitelist = {
         'quora':['','com'],              # quora 类似知乎
         'zhihu':['','com/question'],     # 知乎
         'segmentfault':['','com'],       # 思否，国内版 stackoverflow
-        'autoahk':['','com'],            # AHK 脚本
+        'autoahk':['','com/archives'],   # AutoHotkey 中文社区
+        'autohotkey':['','com/boards'],  # AutoHotkey 官方论坛
         'v2ex':['','com'],               # v2ex社区，经常无法打开
         'appinn':['meta','net'],         # 小众论坛
         'oschina':['','net/question'],   # 开源中国问答区
