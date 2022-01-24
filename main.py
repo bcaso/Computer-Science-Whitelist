@@ -98,8 +98,9 @@ for each in lis_total:
     f.write(each+'\n')
 f.close()
 
-# 汇总域名列表，为了给其他插件使用，如油猴脚本拦载
+# 汇总域名列表，对于其他使用方式：google 可编程搜索(cse.google.com)，油猴插件
 f = open('whitelists/domain_name.txt', 'w')
 for each in lis_total:
-    f.write(each[5:][:-2]+'\n') # *.prefix.domain_name.suffix
+    f.write(each[5:]+'\n') # *.prefix.domain_name.suffix
+    #print(each[5:])
 f.close()
