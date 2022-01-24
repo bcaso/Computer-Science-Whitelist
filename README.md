@@ -110,6 +110,11 @@
 
 <img src="subscription.jpg">
 
+<b>其他使用方式：</b>
+
+以上所有域名都已加入 <a href="https://cse.google.com">google 可编程搜索</a>，可以修改为浏览器默认搜索引擎: <a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
+
+
 ## 白名单与黑名单
 
 黑名单是无限的。白名单可以是有限的，以有限的精力去维护有限的白名单。

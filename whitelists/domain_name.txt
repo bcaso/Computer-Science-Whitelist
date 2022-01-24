@@ -45,6 +45,7 @@
 *.nowcoder.com/questionTermina
 *.leetcode-cn.com/circle/discus
 *.bbs.letitfly.me
+*.bbs.ikuai8.com
 *.sourceforge.net
 *.softonic.com
 *.getintopc.com

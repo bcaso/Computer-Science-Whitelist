@@ -19,4 +19,6 @@ Whitelist = {
         'nowcoder':['','com/questionTerminal'],  # 牛客网试题问答区
         'leetcode-cn':['','com/circle/discuss'], # 乐扣问答区
         'letitfly':['bbs','me'],         # Android 刷机，现在也有电脑方面的内容
+        'ikuai8':['bbs','com'],          # iKuai 路由器论坛
+
 }

@@ -18,3 +18,4 @@
 @*://*.nowcoder.com/questionTerminal*
 @*://*.leetcode-cn.com/circle/discuss*
 @*://*.bbs.letitfly.me/*
+@*://*.bbs.ikuai8.com/*
