@@ -1,4 +1,4 @@
-Whitelist = {'wikipedia':['','org'],             # 维基
+Whitelist = {'wikipedia':['','org/wiki'],        # 维基，由于同一关键词给出了多个不同语言版的结果占用了太多搜索结果(zh.wikipedia.org/wiki, zh.wikipedia.org/zh-tw ...)，所以后缀改为 org/wiki
         'mozilla':['developer','org'],           # MDN Web Docs
         'runoob':['','com'],                     # 菜鸟教程
         'biancheng':['c','net'],                 # C 语言中文网，各方面的编程文档都有

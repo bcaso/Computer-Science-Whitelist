@@ -1,4 +1,4 @@
-@*://*.wikipedia.org/*
+@*://*.wikipedia.org/wiki*
 @*://*.developer.mozilla.org/*
 @*://*.runoob.com/*
 @*://*.c.biancheng.net/*
