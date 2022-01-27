@@ -166,7 +166,10 @@ def gen_cse_xml():
 def gen_annotations_xml(list_of_domain):
     lis = []
     for each in list_of_domain:
-        lis.append(each[5:])
+        if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
+            lis.append(each[1:])
+        else:
+            lis.append(each[5:])          # @*://*. 
 
     # print(lis)
 

@@ -80,9 +80,9 @@
 		<Label name="_include_" />
 		<AdditionalData value="*.edu/*" attribute="original_url" />
 	</Annotation>
-	<Annotation about="s://www.cnblogs.com/*">
+	<Annotation about="https://www.cnblogs.com/*">
 		<Label name="_include_" />
-		<AdditionalData value="s://www.cnblogs.com/*" attribute="original_url" />
+		<AdditionalData value="https://www.cnblogs.com/*" attribute="original_url" />
 	</Annotation>
 	<Annotation about="*.my.oschina.net/*">
 		<Label name="_include_" />
