@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSearchEngine id="e9a1e480e37a86080" creator="011207479066904560854" language="en" top_refinements="2147483647" encoding="UTF-8" enable_promotions="true" cx_id="e9a1e480e37a86080" last_update_time_millis="1643201212162" autocompletions="true">
+  <Title>My Search</Title>
+  <Context>
+    <BackgroundLabels>
+      <Label name="_include_" mode="FILTER"/>
+      <Label name="_exclude_" mode="ELIMINATE"/>
+    </BackgroundLabels>
+  </Context>
+  <LookAndFeel code="4" element_layout="1" theme="7" custom_theme="true" url_length="breadcrumbs" element_branding="hide" enable_cse_thumbnail="false" font="2">
+    <Logo/>
+    <Colors text="#000000"/>
+    <Promotions background_color="#FFFFFF" snippet_color="#000000"/>
+    <SearchControls input_border_color="#999999" button_border_color="#000000" button_background_color="#000000"/>
+    <Results border_hover_color="#EEEEEE" background_hover_color="#FDFDFD"/>
+  </LookAndFeel>
+  <ImageSearchSettings layout="2"/>
+  <autocomplete_settings source="1"/>
+  <sort_by_keys label="Relevance" key=""/>
+  <sort_by_keys label="Date" key="date"/>
+  <cse_advance_settings>
+    <web_search_options result_set_size="20" enable_history="true">
+      <search_restrict_args filter="1"/>
+    </web_search_options>
+    <image_advanced_options/>
+  </cse_advance_settings>
+</CustomSearchEngine>

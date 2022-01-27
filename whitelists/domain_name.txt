@@ -18,12 +18,13 @@
 *.gitee.io/*
 *.github.io/*
 *.edu/*
-*.www.cnblogs.com/*
+https://www.cnblogs.com/*
 *.my.oschina.net/*
 *.zhuanlan.zhihu.com/*
-*.liaoxuefeng.com/*
+*.liaoxuefeng.com/wiki*
 *.ruanyifeng.com/*
-*.williamlong.info/*
+*.coolshell.cn/articles*
+*.williamlong.info/articles*
 *.leetcode-cn.com/problems*
 *.medium.com/*
 *.stackoverflow.com/*

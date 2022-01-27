@@ -5,9 +5,10 @@ Whitelist = {
         'cnblogs':['www','com'],      # 博客园，加上 www 是为了过滤 https://recomm.cnblogs.com/ 这个地址
         'oschina':['my','net'],       # 开源中国博客
         'zhihu':['zhuanlan','com'],   # 知乎专栏
-        'liaoxuefeng':['','com'],     # 廖雪峰的官方网站
+        'liaoxuefeng':['','com/wiki'],# 廖雪峰的官方网站
         'ruanyifeng':['','com'],      # 阮一峰的网络日志
-        'williamlong':['','info'],    # 月光博客
+        'coolshell':['','cn/articles'],        # 酷壳
+        'williamlong':['','info/articles'],    # 月光博客
         'leetcode-cn':['','com/problems'], # 乐扣试题区，不好分类的网址
 
 }
