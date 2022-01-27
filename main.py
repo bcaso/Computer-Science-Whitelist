@@ -125,7 +125,6 @@ def gen_subscription_combined_txt():
 def gen_domain_name_txt():
     f = open('whitelists/domain_name.txt', 'w')
     for each in lis_total:
-        # TODO 区分是否以 @http 开头
         if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
             f.write(each[1:]+'\n')    # http(s)://www.cnblogs.com/*
             ...
@@ -160,11 +159,11 @@ def gen_cse_xml():
     ...
 
 
-# TODO 权重排序
 # generate annotations.xml {{{
 # https://vae-0118.github.io/2017/11/06/Python%E4%B8%ADXML%E7%9A%84%E8%AF%BB%E5%86%99%E6%80%BB%E7%BB%93/
+# TODO 给结果按权重排序
 def gen_annotations_xml(list_of_domain):
-    lis = []
+    lis = []                          # TODO 列表中要添加更多的字段
     for each in list_of_domain:
         if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
             lis.append(each[1:])
@@ -177,7 +176,6 @@ def gen_annotations_xml(list_of_domain):
     root = ET.Element('Annotations')       # 创建根节点
     tree = ET.ElementTree(root)            # 创建文档
 
-    # link, weight
     for link in lis:
         element = ET.Element('Annotation') # 子节点
         element.set('about', link)         # 这个属性的值可能只是注释
@@ -201,9 +199,7 @@ def gen_annotations_xml(list_of_domain):
 
 
 
-
 def main():
-    gen_whitelist_rule_txt()
     gen_subscription_txt()
     gen_subscription_combined_txt()
     gen_domain_name_txt()

@@ -131,7 +131,7 @@
 
 ### cse.google.com
 
-<a href="./whitelists/cse.xml">./whitelists/cse.xml</a> 是配置项。
+<a href="./whitelists/cse.xml">./whitelists/cse.xml</a> 是配置项。(第二行 "<CustomSearchEngine ...>" 中的属性要改为自已的，可以先点击 "View in browser" 查看)
 
 <a href="./whitelists/annotations.xml">./whitelists/annotations.xml</a> 是名单列表。
 
