@@ -87,6 +87,8 @@
 │   subscription.jpg
 │
 ├───whitelists
+│       annotations.xml
+│       cse.xml
 │       domain_name.txt
 │       whitelist.txt
 │       whitelists_combined.txt
@@ -106,8 +108,17 @@
         wiki.py
         __init__.py
 ```
+    annotations.xml
+    cse.xml
+    domain_name.txt
+    whitelist.txt
+    whitelists_combined.txt
+    wiki.txt
+
 
 ## 使用
+
+### uBlacklist
 
 为保证白名单生效，先订阅 whitelist.txt
 
@@ -126,15 +137,23 @@
 
 点击添加订阅 <a href="https://iorate.github.io/ublacklist/subscribe?name=whitelists_combined&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists_combined.txt">汇总列表</a>
 
-`whitelists_combined.txt` 是所有列表的汇总。
-
 我感觉分类订阅比订阅总列表的可控度高，根据需要，可在搜索前只启用一部分。
 
 <img src="subscription.jpg">
 
-<b>其他使用方式：</b>
+### cse.google.com
 
-以上所有域名都已加入 <a href="https://cse.google.com">google 可编程搜索</a>，可以修改为浏览器默认搜索引擎: <a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
+<a href="./whitelists/cse.xml">./whitelists/cse.xml</a> 是配置项。
+
+<a href="./whitelists/annotations.xml">./whitelists/annotations.xml</a> 是名单列表。
+
+可以在高级选项中上传。
+
+测试：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
+
+### 其他使用方式
+
+<a href="./whitelists/domain_name.txt">./whitelists/domain_name.txt</a> 是域名列表，可以用在油猴脚本中，或许要改下代码来读取。
 
 
 ## 白名单与黑名单
@@ -144,4 +163,3 @@
 两个 google 帐号，开两个 chrome, 一个用<a href="https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist" target="_blank">黑名单</a>一个用白名单。
 
 经过一段时间的积累，就可以转到白名单。
-
