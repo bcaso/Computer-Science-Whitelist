@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations>
+<Annotations start="0" num="84" total="84">
 	<Annotation about="*.github.com/*">
 		<Label name="_include_" />
 		<AdditionalData value="*.github.com/*" attribute="original_url" />

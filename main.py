@@ -176,6 +176,11 @@ def gen_annotations_xml(list_of_domain):
     root = ET.Element('Annotations')       # 创建根节点
     tree = ET.ElementTree(root)            # 创建文档
 
+    # Annotations 的三个非必要属性
+    root.set('start', '0')
+    root.set('num', str(len(lis)))
+    root.set('total', str(len(lis)))
+
     for link in lis:
         element = ET.Element('Annotation') # 子节点
         element.set('about', link)         # 这个属性的值可能只是注释
