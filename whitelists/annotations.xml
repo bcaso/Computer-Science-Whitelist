@@ -144,9 +144,9 @@
 		<Label name="_include_" />
 		<AdditionalData value="*.zhihu.com/question*" attribute="original_url" />
 	</Annotation>
-	<Annotation about="*.segmentfault.com/*">
+	<Annotation about="*.segmentfault.com/q*">
 		<Label name="_include_" />
-		<AdditionalData value="*.segmentfault.com/*" attribute="original_url" />
+		<AdditionalData value="*.segmentfault.com/q*" attribute="original_url" />
 	</Annotation>
 	<Annotation about="*.autoahk.com/archives*">
 		<Label name="_include_" />

@@ -7,7 +7,7 @@ Whitelist = {
         'askubuntu':['','com'],          # about linux
         'quora':['','com'],              # quora 类似知乎
         'zhihu':['','com/question'],     # 知乎
-        'segmentfault':['','com'],       # 思否，国内版 stackoverflow
+        'segmentfault':['','com/q'],     # 思否，国内版 stackoverflow, 博客文章不能踩，所以不添加到博客列表中
         'autoahk':['','com/archives'],   # AutoHotkey 中文社区
         'autohotkey':['','com/boards'],  # AutoHotkey 官方论坛
         'v2ex':['','com'],               # v2ex社区，经常无法打开

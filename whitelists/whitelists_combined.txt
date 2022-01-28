@@ -34,7 +34,7 @@
 @*://*.askubuntu.com/*
 @*://*.quora.com/*
 @*://*.zhihu.com/question*
-@*://*.segmentfault.com/*
+@*://*.segmentfault.com/q*
 @*://*.autoahk.com/archives*
 @*://*.autohotkey.com/boards*
 @*://*.v2ex.com/*
