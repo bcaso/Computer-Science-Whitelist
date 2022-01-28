@@ -1,6 +1,5 @@
 @*://*.gitee.io/*
 @*://*.github.io/*
-@*://*.edu/*
 @https://www.cnblogs.com/*
 @*://*.my.oschina.net/*
 @*://*.zhuanlan.zhihu.com/*
