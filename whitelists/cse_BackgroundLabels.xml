@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BackgroundLabels>
+	<Label name="_cse_wiki" mode="FILTER" weight="1" />
+	<Label name="_cse_bbs" mode="FILTER" weight="0.8" />
+	<Label name="_cse_repository" mode="FILTER" weight="0.8" />
+	<Label name="_cse_blogs" mode="FILTER" weight="0.7" />
+	<Label name="_cse_library" mode="FILTER" weight="0.5" />
+	<Label name="_cse_softwareDownload" mode="FILTER" weight="0.5" />
+</BackgroundLabels>

@@ -4,9 +4,12 @@
 @*://*.stackexchange.com/*
 @*://*.serverfault.com/*
 @*://*.askubuntu.com/*
+@*://*.segmentfault.com/q*
+@*://*.github.community/*
+@*://*.leetcode-cn.com/circle/discuss*
+@*://*.nowcoder.com/questionTerminal*
 @*://*.quora.com/*
 @*://*.zhihu.com/question*
-@*://*.segmentfault.com/*
 @*://*.autoahk.com/archives*
 @*://*.autohotkey.com/boards*
 @*://*.v2ex.com/*
@@ -14,8 +17,5 @@
 @*://*.oschina.net/question*
 @*://*.52pojie.cn/*
 @*://*.community.cisco.com/*
-@*://*.github.community/*
-@*://*.nowcoder.com/questionTerminal*
-@*://*.leetcode-cn.com/circle/discuss*
 @*://*.bbs.letitfly.me/*
 @*://*.bbs.ikuai8.com/*

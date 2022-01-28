@@ -1,11 +1,11 @@
-@*://*.gitee.io/*
+@*://*.leetcode-cn.com/problems*
 @*://*.github.io/*
-@*://*.edu/*
-@https://www.cnblogs.com/*
-@*://*.my.oschina.net/*
+@*://*.gitee.io/*
 @*://*.zhuanlan.zhihu.com/*
-@*://*.liaoxuefeng.com/wiki*
+@https://www.cnblogs.com/*
 @*://*.ruanyifeng.com/*
+@*://*.my.oschina.net/*
+@*://*.liaoxuefeng.com/wiki*
 @*://*.coolshell.cn/articles*
 @*://*.williamlong.info/articles*
-@*://*.leetcode-cn.com/problems*
+@*://*.edu/*

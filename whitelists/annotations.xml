@@ -1,339 +1,339 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Annotations start="0" num="84" total="84">
-	<Annotation about="*.github.com/*">
+	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.github.com/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.gitee.com/*">
+	<Annotation about="*.python.org/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.gitee.com/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.pypi.org/*">
+	<Annotation about="*.autohotkey.com/docs*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.pypi.org/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.wikipedia.org/wiki*">
+	<Annotation about="*.developer.mozilla.org/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.wikipedia.org/wiki*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.developer.mozilla.org/*">
+	<Annotation about="*.gitbooks.io/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.developer.mozilla.org/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.runoob.com/*">
+	<Annotation about="*.shuxuele.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.runoob.com/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.c.biancheng.net/*">
+	<Annotation about="*.mathsisfun.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.c.biancheng.net/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.kb.cnblogs.com/page*">
+	<Annotation about="*.math001.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.kb.cnblogs.com/page*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.python.org/*">
+	<Annotation about="*.zh.wikihow.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.python.org/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.cisco.com/c/zh_cn/support/docs*">
+	<Annotation about="*.programcreek.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.cisco.com/c/zh_cn/support/docs*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.autohotkey.com/docs*">
+	<Annotation about="*.runoob.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.autohotkey.com/docs*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.gitbooks.io/*">
+	<Annotation about="*.c.biancheng.net/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.gitbooks.io/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.zh.wikihow.com/*">
+	<Annotation about="*.kb.cnblogs.com/page*" score="0.55">
 		<Label name="_include_" />
-		<AdditionalData value="*.zh.wikihow.com/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.shuxuele.com/*">
+	<Annotation about="*.cisco.com/c/zh_cn/support/docs*" score="0.55">
 		<Label name="_include_" />
-		<AdditionalData value="*.shuxuele.com/*" attribute="original_url" />
+		<Label name="_cse_wiki" />
 	</Annotation>
-	<Annotation about="*.mathsisfun.com/*">
+	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.mathsisfun.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.math001.com/*">
+	<Annotation about="*.stackoverflow.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.math001.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.programcreek.com/*">
+	<Annotation about="*.superuser.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.programcreek.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.gitee.io/*">
+	<Annotation about="*.stackexchange.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.gitee.io/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.github.io/*">
+	<Annotation about="*.serverfault.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.github.io/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.edu/*">
+	<Annotation about="*.askubuntu.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.edu/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="https://www.cnblogs.com/*">
+	<Annotation about="*.segmentfault.com/q*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="https://www.cnblogs.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.my.oschina.net/*">
+	<Annotation about="*.github.community/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.my.oschina.net/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.zhuanlan.zhihu.com/*">
+	<Annotation about="*.leetcode-cn.com/circle/discuss*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.zhuanlan.zhihu.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.liaoxuefeng.com/wiki*">
+	<Annotation about="*.nowcoder.com/questionTerminal*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.liaoxuefeng.com/wiki*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.ruanyifeng.com/*">
+	<Annotation about="*.quora.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.ruanyifeng.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.coolshell.cn/articles*">
+	<Annotation about="*.zhihu.com/question*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.coolshell.cn/articles*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.williamlong.info/articles*">
+	<Annotation about="*.autoahk.com/archives*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.williamlong.info/articles*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.leetcode-cn.com/problems*">
+	<Annotation about="*.autohotkey.com/boards*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.leetcode-cn.com/problems*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.medium.com/*">
+	<Annotation about="*.v2ex.com/*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.medium.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.stackoverflow.com/*">
+	<Annotation about="*.meta.appinn.net/*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.stackoverflow.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.superuser.com/*">
+	<Annotation about="*.oschina.net/question*" score="0.4">
 		<Label name="_include_" />
-		<AdditionalData value="*.superuser.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.stackexchange.com/*">
+	<Annotation about="*.52pojie.cn/*" score="0.4">
 		<Label name="_include_" />
-		<AdditionalData value="*.stackexchange.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.serverfault.com/*">
+	<Annotation about="*.community.cisco.com/*" score="0.4">
 		<Label name="_include_" />
-		<AdditionalData value="*.serverfault.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.askubuntu.com/*">
+	<Annotation about="*.bbs.letitfly.me/*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.askubuntu.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.quora.com/*">
+	<Annotation about="*.bbs.ikuai8.com/*" score="0.4">
 		<Label name="_include_" />
-		<AdditionalData value="*.quora.com/*" attribute="original_url" />
+		<Label name="_cse_bbs" />
 	</Annotation>
-	<Annotation about="*.zhihu.com/question*">
+	<Annotation about="*.github.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.zhihu.com/question*" attribute="original_url" />
+		<Label name="_cse_repository" />
 	</Annotation>
-	<Annotation about="*.segmentfault.com/*">
+	<Annotation about="*.pypi.org/*" score="0.75">
 		<Label name="_include_" />
-		<AdditionalData value="*.segmentfault.com/*" attribute="original_url" />
+		<Label name="_cse_repository" />
 	</Annotation>
-	<Annotation about="*.autoahk.com/archives*">
+	<Annotation about="*.gitee.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.autoahk.com/archives*" attribute="original_url" />
+		<Label name="_cse_repository" />
 	</Annotation>
-	<Annotation about="*.autohotkey.com/boards*">
+	<Annotation about="*.leetcode-cn.com/problems*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.autohotkey.com/boards*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.v2ex.com/*">
+	<Annotation about="*.github.io/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.v2ex.com/*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.meta.appinn.net/*">
+	<Annotation about="*.gitee.io/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.meta.appinn.net/*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.oschina.net/question*">
+	<Annotation about="*.zhuanlan.zhihu.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.oschina.net/question*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.52pojie.cn/*">
+	<Annotation about="https://www.cnblogs.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.52pojie.cn/*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.community.cisco.com/*">
+	<Annotation about="*.ruanyifeng.com/*" score="0.55">
 		<Label name="_include_" />
-		<AdditionalData value="*.community.cisco.com/*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.github.community/*">
+	<Annotation about="*.my.oschina.net/*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.github.community/*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.nowcoder.com/questionTerminal*">
+	<Annotation about="*.liaoxuefeng.com/wiki*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.nowcoder.com/questionTerminal*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.leetcode-cn.com/circle/discuss*">
+	<Annotation about="*.coolshell.cn/articles*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.leetcode-cn.com/circle/discuss*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.bbs.letitfly.me/*">
+	<Annotation about="*.williamlong.info/articles*" score="0.4">
 		<Label name="_include_" />
-		<AdditionalData value="*.bbs.letitfly.me/*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.bbs.ikuai8.com/*">
+	<Annotation about="*.edu/*" score="0.3">
 		<Label name="_include_" />
-		<AdditionalData value="*.bbs.ikuai8.com/*" attribute="original_url" />
+		<Label name="_cse_blogs" />
 	</Annotation>
-	<Annotation about="*.sourceforge.net/*">
+	<Annotation about="*.wenku.baidu.com/view*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.sourceforge.net/*" attribute="original_url" />
+		<Label name="_cse_library" />
 	</Annotation>
-	<Annotation about="*.softonic.com/*">
+	<Annotation about="*.docin.com/p-*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.softonic.com/*" attribute="original_url" />
+		<Label name="_cse_library" />
 	</Annotation>
-	<Annotation about="*.getintopc.com/*">
+	<Annotation about="*.doc88.com/p-*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.getintopc.com/*" attribute="original_url" />
+		<Label name="_cse_library" />
 	</Annotation>
-	<Annotation about="*.bicfic.com/*">
+	<Annotation about="*.taodocs.com/p-*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.bicfic.com/*" attribute="original_url" />
+		<Label name="_cse_library" />
 	</Annotation>
-	<Annotation about="*.cracksurl.com/*">
+	<Annotation about="*.sourceforge.net/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.cracksurl.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.msguides.com/*">
+	<Annotation about="*.softonic.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.msguides.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.software.informer.com/*">
+	<Annotation about="*.portablesoft.org/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.software.informer.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.portableapps.com/apps*">
+	<Annotation about="*.portableapps.com/apps*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.portableapps.com/apps*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.dayanzai.me/*">
+	<Annotation about="*.getintopc.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.dayanzai.me/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.appinn.com/*">
+	<Annotation about="*.bicfic.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.appinn.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.apprcn.com/*">
+	<Annotation about="*.cracksurl.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.apprcn.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.portablesoft.org/*">
+	<Annotation about="*.msguides.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.portablesoft.org/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.msdn.itellyou.cn/*">
+	<Annotation about="*.software.informer.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.msdn.itellyou.cn/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.luochenzhimu.com/*">
+	<Annotation about="*.msdn.itellyou.cn/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.luochenzhimu.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.mpyit.com/*">
+	<Annotation about="*.luochenzhimu.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.mpyit.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.nruan.com/*">
+	<Annotation about="*.dayanzai.me/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.nruan.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.xkonglong.com/*">
+	<Annotation about="*.aixuefu.com/xiazai*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.xkonglong.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.jb51.net/softs*">
+	<Annotation about="*.xiazaigang.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.jb51.net/softs*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.shenzjd.com/*">
+	<Annotation about="*.zdfans.com/html*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.shenzjd.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.iemblog.com/?p=*">
+	<Annotation about="*.mpyit.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.iemblog.com/?p=*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.ghxi.com/*">
+	<Annotation about="*.ys168.com/*" score="0.7">
 		<Label name="_include_" />
-		<AdditionalData value="*.ghxi.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.liulanmi.com/dl*">
+	<Annotation about="*.xkonglong.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.liulanmi.com/dl*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.iplaysoft.com/*">
+	<Annotation about="*.appinn.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.iplaysoft.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.xingkbjm.com/*">
+	<Annotation about="*.xingkbjm.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.xingkbjm.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.xiazaigang.com/*">
+	<Annotation about="*.iemblog.com/?p=*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.xiazaigang.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.zdfans.com/html*">
+	<Annotation about="*.liulanmi.com/dl*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.zdfans.com/html*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.aixuefu.com/xiazai*">
+	<Annotation about="*.j9p.com/down*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.aixuefu.com/xiazai*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.j9p.com/down*">
+	<Annotation about="*.jb51.net/softs*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.j9p.com/down*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.ys168.com/*">
+	<Annotation about="*.apprcn.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.ys168.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.apkpure.com/*">
+	<Annotation about="*.shenzjd.com/*" score="0.6">
 		<Label name="_include_" />
-		<AdditionalData value="*.apkpure.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.uptodown.com/*">
+	<Annotation about="*.nruan.com/*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.uptodown.com/*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.wenku.baidu.com/view*">
+	<Annotation about="*.ghxi.com/*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.wenku.baidu.com/view*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.docin.com/p-*">
+	<Annotation about="*.iplaysoft.com/*" score="0.5">
 		<Label name="_include_" />
-		<AdditionalData value="*.docin.com/p-*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.doc88.com/p-*">
+	<Annotation about="*.apkpure.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.doc88.com/p-*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
-	<Annotation about="*.taodocs.com/p-*">
+	<Annotation about="*.uptodown.com/*" score="0.8">
 		<Label name="_include_" />
-		<AdditionalData value="*.taodocs.com/p-*" attribute="original_url" />
+		<Label name="_cse_softwareDownload" />
 	</Annotation>
 </Annotations>
