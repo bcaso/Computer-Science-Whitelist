@@ -193,33 +193,42 @@ def __indent(elem, level=0):
 
 # weight from -1.0 to 1.0
 # label, weight
-background_labels_dic = {
-  'wiki': ["_cse_wiki",'1'],
-  'bbs': ["_cse_bbs",'0.8'],
-  'repository': ["_cse_repository",'0.8'],
-  'blogs': ["_cse_blogs", '0.7'],
-  'library': ["_cse_library",'0.5'],
-  'software_download': ["_cse_softwareDownload",'0.5'],
+Facet_labels_dic = {
+  'wiki': ["wiki",'1'],
+  'bbs': ["bbs",'0.8'],
+  'repository': ["repository",'0.8'],
+  'blogs': ["blogs", '0.7'],
+  'library': ["library",'0.5'],
+  'software_download': ["softwareDownload",'0.5'],
 
 }
 
 # 这个文件或许手修改更方便, 所以只生成该文件中的标签部分 {{{
 def gen_cse_xml():
-    root = ET.Element('BackgroundLabels')       # 创建根节点
+    root = ET.Element('Facet')       # 创建根节点
     tree = ET.ElementTree(root)                 # 创建文档
 
 
-    for k,v in background_labels_dic.items():
-        element = ET.Element('Label')      # 子节点
-        element.set('name', v[0])          # 这个属性的值可能只是注释
-        element.set('mode', 'FILTER')      # 这个属性的值是固定的
-        element.set('weight', v[1])        # weight from -1.0 to 1.0
+    for k,v in Facet_labels_dic.items():
+        FacetItem = ET.Element('FacetItem')      # 子节点
+
+        Label = ET.SubElement(FacetItem, 'Label')
+        Label.set('name', v[0])
+        Label.set('mode', 'FILTER')
+        Label.set('weight', v[1])
+        Label.set('enable_for_facet_search', 'true')    # 这个属性的值应该是固定的
+
+        Rewrite = ET.SubElement(Label, 'Rewrite')
+        entities = ET.SubElement(Label, 'entities')
+
+        Title = ET.SubElement(FacetItem, 'Title')
+        Title.text = v[0]                  # 节点中的文本内容
 
 
-        root.append(element)               # 放到根节点下
+        root.append(FacetItem)               # 放到根节点下
 
     __indent(root)          # 增加换行符
-    tree.write('whitelists/cse_BackgroundLabels.xml', encoding='utf-8', xml_declaration=True)
+    tree.write('whitelists/cse_FacetLabels.xml', encoding='utf-8', xml_declaration=True)
     ...
 
 # }}}
@@ -246,7 +255,7 @@ def gen_annotations_xml():
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_cse_wiki')
+        Label.set('name', 'wiki')
 
         # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
         #AdditionalData = ET.SubElement(element, 'AdditionalData')
@@ -273,7 +282,7 @@ def gen_annotations_xml():
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_cse_bbs')
+        Label.set('name', 'bbs')
 
         # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
         #AdditionalData = ET.SubElement(element, 'AdditionalData')
@@ -298,7 +307,7 @@ def gen_annotations_xml():
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_cse_repository')
+        Label.set('name', 'repository')
 
         # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
         #AdditionalData = ET.SubElement(element, 'AdditionalData')
@@ -323,7 +332,7 @@ def gen_annotations_xml():
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_cse_blogs')
+        Label.set('name', 'blogs')
 
         # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
         #AdditionalData = ET.SubElement(element, 'AdditionalData')
@@ -348,7 +357,7 @@ def gen_annotations_xml():
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_cse_library')
+        Label.set('name', 'library')
 
         # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
         #AdditionalData = ET.SubElement(element, 'AdditionalData')
@@ -373,7 +382,7 @@ def gen_annotations_xml():
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_cse_softwareDownload')
+        Label.set('name', 'softwareDownload')
 
         # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
         #AdditionalData = ET.SubElement(element, 'AdditionalData')
@@ -402,6 +411,8 @@ def main():
     gen_domain_name_txt()
     # BackgroundLabels 下的 Lables 加上后，搜索就不能用了。显示无结果。
     # 但是教程中有如下示例，尚不明确是哪里出错了。
+    # 官方视频教程(2009年)，不是这么写的。自定义 Label 只能在 Facet 下的 FacetItem 下。
+    # https://www.youtube.com/watch?v=fIUHTFvIt9c
     '''
           <BackgroundLabels>
             <Label name="_cse_hwbuiarvsbo" mode="FILTER" weight="0.65"/>
