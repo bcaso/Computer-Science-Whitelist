@@ -12,10 +12,10 @@
 @*://*.zhihu.com/question*
 @*://*.autoahk.com/archives*
 @*://*.autohotkey.com/boards*
-@*://*.v2ex.com/*
 @*://*.meta.appinn.net/*
 @*://*.oschina.net/question*
-@*://*.52pojie.cn/*
-@*://*.community.cisco.com/*
-@*://*.bbs.letitfly.me/*
+@*://*.v2ex.com/*
 @*://*.bbs.ikuai8.com/*
+@*://*.52pojie.cn/*
+@*://*.bbs.letitfly.me/*
+@*://*.community.cisco.com/*

@@ -4,8 +4,6 @@
 @*://*.zhuanlan.zhihu.com/*
 @https://www.cnblogs.com/*
 @*://*.ruanyifeng.com/*
-@*://*.my.oschina.net/*
 @*://*.liaoxuefeng.com/wiki*
 @*://*.coolshell.cn/articles*
-@*://*.williamlong.info/articles*
 @*://*.edu/*

@@ -1,0 +1,16 @@
+# 将本文件先放到 /etc/nginx/sites-available/cse_google_nginx_conf 
+# 再将其软链接到 /etc/nginx/sites-enabled/cse_google_nginx_conf 
+#     sudo ln -s /etc/nginx/sites-available/cse_google_nginx_conf /etc/nginx/sites-enabled/cse_google_nginx_conf#
+# 重启 nginx: sudo nginx -s reload
+
+server {
+#listen 80 default;
+listen 65534;
+server_name 127.0.0.1;
+    # root 设置cse.google.com 网页的目录
+    # 假设 index.html 的位置是：/home/pi/cse/index.html
+    location /{
+        root /home/pi/cse;
+        index index.html index.html;
+    }
+}

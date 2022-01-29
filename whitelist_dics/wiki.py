@@ -6,10 +6,10 @@ Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一�
         'shuxuele':['','com','0.7'],                   # 数学乐
         'mathsisfun':['','com','0.7'],                 # 数学乐, 英文版
         'math001':['','com','0.7'],                    # 数学网站
+        'biancheng':['c','net','0.65'],                 # C 语言中文网，各方面的编程文档都有
         'wikihow':['zh','com','0.6'],                  # wikihow, about health
         'programcreek':['','com','0.6'],               # 函数代码示例
         'runoob':['','com','0.6'],                     # 菜鸟教程
-        'biancheng':['c','net','0.6'],                 # C 语言中文网，各方面的编程文档都有
         'cnblogs':['kb','com/page','0.55'],             # cnblogs 博客园知识库
-        'cisco':['','com/c/zh_cn/support/docs','0.55'], # cisco 中文文档
+        'cisco':['','com/c/zh_cn/support/docs','0.3'], # cisco 中文文档
 }
