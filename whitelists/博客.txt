@@ -1,8 +1,0 @@
-@*://*.gitee.io/*
-@*://*.github.io/*
-@https://www.cnblogs.com/*
-@*://*.zhuanlan.zhihu.com/*
-@*://*.liaoxuefeng.com/wiki*
-@*://*.ruanyifeng.com/*
-@*://*.coolshell.cn/articles*
-@*://*.leetcode-cn.com/problems*
