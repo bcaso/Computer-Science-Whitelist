@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Facet>
+	<FacetItem>
+		<Label name="wiki" mode="FILTER" weight="1" enable_for_facet_search="true">
+			<Rewrite />
+			<entities />
+		</Label>
+		<Title>wiki</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="bbs" mode="FILTER" weight="0.8" enable_for_facet_search="true">
+			<Rewrite />
+			<entities />
+		</Label>
+		<Title>bbs</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="repository" mode="FILTER" weight="0.8" enable_for_facet_search="true">
+			<Rewrite />
+			<entities />
+		</Label>
+		<Title>repository</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="blogs" mode="FILTER" weight="0.7" enable_for_facet_search="true">
+			<Rewrite />
+			<entities />
+		</Label>
+		<Title>blogs</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="library" mode="FILTER" weight="0.5" enable_for_facet_search="true">
+			<Rewrite />
+			<entities />
+		</Label>
+		<Title>library</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="softwareDownload" mode="FILTER" weight="0.5" enable_for_facet_search="true">
+			<Rewrite />
+			<entities />
+		</Label>
+		<Title>softwareDownload</Title>
+	</FacetItem>
+</Facet>

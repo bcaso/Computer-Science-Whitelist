@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Annotations start="0" num="82" total="82">
+	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.python.org/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.autohotkey.com/docs*" score="0.8">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.developer.mozilla.org/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.gitbooks.io/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.shuxuele.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.mathsisfun.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.math001.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.c.biancheng.net/*" score="0.65">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.zh.wikihow.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.programcreek.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.runoob.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.kb.cnblogs.com/page*" score="0.55">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.cisco.com/c/zh_cn/support/docs*" score="0.3">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.medium.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.stackoverflow.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.superuser.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.stackexchange.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.serverfault.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.askubuntu.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.segmentfault.com/q*" score="0.7">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.github.community/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.leetcode-cn.com/circle/discuss*" score="0.7">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.nowcoder.com/questionTerminal*" score="0.7">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.quora.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.zhihu.com/question*" score="0.7">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.autoahk.com/archives*" score="0.6">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.autohotkey.com/boards*" score="0.6">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.meta.appinn.net/*" score="0.5">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.oschina.net/question*" score="0.4">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.v2ex.com/*" score="0.4">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.ikuai8.com/*" score="0.4">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.52pojie.cn/*" score="0.4">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.letitfly.me/*" score="0.4">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.community.cisco.com/*" score="0.3">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.github.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.pypi.org/*" score="0.75">
+		<Label name="_include_" />
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.gitee.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.leetcode-cn.com/problems*" score="0.8">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.github.io/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.gitee.io/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.zhuanlan.zhihu.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="https://www.cnblogs.com/*" score="0.65">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.ruanyifeng.com/*" score="0.65">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.liaoxuefeng.com/wiki*" score="0.5">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.coolshell.cn/articles*" score="0.5">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.edu/*" score="0.1">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.wenku.baidu.com/view*" score="0.7">
+		<Label name="_include_" />
+		<Label name="library" />
+	</Annotation>
+	<Annotation about="*.docin.com/p-*" score="0.7">
+		<Label name="_include_" />
+		<Label name="library" />
+	</Annotation>
+	<Annotation about="*.doc88.com/p-*" score="0.7">
+		<Label name="_include_" />
+		<Label name="library" />
+	</Annotation>
+	<Annotation about="*.taodocs.com/p-*" score="0.7">
+		<Label name="_include_" />
+		<Label name="library" />
+	</Annotation>
+	<Annotation about="*.sourceforge.net/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.softonic.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.portablesoft.org/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.portableapps.com/apps*" score="0.8">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.getintopc.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.bicfic.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.cracksurl.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.msguides.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.software.informer.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.msdn.itellyou.cn/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.luochenzhimu.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.dayanzai.me/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.aixuefu.com/xiazai*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.xiazaigang.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.zdfans.com/html*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.mpyit.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.ys168.com/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.xkonglong.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.appinn.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.xingkbjm.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.iemblog.com/?p=*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.liulanmi.com/dl*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.j9p.com/down*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.jb51.net/softs*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.apprcn.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.shenzjd.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.nruan.com/*" score="0.5">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.ghxi.com/*" score="0.5">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.iplaysoft.com/*" score="0.5">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.apkpure.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+	<Annotation about="*.uptodown.com/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="softwareDownload" />
+	</Annotation>
+</Annotations>

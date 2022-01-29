@@ -13,10 +13,6 @@ import whitelist_dics.library
 lis = []
 lis_total = []
 
-# 规则 @*://*.v2ex.com 与 @*://v2ex.com/* 的拦截效果不同，后者没效果
-# 规则 @*://前缀.域名.后缀/* 有时没效果
-# 所以将所有的规则改为 @*://*.前缀.域名.后缀/*
-# 如果前缀是 www. 就不要写在 Whitelist 的 value[0] 中 
 
 '''
 with prefix
@@ -28,41 +24,80 @@ no prefix and no domain name, only the suffix
 '''
 
 # generate url {{{
-def gen_urls(whitelist_dic):
-    for k,v in whitelist_dic.items(): 
-        url = '@*://*.'
-        # 前缀
-        if v[0] != '':
-            if v[0].startswith('http://') or v[0].startswith('https://'):   # http(s)://www.cnblogs.com/*
-                url = '@'+v[0]+'.'            # uBlacklist suppot rules like "@https://www.cnblogs.com/*"
-                ...
-            elif v[0].startswith('www'): # www.cnblogs.com/*
-                # 在 cse.google.com 中，"*.www.cnblogs.com/*" 不会匹配 https://www.cnblogs.com/*
-                #              但是     "*.my.oschina.net/*"  能匹配到 https://my.oschina.net/*
-                # 没有更好的方法处理 http 或 https，全都改为 https://www.
-                # 如果是以 http 开头，就写到前缀中，这里处理不了
-                url = "@https://"+v[0]+'.'
-                ...
+def gen_urls(whitelist_dic, startwith_at=False):
+    if not startwith_at :
+        for k,v in whitelist_dic.items(): 
+            url = '@*://*.'
+            # 前缀
+            if v[0] != '':
+                if v[0].startswith('http://') or v[0].startswith('https://'):   # http(s)://www.cnblogs.com/*
+                    url = '@'+v[0]+'.'            # uBlacklist suppot rules like "@https://www.cnblogs.com/*"
+                    ...
+                elif v[0].startswith('www'): # www.cnblogs.com/*
+                    # 在 cse.google.com 中，"*.www.cnblogs.com/*" 不会匹配 https://www.cnblogs.com/*
+                    #              但是     "*.my.oschina.net/*"  能匹配到 https://my.oschina.net/*
+                    # 没有更好的方法处理 http 或 https，全都改为 https://www.
+                    # 如果是以 http 开头，就写到前缀中，这里处理不了
+                    url = "@https://"+v[0]+'.'
+                    ...
+                else:
+                    url+=v[0] + '.'
+            # 加域名
+            if k != '':
+                url += k.lower() # uBlacklist 对域名区分大小写 @*://*.stackoverflow.com/* 与 @*://*.StackOverflow.com/* 拦截效果不同
             else:
-                url+=v[0] + '.'
-        # 加域名
-        if k != '':
-            url += k.lower() # uBlacklist 对域名区分大小写 @*://*.stackoverflow.com/* 与 @*://*.StackOverflow.com/* 拦截效果不同
-        else:
-            url = url[:-1]   # change url('@*://*.') to '@*://*', 为了添加指定后缀的域名，如 @*://*.edu
+                url = url[:-1]   # change url('@*://*.') to '@*://*', 为了添加指定后缀的域名，如 @*://*.edu
 
-        # 后缀
-        if v[1] != '':    
-            # 添加不完全后缀, @*://*.docin.com/p-* , 多数文库的文章以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
-            if '/' in v[1]:
-                url+='.'+v[1]+'*'
-            # 添加完全后缀, @*://*.mathsisfun.com/*
-            else: 
-                url+='.'+v[1]+'/*'
+            # 后缀
+            if v[1] != '':    
+                # 添加不完全后缀, @*://*.docin.com/p-* , 多数文库的文章以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
+                if '/' in v[1]:
+                    url+='.'+v[1]+'*'
+                # 添加完全后缀, @*://*.mathsisfun.com/*
+                else: 
+                    url+='.'+v[1]+'/*'
 
-        #print(url)
-        lis.append(url)
-        lis_total.append(url)
+            #print(url)
+            lis.append(url)
+            lis_total.append(url)
+    else:
+        for k,v in whitelist_dic.items(): 
+            if(len(v) != 3):
+                print('-------------','k is',k, 'v is ', v)
+            url = '*.'
+            # 前缀
+            if v[0] != '':
+                if v[0].startswith('http://') or v[0].startswith('https://'):   # http(s)://www
+                    url = v[0]+'.'             
+                    ...
+                elif v[0].startswith('www'): # www.cnblogs.com/*
+                    # 在 cse.google.com 中，"*.www.cnblogs.com/*" 不会匹配 https://www.cnblogs.com/*
+                    #              但是     "*.my.oschina.net/*"  能匹配到 https://my.oschina.net/*
+                    # 没有更好的方法处理 http 或 https，全都改为 https://www.
+                    # 如果是以 http 开头，就写到前缀中，这里处理不了
+                    url = "https://"+v[0]+'.'
+                    ...
+                else:
+                    url+=v[0] + '.'
+            # 加域名
+            if k != '':
+                url += k.lower()
+            else:
+                url = url[:-1]   # 为了添加指定后缀的域名，如 *.edu
+
+            # 后缀
+            if v[1] != '':    
+                # 添加不完全后缀, *.docin.com/p-* , 多数文库的文章以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
+                if '/' in v[1]:
+                    url+='.'+v[1]+'*'
+                # 添加完全后缀, @*://*.mathsisfun.com/*
+                else: 
+                    url+='.'+v[1]+'/*'
+
+            #print(url)
+            lis.append([url, v[2]]) # [url, score]
+            lis_total.append(url)
+        ...
 # }}}
 
 def gen_txt(filename, lis):
@@ -114,6 +149,7 @@ def gen_subscription_txt():
 # }}}
 
 
+# 汇总 txt {{{
 # 汇总列表，for uBlacklist
 def gen_subscription_combined_txt():
     f = open('whitelists/whitelists_combined.txt', 'w')
@@ -135,6 +171,7 @@ def gen_domain_name_txt():
 
     f.close()
 
+# }}}
 
 # 增加换行符 {{{
 # https://vae-0118.github.io/2017/11/06/Python%E4%B8%ADXML%E7%9A%84%E8%AF%BB%E5%86%99%E6%80%BB%E7%BB%93/
@@ -154,61 +191,236 @@ def __indent(elem, level=0):
             elem.tail = i
 # }}}
 
-# 这个文件或许手修改更方便
+# weight from -1.0 to 1.0
+# label, weight
+Facet_labels_dic = {
+  'wiki': ["wiki",'1'],
+  'bbs': ["bbs",'0.8'],
+  'repository': ["repository",'0.8'],
+  'blogs': ["blogs", '0.7'],
+  'library': ["library",'0.5'],
+  'software_download': ["softwareDownload",'0.5'],
+
+}
+
+# 这个文件或许手修改更方便, 所以只生成该文件中的标签部分 {{{
 def gen_cse_xml():
-    ...
+    root = ET.Element('Facet')       # 创建根节点
+    tree = ET.ElementTree(root)                 # 创建文档
 
 
-# generate annotations.xml {{{
-# https://vae-0118.github.io/2017/11/06/Python%E4%B8%ADXML%E7%9A%84%E8%AF%BB%E5%86%99%E6%80%BB%E7%BB%93/
-# TODO 给结果按权重排序
-def gen_annotations_xml(list_of_domain):
-    lis = []                          # TODO 列表中要添加更多的字段
-    for each in list_of_domain:
-        if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
-            lis.append(each[1:])
-        else:
-            lis.append(each[5:])          # @*://*. 
+    for k,v in Facet_labels_dic.items():
+        FacetItem = ET.Element('FacetItem')      # 子节点
 
-    # print(lis)
+        Label = ET.SubElement(FacetItem, 'Label')
+        Label.set('name', v[0])
+        Label.set('mode', 'FILTER')
+        Label.set('weight', v[1])
+        Label.set('enable_for_facet_search', 'true')    # 这个属性的值应该是固定的
 
+        Rewrite = ET.SubElement(Label, 'Rewrite')
+        entities = ET.SubElement(Label, 'entities')
 
-    root = ET.Element('Annotations')       # 创建根节点
-    tree = ET.ElementTree(root)            # 创建文档
-
-    # Annotations 的三个非必要属性
-    root.set('start', '0')
-    root.set('num', str(len(lis)))
-    root.set('total', str(len(lis)))
-
-    for link in lis:
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', link)         # 这个属性的值可能只是注释
-        # element.text = 'default'         # 节点中的文本内容
-
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-
-        AdditionalData = ET.SubElement(element, 'AdditionalData')
-        AdditionalData.set('value', link)     # link 地址
-        AdditionalData.set('attribute', 'original_url')
+        Title = ET.SubElement(FacetItem, 'Title')
+        Title.text = v[0]                  # 节点中的文本内容
 
 
-        root.append(element)               # 放到根节点下
+        root.append(FacetItem)               # 放到根节点下
 
     __indent(root)          # 增加换行符
-    tree.write('whitelists/annotations.xml', encoding='utf-8', xml_declaration=True)
+    tree.write('whitelists/cse_FacetLabels.xml', encoding='utf-8', xml_declaration=True)
     ...
 
 # }}}
 
+# generate annotations.xml {{{
+# https://vae-0118.github.io/2017/11/06/Python%E4%B8%ADXML%E7%9A%84%E8%AF%BB%E5%86%99%E6%80%BB%E7%BB%93/
+def gen_annotations_xml():
 
+    total = 0
+
+    root = ET.Element('Annotations')       # 创建根节点
+    tree = ET.ElementTree(root)            # 创建文档
+
+    # lis_of_wiki {{{
+    gen_urls(whitelist_dics.wiki.Whitelist, True)
+
+    for each in lis:
+        #   each 的属性，权重
+        element = ET.Element('Annotation') # 子节点
+        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        # element.text = 'default'         # 节点中的文本内容
+
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', '_include_')
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', 'wiki')
+
+        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
+        #AdditionalData = ET.SubElement(element, 'AdditionalData')
+        #AdditionalData.set('value', each[0])     # link 地址
+        #AdditionalData.set('attribute', 'original_url')
+        root.append(element)               # 放到根节点下
+
+    total += len(lis)
+    print(lis)
+    
+    lis.clear()
+    # }}}
+
+    # lis_of_bbs {{{
+    gen_urls(whitelist_dics.bbs.Whitelist, True)
+
+    for each in lis:
+        #   each 的属性，权重
+        element = ET.Element('Annotation') # 子节点
+        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        # element.text = 'default'         # 节点中的文本内容
+
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', '_include_')
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', 'bbs')
+
+        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
+        #AdditionalData = ET.SubElement(element, 'AdditionalData')
+        #AdditionalData.set('value', each[0])     # link 地址
+        #AdditionalData.set('attribute', 'original_url')
+        root.append(element)               # 放到根节点下
+
+    total += len(lis)
+    lis.clear()
+    # }}}
+
+    # lis_of_repository {{{
+    gen_urls(whitelist_dics.repository.Whitelist, True)
+
+    for each in lis:
+        #   each 的属性，权重
+        element = ET.Element('Annotation') # 子节点
+        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        # element.text = 'default'         # 节点中的文本内容
+
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', '_include_')
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', 'repository')
+
+        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
+        #AdditionalData = ET.SubElement(element, 'AdditionalData')
+        #AdditionalData.set('value', each[0])     # link 地址
+        #AdditionalData.set('attribute', 'original_url')
+        root.append(element)               # 放到根节点下
+
+    total += len(lis)
+    lis.clear()
+    # }}}
+
+    # lis_of_blogs {{{
+    gen_urls(whitelist_dics.blogs.Whitelist, True)
+
+    for each in lis:
+        #   each 的属性，权重
+        element = ET.Element('Annotation') # 子节点
+        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        # element.text = 'default'         # 节点中的文本内容
+
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', '_include_')
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', 'blogs')
+
+        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
+        #AdditionalData = ET.SubElement(element, 'AdditionalData')
+        #AdditionalData.set('value', each[0])     # link 地址
+        #AdditionalData.set('attribute', 'original_url')
+        root.append(element)               # 放到根节点下
+
+    total += len(lis)
+    lis.clear()
+    # }}}
+
+    # lis_of_library {{{
+    gen_urls(whitelist_dics.library.Whitelist, True)
+
+    for each in lis:
+        #   each 的属性，权重
+        element = ET.Element('Annotation') # 子节点
+        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        # element.text = 'default'         # 节点中的文本内容
+
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', '_include_')
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', 'library')
+
+        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
+        #AdditionalData = ET.SubElement(element, 'AdditionalData')
+        #AdditionalData.set('value', each[0])     # link 地址
+        #AdditionalData.set('attribute', 'original_url')
+        root.append(element)               # 放到根节点下
+
+    total += len(lis)
+    lis.clear()
+    # }}}
+
+    # lis_of_software_download  {{{
+    gen_urls(whitelist_dics.software_download.Whitelist, True)
+
+    for each in lis:
+        #   each 的属性，权重
+        element = ET.Element('Annotation') # 子节点
+        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        # element.text = 'default'         # 节点中的文本内容
+
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', '_include_')
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', 'softwareDownload')
+
+        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
+        #AdditionalData = ET.SubElement(element, 'AdditionalData')
+        #AdditionalData.set('value', each[0])     # link 地址
+        #AdditionalData.set('attribute', 'original_url')
+        root.append(element)               # 放到根节点下
+
+    total += len(lis)
+    lis.clear()
+    # }}}
+
+
+    # Annotations 的三个非必要属性
+    root.set('start', '0')
+    root.set('num', str(total))
+    root.set('total', str(total))
+
+    __indent(root)          # 增加换行符
+    tree.write('whitelists/annotations.xml', encoding='utf-8', xml_declaration=True)
+
+# }}}
 
 def main():
     gen_subscription_txt()
     gen_subscription_combined_txt()
     gen_domain_name_txt()
-    gen_annotations_xml(lis_total)
+    # BackgroundLabels 下的 Lables 加上后，搜索就不能用了。显示无结果。
+    # 但是教程中有如下示例，尚不明确是哪里出错了。
+    # 官方视频教程(2009年)，不是这么写的。自定义 Label 只能在 Facet 下的 FacetItem 下。
+    # https://www.youtube.com/watch?v=fIUHTFvIt9c
+    '''
+          <BackgroundLabels>
+            <Label name="_cse_hwbuiarvsbo" mode="FILTER" weight="0.65"/>
+            <Label name="_cse_exclude_hwbuiarvsbo" mode="ELIMINATE"/>
+          </BackgroundLabels>
+    '''
+    gen_cse_xml()
+    gen_annotations_xml()
 
     ...
 

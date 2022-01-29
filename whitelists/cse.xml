@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSearchEngine language="en" encoding="UTF-8" enable_promotions="true" autocompletions="true">
+  <Title>My Search</Title>
+  <Context>
+    <Facet>
+      <FacetItem>
+        <Label name="wiki" mode="FILTER" weight="1" enable_for_facet_search="true">
+          <Rewrite />
+          <entities />
+        </Label>
+        <Title>wiki</Title>
+      </FacetItem>
+      <FacetItem>
+        <Label name="bbs" mode="FILTER" weight="0.8" enable_for_facet_search="true">
+          <Rewrite />
+          <entities />
+        </Label>
+        <Title>bbs</Title>
+      </FacetItem>
+      <FacetItem>
+        <Label name="repository" mode="FILTER" weight="0.8" enable_for_facet_search="true">
+          <Rewrite />
+          <entities />
+        </Label>
+        <Title>repository</Title>
+      </FacetItem>
+      <FacetItem>
+        <Label name="blogs" mode="FILTER" weight="0.7" enable_for_facet_search="true">
+          <Rewrite />
+          <entities />
+        </Label>
+        <Title>blogs</Title>
+      </FacetItem>
+      <FacetItem>
+        <Label name="library" mode="FILTER" weight="0.5" enable_for_facet_search="true">
+          <Rewrite />
+          <entities />
+        </Label>
+        <Title>library</Title>
+      </FacetItem>
+      <FacetItem>
+        <Label name="softwareDownload" mode="FILTER" weight="0.5" enable_for_facet_search="true">
+          <Rewrite />
+          <entities />
+        </Label>
+        <Title>softwareDownload</Title>
+      </FacetItem>
+    </Facet>
+    <BackgroundLabels>
+      <Label name="_include_" mode="FILTER"/>
+      <Label name="_exclude_" mode="ELIMINATE"/>
+    </BackgroundLabels>
+  </Context>
+  <LookAndFeel code="4" element_layout="6" theme="7" custom_theme="true" url_length="full" element_branding="hide" enable_cse_thumbnail="false" font="2">
+    <Logo/>
+    <Colors text="#000000"/>
+    <Promotions background_color="#FFFFFF" snippet_color="#000000"/>
+    <SearchControls input_border_color="#999999" button_border_color="#000000" button_background_color="#000000"/>
+    <Results border_hover_color="#EEEEEE" background_hover_color="#FDFDFD"/>
+  </LookAndFeel>
+  <ImageSearchSettings layout="2"/>
+  <autocomplete_settings source="1"/>
+  <sort_by_keys label="Relevance" key=""/>
+  <sort_by_keys label="Date" key="date"/>
+  <cse_advance_settings enable_facet_search="true">
+    <custom_search_control_options no_results_string="Sorry, I didn’t find anything, please try different keywords."/>
+    <web_search_options result_set_size="20" enable_history="true" show_structured_data="true">
+      <search_restrict_args lr="lang_en" filter="1"/>
+    </web_search_options>
+    <search_options link_target=""/>
+    <image_advanced_options/>
+  </cse_advance_settings>
+</CustomSearchEngine>

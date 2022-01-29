@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # 将本文件先放到 /etc/nginx/sites-available/cse_google_nginx_conf
 # 再将其软链接到 /etc/nginx/sites-enabled/cse_google_nginx_conf
 #     sudo ln -s /etc/nginx/sites-available/cse_google_nginx_conf /etc/nginx/sites-enabled/cse_google_nginx_conf
+=======
+# 将本文件先放到 /etc/nginx/sites-available/cse_google_nginx_conf 
+# 再将其软链接到 /etc/nginx/sites-enabled/cse_google_nginx_conf 
+#     sudo ln -s /etc/nginx/sites-available/cse_google_nginx_conf /etc/nginx/sites-enabled/cse_google_nginx_conf#
+>>>>>>> whitelists_1
 # 重启 nginx: sudo nginx -s reload
 
 server {
