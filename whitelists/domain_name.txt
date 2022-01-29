@@ -22,7 +22,6 @@ https://www.cnblogs.com/*
 *.liaoxuefeng.com/wiki*
 *.ruanyifeng.com/*
 *.coolshell.cn/articles*
-*.williamlong.info/articles*
 *.leetcode-cn.com/problems*
 *.medium.com/*
 *.stackoverflow.com/*

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="82" total="82">
+<Annotations start="0" num="81" total="81">
 	<Annotation about="*.github.com/*">
 		<Label name="_include_" />
 		<AdditionalData value="*.github.com/*" attribute="original_url" />
@@ -95,10 +95,6 @@
 	<Annotation about="*.coolshell.cn/articles*">
 		<Label name="_include_" />
 		<AdditionalData value="*.coolshell.cn/articles*" attribute="original_url" />
-	</Annotation>
-	<Annotation about="*.williamlong.info/articles*">
-		<Label name="_include_" />
-		<AdditionalData value="*.williamlong.info/articles*" attribute="original_url" />
 	</Annotation>
 	<Annotation about="*.leetcode-cn.com/problems*">
 		<Label name="_include_" />
