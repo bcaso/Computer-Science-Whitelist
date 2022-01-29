@@ -18,7 +18,6 @@
 *.gitee.io/*
 *.github.io/*
 https://www.cnblogs.com/*
-*.my.oschina.net/*
 *.zhuanlan.zhihu.com/*
 *.liaoxuefeng.com/wiki*
 *.ruanyifeng.com/*
