@@ -49,6 +49,10 @@
 
 可以在高级选项中上传。
 
+<img src="cse_google.jpg" width="70%">
+
+cse.xml 可设项有些多，在网页上修改比较简单。
+
 测试：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
 
 
