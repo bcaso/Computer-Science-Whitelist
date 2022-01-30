@@ -4,46 +4,81 @@
   <Context>
     <Facet>
       <FacetItem>
-        <Label name="wiki" mode="FILTER" weight="1" enable_for_facet_search="true">
-          <Rewrite />
-          <entities />
+        <Label name="wiki" mode="FILTER" weight="1">
+          <Rewrite/>
+          <entities>
+            <entity mid="/m/01mf_"/>
+            <entity mid="/m/05z1_"/>
+            <entity mid="/m/01mkq"/>
+            <entity mid="/m/04rjg"/>
+          </entities>
         </Label>
         <Title>wiki</Title>
       </FacetItem>
       <FacetItem>
-        <Label name="bbs" mode="FILTER" weight="0.8" enable_for_facet_search="true">
-          <Rewrite />
-          <entities />
+        <Label name="bbs" mode="FILTER" weight="0.8">
+          <Rewrite/>
+          <entities>
+            <entity mid="/m/01mf_"/>
+            <entity mid="/m/025sbhf"/>
+            <entity mid="/m/05z1_"/>
+            <entity mid="/m/01mkq"/>
+            <entity mid="/m/04rjg"/>
+          </entities>
         </Label>
         <Title>bbs</Title>
       </FacetItem>
       <FacetItem>
-        <Label name="repository" mode="FILTER" weight="0.8" enable_for_facet_search="true">
-          <Rewrite />
-          <entities />
+        <Label name="repository" mode="FILTER" weight="0.8">
+          <Rewrite/>
+          <entities>
+            <entity mid="/m/01mf_"/>
+            <entity mid="/m/04rjg"/>
+            <entity mid="/m/05z1_"/>
+            <entity mid="/m/01mkq"/>
+          </entities>
         </Label>
         <Title>repository</Title>
       </FacetItem>
       <FacetItem>
-        <Label name="blogs" mode="FILTER" weight="0.7" enable_for_facet_search="true">
-          <Rewrite />
-          <entities />
+        <Label name="blogs" mode="FILTER" weight="0.7">
+          <Rewrite/>
+          <entities>
+            <entity mid="/m/01mf_"/>
+            <entity mid="/m/05z1_"/>
+            <entity mid="/m/01mkq"/>
+            <entity mid="/m/04rjg"/>
+          </entities>
         </Label>
         <Title>blogs</Title>
       </FacetItem>
       <FacetItem>
-        <Label name="library" mode="FILTER" weight="0.5" enable_for_facet_search="true">
-          <Rewrite />
-          <entities />
+        <Label name="library" mode="FILTER" weight="0.5">
+          <Rewrite/>
+          <entities/>
         </Label>
         <Title>library</Title>
       </FacetItem>
       <FacetItem>
-        <Label name="softwareDownload" mode="FILTER" weight="0.5" enable_for_facet_search="true">
-          <Rewrite />
-          <entities />
+        <Label name="softwaredownload" mode="FILTER" weight="0.5">
+          <Rewrite/>
+          <entities/>
         </Label>
         <Title>softwareDownload</Title>
+      </FacetItem>
+      <FacetItem>
+        <Label name="pdf" mode="BOOST">
+          <Rewrite>filetype:pdf</Rewrite>
+          <entities/>
+        </Label>
+        <Title>PDF</Title>
+      </FacetItem>
+      <FacetItem>
+        <Label name="edu" mode="BOOST">
+          <Rewrite>site:.edu</Rewrite>
+          <entities/>
+        </Label>
+        <Title>edu</Title>
       </FacetItem>
     </Facet>
     <BackgroundLabels>
@@ -62,12 +97,19 @@
   <autocomplete_settings source="1"/>
   <sort_by_keys label="Relevance" key=""/>
   <sort_by_keys label="Date" key="date"/>
-  <cse_advance_settings enable_facet_search="true">
+  <cse_advance_settings>
     <custom_search_control_options no_results_string="Sorry, I didn’t find anything, please try different keywords."/>
     <web_search_options result_set_size="20" enable_history="true" show_structured_data="true">
-      <search_restrict_args lr="lang_en" filter="1"/>
+      <search_restrict_args lr="" filter="1"/>
     </web_search_options>
     <search_options link_target=""/>
     <image_advanced_options/>
   </cse_advance_settings>
+  <entities>
+    <entity mid="/m/01mf_"/>
+    <entity mid="/m/05z1_"/>
+    <entity mid="/m/0t5ctcn"/>
+    <entity mid="/m/01mkq"/>
+    <entity mid="/m/04rjg"/>
+  </entities>
 </CustomSearchEngine>
