@@ -1,0 +1,4 @@
+@https://www.bilibili.com/video*
+@https://www.youtube
+@https://open.163.com/*
+@*://*.icourse163.org/*

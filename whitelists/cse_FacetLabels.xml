@@ -1,45 +1,93 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Facet>
 	<FacetItem>
-		<Label name="wiki" mode="FILTER" weight="1" enable_for_facet_search="true">
+		<Label name="wiki" mode="FILTER" weight="0.9" enable_for_facet_search="true">
 			<Rewrite />
-			<entities />
+			<entities>
+				<entity mid="/m/01mf_" />
+				<entity mid="/m/05z1_" />
+				<entity mid="/m/01mkq" />
+				<entity mid="/m/04rjg" />
+			</entities>
 		</Label>
 		<Title>wiki</Title>
 	</FacetItem>
 	<FacetItem>
 		<Label name="bbs" mode="FILTER" weight="0.8" enable_for_facet_search="true">
 			<Rewrite />
-			<entities />
+			<entities>
+				<entity mid="/m/01mf_" />
+				<entity mid="/m/05z1_" />
+				<entity mid="/m/01mkq" />
+				<entity mid="/m/04rjg" />
+			</entities>
 		</Label>
 		<Title>bbs</Title>
 	</FacetItem>
 	<FacetItem>
 		<Label name="repository" mode="FILTER" weight="0.8" enable_for_facet_search="true">
 			<Rewrite />
-			<entities />
+			<entities>
+				<entity mid="/m/01mf_" />
+				<entity mid="/m/05z1_" />
+				<entity mid="/m/01mkq" />
+				<entity mid="/m/04rjg" />
+			</entities>
 		</Label>
 		<Title>repository</Title>
 	</FacetItem>
 	<FacetItem>
 		<Label name="blogs" mode="FILTER" weight="0.7" enable_for_facet_search="true">
 			<Rewrite />
-			<entities />
+			<entities>
+				<entity mid="/m/01mf_" />
+				<entity mid="/m/05z1_" />
+				<entity mid="/m/01mkq" />
+				<entity mid="/m/04rjg" />
+			</entities>
 		</Label>
 		<Title>blogs</Title>
 	</FacetItem>
 	<FacetItem>
-		<Label name="library" mode="FILTER" weight="0.5" enable_for_facet_search="true">
+		<Label name="library" mode="FILTER" weight="0.4" enable_for_facet_search="true">
 			<Rewrite />
-			<entities />
+			<entities>
+				<entity mid="/m/01mf_" />
+				<entity mid="/m/05z1_" />
+				<entity mid="/m/01mkq" />
+				<entity mid="/m/04rjg" />
+			</entities>
 		</Label>
 		<Title>library</Title>
 	</FacetItem>
 	<FacetItem>
-		<Label name="softwareDownload" mode="FILTER" weight="0.5" enable_for_facet_search="true">
+		<Label name="software" mode="FILTER" weight="0.5" enable_for_facet_search="false">
 			<Rewrite />
 			<entities />
 		</Label>
-		<Title>softwareDownload</Title>
+		<Title>software</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="pdf" mode="BOOST" weight="0.5" enable_for_facet_search="false">
+			<Rewrite>filetype:pdf</Rewrite>
+			<entities />
+		</Label>
+		<Title>pdf</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="video" mode="FILTER" weight="0" enable_for_facet_search="true">
+			<Rewrite />
+			<entities>
+				<entity mid="/m/01mf_" />
+			</entities>
+		</Label>
+		<Title>video</Title>
+	</FacetItem>
+	<FacetItem>
+		<Label name="edu" mode="FILTER" weight="0.1" enable_for_facet_search="true">
+			<Rewrite>site:.edu</Rewrite>
+			<entities />
+		</Label>
+		<Title>edu</Title>
 	</FacetItem>
 </Facet>

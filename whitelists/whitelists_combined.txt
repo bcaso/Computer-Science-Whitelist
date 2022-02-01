@@ -15,6 +15,8 @@
 @*://*.runoob.com/*
 @*://*.kb.cnblogs.com/page*
 @*://*.cisco.com/c/zh_cn/support/docs*
+@*://*.medium.com/*
+@*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*
 @*://*.github.io/*
 @*://*.gitee.io/*
@@ -24,12 +26,12 @@
 @*://*.liaoxuefeng.com/wiki*
 @*://*.coolshell.cn/articles*
 @*://*.edu/*
-@*://*.medium.com/*
 @*://*.stackoverflow.com/*
 @*://*.superuser.com/*
 @*://*.stackexchange.com/*
 @*://*.serverfault.com/*
 @*://*.askubuntu.com/*
+@*://*.forum.xda-developers.com/*
 @*://*.segmentfault.com/q*
 @*://*.github.community/*
 @*://*.leetcode-cn.com/circle/discuss*
@@ -80,3 +82,7 @@
 @*://*.docin.com/p-*
 @*://*.doc88.com/p-*
 @*://*.taodocs.com/p-*
+@https://www.bilibili.com/video*
+@https://www.youtube
+@https://open.163.com/*
+@*://*.icourse163.org/*

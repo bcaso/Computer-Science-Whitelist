@@ -1,10 +1,10 @@
 Whitelist = {
-        'medium':['','com','0.8'],
-        'stackoverflow':['','com','0.8'],
+        'stackoverflow':['','com','0.8'],      # StackOverflow
         'superuser':['','com','0.8'],          # 类似 stackoverflow
         'stackexchange':['','com','0.8'],      # stack exchange
         'serverfault':['','com','0.8'],        # stack exchange 下关于网络的子站
         'askubuntu':['','com','0.8'],          # about linux
+        'xda-developers':['forum','com','0.7'],# Mobile phone flashing forum
         'segmentfault':['','com/q','0.7'],     # 思否，国内版 stackoverflow
         'github':['','community','0.7'],       # github 社区
         'leetcode-cn':['','com/circle/discuss','0.7'], # 乐扣问答区

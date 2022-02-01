@@ -7,6 +7,7 @@ import whitelist_dics.blogs
 import whitelist_dics.bbs
 import whitelist_dics.software_download
 import whitelist_dics.library
+import whitelist_dics.videos
 
 # }}}
 
@@ -146,6 +147,11 @@ def gen_subscription_txt():
     gen_txt('文库.txt', lis)
 
     lis.clear()
+
+    gen_urls(whitelist_dics.videos.Whitelist)
+    gen_txt('视频.txt', lis)
+
+    lis.clear()
 # }}}
 
 
@@ -192,38 +198,90 @@ def __indent(elem, level=0):
 # }}}
 
 # weight from -1.0 to 1.0
-# label, weight
-Facet_labels_dic = {
-  'wiki': ["wiki",'1'],
-  'bbs': ["bbs",'0.8'],
-  'repository': ["repository",'0.8'],
-  'blogs': ["blogs", '0.7'],
-  'library': ["library",'0.5'],
-  'software_download': ["softwareDownload",'0.5'],
-
+facet_items = {
+        'wiki':{'Label_name':'wiki',
+          'Label_mode':'FILTER',
+          'Label_weight':'0.9',
+          'Label_enable_for_facet_search':'true',
+          'Rewrite':'',
+          'entities':['/m/01mf_','/m/05z1_','/m/01mkq','/m/04rjg']},
+        'bbs':{'Label_name':'bbs',
+          'Label_mode':'FILTER',
+          'Label_weight':'0.8',
+          'Label_enable_for_facet_search':'true',
+          'Rewrite':'',
+          'entities':['/m/01mf_','/m/05z1_','/m/01mkq','/m/04rjg']},
+        'repository':{'Label_name':'repository',
+          'Label_mode':'FILTER',
+          'Label_weight':'0.8',
+          'Label_enable_for_facet_search':'true',
+          'Rewrite':'',
+          'entities':['/m/01mf_','/m/05z1_','/m/01mkq','/m/04rjg']},
+        'blogs':{'Label_name':'blogs',
+          'Label_mode':'FILTER',
+          'Label_weight':'0.7',
+          'Label_enable_for_facet_search':'true',
+          'Rewrite':'',
+          'entities':['/m/01mf_','/m/05z1_','/m/01mkq','/m/04rjg']},
+        'library':{'Label_name':'library',
+          'Label_mode':'FILTER',
+          'Label_weight':'0.4',
+          'Label_enable_for_facet_search':'true',
+          'Rewrite':'',
+          'entities':['/m/01mf_','/m/05z1_','/m/01mkq','/m/04rjg']},
+        'software':{'Label_name':'software',
+          'Label_mode':'FILTER',
+          'Label_weight':'0.5',
+          'Label_enable_for_facet_search':'false',
+          'Rewrite':'',
+          'entities':[]},
+        'pdf':{'Label_name':'pdf',
+          'Label_mode':'BOOST',
+          'Label_weight':'0.5',
+          'Label_enable_for_facet_search':'false',
+          'Rewrite':'filetype:pdf',
+          'entities':[]},
+        'video':{'Label_name':'video',
+          'Label_mode':'FILTER',
+          'Label_weight':'0',
+          'Label_enable_for_facet_search':'true',
+          'Rewrite':'',
+          'entities':['/m/01mf_']},
+        'edu':{'Label_name':'edu',
+          'Label_mode':'FILTER',
+          'Label_weight':'0.1',
+          'Label_enable_for_facet_search':'true',
+          'Rewrite':'site:.edu',
+          'entities':[]},
 }
 
 # 这个文件或许手修改更方便, 所以只生成该文件中的标签部分 {{{
 def gen_cse_xml():
     root = ET.Element('Facet')       # 创建根节点
-    tree = ET.ElementTree(root)                 # 创建文档
+    tree = ET.ElementTree(root)      # 创建文档
 
 
-    for k,v in Facet_labels_dic.items():
+    for facet in list(facet_items.values()):
         FacetItem = ET.Element('FacetItem')      # 子节点
 
         Label = ET.SubElement(FacetItem, 'Label')
-        Label.set('name', v[0])
-        Label.set('mode', 'FILTER')
-        Label.set('weight', v[1])
-        Label.set('enable_for_facet_search', 'true')    # 这个属性的值应该是固定的
+        Label.set('name', facet['Label_name'])
+        Label.set('mode', facet['Label_mode'])
+        Label.set('weight',facet['Label_weight'])
+        Label.set('enable_for_facet_search',facet['Label_enable_for_facet_search'])
 
         Rewrite = ET.SubElement(Label, 'Rewrite')
+        rewrite_text = facet['Rewrite']
+        if rewrite_text != '':
+            Rewrite.text = rewrite_text
+
         entities = ET.SubElement(Label, 'entities')
+        for mid in facet['entities']:
+            entity = ET.SubElement(entities, 'entity')
+            entity.set('mid', mid)
 
         Title = ET.SubElement(FacetItem, 'Title')
-        Title.text = v[0]                  # 节点中的文本内容
-
+        Title.text = facet['Label_name']
 
         root.append(FacetItem)               # 放到根节点下
 
@@ -242,25 +300,23 @@ def gen_annotations_xml():
     root = ET.Element('Annotations')       # 创建根节点
     tree = ET.ElementTree(root)            # 创建文档
 
+    # add Annotation {{{
+
     # lis_of_wiki {{{
     gen_urls(whitelist_dics.wiki.Whitelist, True)
 
     for each in lis:
         #   each 的属性，权重
         element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
-        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('about', each[0])      # about 存 url pattern
+        element.set('score', each[1])
         # element.text = 'default'         # 节点中的文本内容
 
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', 'wiki')
+        Label.set('name', facet_items['wiki']['Label_name'])
 
-        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
-        #AdditionalData = ET.SubElement(element, 'AdditionalData')
-        #AdditionalData.set('value', each[0])     # link 地址
-        #AdditionalData.set('attribute', 'original_url')
         root.append(element)               # 放到根节点下
 
     total += len(lis)
@@ -275,19 +331,15 @@ def gen_annotations_xml():
     for each in lis:
         #   each 的属性，权重
         element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
-        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('about', each[0])
+        element.set('score', each[1])
         # element.text = 'default'         # 节点中的文本内容
 
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', 'bbs')
+        Label.set('name', facet_items['bbs']['Label_name'])
 
-        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
-        #AdditionalData = ET.SubElement(element, 'AdditionalData')
-        #AdditionalData.set('value', each[0])     # link 地址
-        #AdditionalData.set('attribute', 'original_url')
         root.append(element)               # 放到根节点下
 
     total += len(lis)
@@ -300,19 +352,15 @@ def gen_annotations_xml():
     for each in lis:
         #   each 的属性，权重
         element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
-        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('about', each[0])
+        element.set('score', each[1])
         # element.text = 'default'         # 节点中的文本内容
 
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', 'repository')
+        Label.set('name', facet_items['repository']['Label_name'])
 
-        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
-        #AdditionalData = ET.SubElement(element, 'AdditionalData')
-        #AdditionalData.set('value', each[0])     # link 地址
-        #AdditionalData.set('attribute', 'original_url')
         root.append(element)               # 放到根节点下
 
     total += len(lis)
@@ -325,19 +373,15 @@ def gen_annotations_xml():
     for each in lis:
         #   each 的属性，权重
         element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
-        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('about', each[0])
+        element.set('score', each[1])
         # element.text = 'default'         # 节点中的文本内容
 
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', 'blogs')
+        Label.set('name', facet_items['blogs']['Label_name'])
 
-        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
-        #AdditionalData = ET.SubElement(element, 'AdditionalData')
-        #AdditionalData.set('value', each[0])     # link 地址
-        #AdditionalData.set('attribute', 'original_url')
         root.append(element)               # 放到根节点下
 
     total += len(lis)
@@ -350,50 +394,64 @@ def gen_annotations_xml():
     for each in lis:
         #   each 的属性，权重
         element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
-        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('about', each[0])
+        element.set('score', each[1])
         # element.text = 'default'         # 节点中的文本内容
 
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', 'library')
+        Label.set('name', facet_items['library']['Label_name'])
 
-        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
-        #AdditionalData = ET.SubElement(element, 'AdditionalData')
-        #AdditionalData.set('value', each[0])     # link 地址
-        #AdditionalData.set('attribute', 'original_url')
         root.append(element)               # 放到根节点下
 
     total += len(lis)
     lis.clear()
     # }}}
 
-    # lis_of_software_download  {{{
+    # lis_of_software {{{
     gen_urls(whitelist_dics.software_download.Whitelist, True)
 
     for each in lis:
         #   each 的属性，权重
         element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])         # 在使用排时, 就只用这个，而不用 AdditionalData
-        element.set('score', each[1])         # 在使用排时, 就只用这个，而不用 AdditionalData
+        element.set('about', each[0])
+        element.set('score', each[1])
         # element.text = 'default'         # 节点中的文本内容
 
         Label = ET.SubElement(element, 'Label')
         Label.set('name', '_include_')
         Label = ET.SubElement(element, 'Label')
-        Label.set('name', 'softwareDownload')
+        Label.set('name', facet_items['software']['Label_name'])
 
-        # 可能不需要 https://developers.google.com/custom-search/docs/ranking?hl=en
-        #AdditionalData = ET.SubElement(element, 'AdditionalData')
-        #AdditionalData.set('value', each[0])     # link 地址
-        #AdditionalData.set('attribute', 'original_url')
         root.append(element)               # 放到根节点下
 
     total += len(lis)
     lis.clear()
     # }}}
 
+    # lis_of_video {{{
+    gen_urls(whitelist_dics.videos.Whitelist, True)
+
+    for each in lis:
+        #   each 的属性，权重
+        element = ET.Element('Annotation') # 子节点
+        element.set('about', each[0])
+        element.set('score', each[1])
+        # element.text = 'default'         # 节点中的文本内容
+
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', '_include_')
+        Label = ET.SubElement(element, 'Label')
+        Label.set('name', facet_items['video']['Label_name'])
+
+        root.append(element)               # 放到根节点下
+
+    total += len(lis)
+    lis.clear()
+    # }}}
+
+    # }}}
 
     # Annotations 的三个非必要属性
     root.set('start', '0')
@@ -409,16 +467,7 @@ def main():
     gen_subscription_txt()
     gen_subscription_combined_txt()
     gen_domain_name_txt()
-    # BackgroundLabels 下的 Lables 加上后，搜索就不能用了。显示无结果。
-    # 但是教程中有如下示例，尚不明确是哪里出错了。
-    # 官方视频教程(2009年)，不是这么写的。自定义 Label 只能在 Facet 下的 FacetItem 下。
-    # https://www.youtube.com/watch?v=fIUHTFvIt9c
-    '''
-          <BackgroundLabels>
-            <Label name="_cse_hwbuiarvsbo" mode="FILTER" weight="0.65"/>
-            <Label name="_cse_exclude_hwbuiarvsbo" mode="ELIMINATE"/>
-          </BackgroundLabels>
-    '''
+    # BackgroundLabels 下的 Lables 只能有两个，且是两种(_include_ 和 _exclude_)
     gen_cse_xml()
     gen_annotations_xml()
 

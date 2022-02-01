@@ -27,6 +27,7 @@
 │       仓库.txt
 │       博客.txt
 │       文库.txt
+│       视频.txt
 │       论坛.txt
 │       软件下载站.txt
 │
@@ -35,6 +36,7 @@
 │   │   blogs.py
 │   │   blogs_blacklist.py
 │   │   library.py
+│   │   videos.py
 │   │   repository.py
 │   │   software_download.py
 │   │   wiki.py
@@ -96,6 +98,8 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 这两个标签下的所有 Annotation 都以这个为排序，每个 Annotation 可以多个 Label。
 
+经过测试，发现，当 Rewrite 中有内容且没有任何网址拥有这些标签时，对应的 Label 的 mode 只能选 BOOST，不然无结果
+
 <b>二级排序(标签内部微调):</b>
 
 在 annotations.xml 中为每一个 Annotation 的 Label 添加 score 属性，值同样是 from -1.0 to 1.0
@@ -131,6 +135,8 @@ cse.xml 可设项有些多，在网页上修改比较简单。
   </Annotation>
 </Annotations>
 ```
+
+> 经过测试发现，当 score <= 0 时，不会出现在结果中，所以最小也应该设置为 0.01
 
 ### 配置项
 
@@ -229,12 +235,13 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 4. <a href="https://iorate.github.io/ublacklist/subscribe?name=论坛&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E8%AE%BA%E5%9D%9B.txt">论坛</a>
 5. <a href="https://iorate.github.io/ublacklist/subscribe?name=软件下载站&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E7%AB%99.txt">软件下载站</a>
 6. <a href="https://iorate.github.io/ublacklist/subscribe?name=文库&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E6%96%87%E5%BA%93.txt">文库</a>
+7. <a href="https://iorate.github.io/ublacklist/subscribe?name=视频&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E8%A7%86%E9%A2%91.txt">视频</a>
 
 或者不分类，直接订阅总列表: <a href="https://iorate.github.io/ublacklist/subscribe?name=whitelists_combined&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists_combined.txt">汇总列表</a>
 
 分类订阅比订阅总列表的可控度高，根据内容需要，可在搜索前只启用一部分：
 
-<img src="uBlacklist.png" width="90%">
+<img src="uBlacklist.png" width="90%" height="90%">
 
 
 

@@ -1,3 +1,5 @@
+@*://*.medium.com/*
+@*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*
 @*://*.github.io/*
 @*://*.gitee.io/*
