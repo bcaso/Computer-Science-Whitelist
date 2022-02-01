@@ -340,7 +340,7 @@
 		<Label name="_include_" />
 		<Label name="video" />
 	</Annotation>
-	<Annotation about="https://www.youtube" score="0.4">
+	<Annotation about="https://www.youtube.com/*" score="0.4">
 		<Label name="_include_" />
 		<Label name="video" />
 	</Annotation>
