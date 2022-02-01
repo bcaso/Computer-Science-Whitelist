@@ -146,6 +146,8 @@ cse.xml 中的 CustomSearchEngine 的属性，只有 language, encoding, enable_
 
 annotations.xml 中的 Annotations 的属性 start, num, total, 也是会自动生成，手动加上方便查看。timestamp, href, 是系统生成的，不需要手动添加。
 
+<b>如果一个 url 不是通过上传 annotations.xml 所添加，那么在高级选项中下删除 annotations.xml 也不会将这个 url 删除</b>
+
 
 ## uBlacklist
 
