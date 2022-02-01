@@ -248,7 +248,7 @@ facet_items = {
           'Rewrite':'',
           'entities':['/m/01mf_']},
         'edu':{'Label_name':'edu',
-          'Label_mode':'FILTER',
+          'Label_mode':'BOOST',
           'Label_weight':'0.1',
           'Label_enable_for_facet_search':'true',
           'Rewrite':'site:.edu',

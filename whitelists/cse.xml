@@ -87,7 +87,7 @@
         <Title>video</Title>
       </FacetItem>
       <FacetItem>
-        <Label name="edu" mode="FILTER" weight="0.1" enable_for_facet_search="true">
+        <Label name="edu" mode="BOOST" weight="0.1" enable_for_facet_search="true">
           <Rewrite>site:.edu</Rewrite>
           <entities />
         </Label>
