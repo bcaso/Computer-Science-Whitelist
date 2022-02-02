@@ -1,31 +1,51 @@
 import xml.etree.ElementTree as ET  # for xml
 
 # import whitelist_dics {{{
-import whitelist_dics.repository
-import whitelist_dics.wiki
-import whitelist_dics.blogs
-import whitelist_dics.bbs
-import whitelist_dics.software_download
-import whitelist_dics.library
-import whitelist_dics.videos
+import whitelist_dics.repository, \
+        whitelist_dics.wiki, \
+        whitelist_dics.blogs, \
+        whitelist_dics.bbs, \
+        whitelist_dics.software, \
+        whitelist_dics.library, \
+        whitelist_dics.videos
+
+# https://magic.iswbm.com/c03/c03_02.html
+# for python 3.9:
+whitelist_dics = { 'repository':whitelist_dics.repository.Whitelist } | \
+        {'wiki':whitelist_dics.wiki.Whitelist} | \
+        {'blogs':whitelist_dics.blogs.Whitelist} | \
+        {'bbs':whitelist_dics.bbs.Whitelist} | \
+        {'software':whitelist_dics.software.Whitelist} | \
+        {'library':whitelist_dics.library.Whitelist} | \
+        {'videos':whitelist_dics.videos.Whitelist} 
 
 # }}}
 
-lis = []
-lis_total = []
+lis = []          # 临时列表
+lis_total = []    # 总列表，递增添加所有名单，不减少
 
 
+# generate urls_list {{{
 '''
-with prefix
-@*://*.prefix.domain_name.suffix/*
-no prefix
-@*://*.domain_name.suffix/*
-no prefix and no domain name, only the suffix
-@*://*.suffix/*
-'''
+uBlacklist whitelist rule:
+    with prefix
+        @*://*.prefix.domain_name.suffix/*
+    no prefix
+        @*://*.domain_name.suffix/*
+    no prefix and no domain name, only the suffix
+        @*://*.suffix/*
 
-# generate url {{{
-def gen_urls(whitelist_dic, startwith_at=False):
+cse whitelist rule:
+    with prefix
+        *.prefix.domain_name.suffix/*
+        https://prefix.domain_name.suffix/*
+
+    no prefix
+        *.domain_name.suffix/*
+    no prefix and no domain name, only the suffix
+        *.suffix/*
+'''
+def gen_urls_list(whitelist_dic, startwith_at=False):
     if not startwith_at :
         for k,v in whitelist_dic.items(): 
             url = '@*://*.'
@@ -91,7 +111,7 @@ def gen_urls(whitelist_dic, startwith_at=False):
                 # 添加不完全后缀, *.docin.com/p-* , 多数文库的文章以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
                 if '/' in v[1]:
                     url+='.'+v[1]+'*'
-                # 添加完全后缀, @*://*.mathsisfun.com/*
+                # 添加完全后缀, *.mathsisfun.com/*
                 else: 
                     url+='.'+v[1]+'/*'
 
@@ -101,81 +121,42 @@ def gen_urls(whitelist_dic, startwith_at=False):
         ...
 # }}}
 
-def gen_txt(filename, lis):
-    filename = 'whitelists/' + filename
-    f = open(filename, 'w')
-    for each in lis:
-        f.write(each+'\n')
-    f.close()
-
-def gen_whitelist_rule_txt():
-    f = open('whitelists/whitelist.txt', 'w')
-    f.write(r'*://*/*')
-    f.close()
-      
-
 # generate subscription txt {{{
 def gen_subscription_txt():
-    gen_whitelist_rule_txt()
+    # generate whitelist rule text
+    with open('whitelists/whitelist.txt', 'w') as f:
+        f.write(r'*://*/*')
 
-    gen_urls(whitelist_dics.repository.Whitelist)
-    gen_txt('仓库.txt', lis)
+    for k,v in whitelist_dics.items():
+        #print(k, v)
+        gen_urls_list(v)
+        #gen_txt(k + '.txt', lis)
+        filename = 'whitelists/' + k + '.txt'
+        with open(filename, 'w') as f:
+            for each in lis:
+                f.write(each+'\n')
 
-    lis.clear()
-
-    gen_urls(whitelist_dics.wiki.Whitelist)
-    gen_txt('wiki.txt', lis)
-
-    lis.clear()
-
-    gen_urls(whitelist_dics.blogs.Whitelist)
-    gen_txt('博客.txt', lis)
-
-    lis.clear()
-
-    gen_urls(whitelist_dics.bbs.Whitelist)
-    gen_txt('论坛.txt', lis)
-
-    lis.clear()
-
-    gen_urls(whitelist_dics.software_download.Whitelist)
-    gen_txt('软件下载站.txt', lis)
-
-    lis.clear()
-
-    gen_urls(whitelist_dics.library.Whitelist)
-    gen_txt('文库.txt', lis)
-
-    lis.clear()
-
-    gen_urls(whitelist_dics.videos.Whitelist)
-    gen_txt('视频.txt', lis)
-
-    lis.clear()
+        lis.clear()
 # }}}
-
 
 # 汇总 txt {{{
 # 汇总列表，for uBlacklist
 def gen_subscription_combined_txt():
-    f = open('whitelists/whitelists_combined.txt', 'w')
-    for each in lis_total:
-        f.write(each+'\n')
-    f.close()
+    with open('whitelists/whitelists_combined.txt', 'w') as f:
+        for each in lis_total:
+            f.write(each+'\n')
 
 # 汇总域名列表，for other ways："cse.google.com"，油猴插件
 def gen_domain_name_txt():
-    f = open('whitelists/domain_name.txt', 'w')
-    for each in lis_total:
-        if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
-            f.write(each[1:]+'\n')    # http(s)://www.cnblogs.com/*
-            ...
-        else:
-            f.write(each[5:]+'\n') # *.prefix.domain_name.suffix
-            #print(each[5:])
-            ...
-
-    f.close()
+    with open('whitelists/domain_name.txt', 'w') as f:
+        for each in lis_total:
+            if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
+                f.write(each[1:]+'\n')    # http(s)://www.cnblogs.com/*
+                ...
+            else:
+                f.write(each[5:]+'\n') # *.prefix.domain_name.suffix
+                #print(each[5:])
+                ...
 
 # }}}
 
@@ -197,6 +178,7 @@ def __indent(elem, level=0):
             elem.tail = i
 # }}}
 
+# facet_items {{{
 # weight from -1.0 to 1.0
 facet_items = {
         'wiki':{'Label_name':'wiki',
@@ -254,6 +236,7 @@ facet_items = {
           'Rewrite':'site:.edu',
           'entities':[]},
 }
+# }}}
 
 # 这个文件或许手修改更方便, 所以只生成该文件中的标签部分 {{{
 def gen_cse_xml():
@@ -293,175 +276,52 @@ def gen_cse_xml():
 
 # generate annotations.xml {{{
 # https://vae-0118.github.io/2017/11/06/Python%E4%B8%ADXML%E7%9A%84%E8%AF%BB%E5%86%99%E6%80%BB%E7%BB%93/
+# TODO
 def gen_annotations_xml():
-
-    total = 0
+    total_length = 0
 
     root = ET.Element('Annotations')       # 创建根节点
     tree = ET.ElementTree(root)            # 创建文档
 
     # add Annotation {{{
 
-    # lis_of_wiki {{{
-    gen_urls(whitelist_dics.wiki.Whitelist, True)
+    # whitelists 总字典  { 'bbs':{'':[],'':[]}, 'blogs':{} }
+    for k,v in whitelist_dics.items():
+        # print(k, v)
+        # 将 k 对应的字典转为 list
+        gen_urls_list(v, True)
 
-    for each in lis:
-        #   each 的属性，权重
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])      # about 存 url pattern
-        element.set('score', each[1])
-        # element.text = 'default'         # 节点中的文本内容
+        # 遍历列表
+        for each in lis:
+            # each 的属性，权重
+            element = ET.Element('Annotation') # 子节点
+            element.set('about', each[0])      # about 存 url pattern
+            element.set('score', each[1])
+            # element.text = 'default'         # 节点中的文本内容
 
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', facet_items['wiki']['Label_name'])
+            Label = ET.SubElement(element, 'Label')
+            Label.set('name', '_include_')
+            Label = ET.SubElement(element, 'Label')
+            Label.set('name', facet_items['wiki']['Label_name'])
 
-        root.append(element)               # 放到根节点下
+            root.append(element)               # 放到根节点下
 
-    total += len(lis)
-    print(lis)
+    total_length += len(lis)
     
+    print(lis, len(lis), end='\n')
     lis.clear()
-    # }}}
-
-    # lis_of_bbs {{{
-    gen_urls(whitelist_dics.bbs.Whitelist, True)
-
-    for each in lis:
-        #   each 的属性，权重
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])
-        element.set('score', each[1])
-        # element.text = 'default'         # 节点中的文本内容
-
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', facet_items['bbs']['Label_name'])
-
-        root.append(element)               # 放到根节点下
-
-    total += len(lis)
-    lis.clear()
-    # }}}
-
-    # lis_of_repository {{{
-    gen_urls(whitelist_dics.repository.Whitelist, True)
-
-    for each in lis:
-        #   each 的属性，权重
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])
-        element.set('score', each[1])
-        # element.text = 'default'         # 节点中的文本内容
-
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', facet_items['repository']['Label_name'])
-
-        root.append(element)               # 放到根节点下
-
-    total += len(lis)
-    lis.clear()
-    # }}}
-
-    # lis_of_blogs {{{
-    gen_urls(whitelist_dics.blogs.Whitelist, True)
-
-    for each in lis:
-        #   each 的属性，权重
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])
-        element.set('score', each[1])
-        # element.text = 'default'         # 节点中的文本内容
-
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', facet_items['blogs']['Label_name'])
-
-        root.append(element)               # 放到根节点下
-
-    total += len(lis)
-    lis.clear()
-    # }}}
-
-    # lis_of_library {{{
-    gen_urls(whitelist_dics.library.Whitelist, True)
-
-    for each in lis:
-        #   each 的属性，权重
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])
-        element.set('score', each[1])
-        # element.text = 'default'         # 节点中的文本内容
-
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', facet_items['library']['Label_name'])
-
-        root.append(element)               # 放到根节点下
-
-    total += len(lis)
-    lis.clear()
-    # }}}
-
-    # lis_of_software {{{
-    gen_urls(whitelist_dics.software_download.Whitelist, True)
-
-    for each in lis:
-        #   each 的属性，权重
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])
-        element.set('score', each[1])
-        # element.text = 'default'         # 节点中的文本内容
-
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', facet_items['software']['Label_name'])
-
-        root.append(element)               # 放到根节点下
-
-    total += len(lis)
-    lis.clear()
-    # }}}
-
-    # lis_of_video {{{
-    gen_urls(whitelist_dics.videos.Whitelist, True)
-
-    for each in lis:
-        #   each 的属性，权重
-        element = ET.Element('Annotation') # 子节点
-        element.set('about', each[0])
-        element.set('score', each[1])
-        # element.text = 'default'         # 节点中的文本内容
-
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', '_include_')
-        Label = ET.SubElement(element, 'Label')
-        Label.set('name', facet_items['video']['Label_name'])
-
-        root.append(element)               # 放到根节点下
-
-    total += len(lis)
-    lis.clear()
-    # }}}
 
     # }}}
 
     # Annotations 的三个非必要属性
     root.set('start', '0')
-    root.set('num', str(total))
-    root.set('total', str(total))
+    root.set('num', str(total_length))
+    root.set('total', str(total_length))
 
     __indent(root)          # 增加换行符
     tree.write('whitelists/annotations.xml', encoding='utf-8', xml_declaration=True)
+# }}} 
 
-# }}}
 
 def main():
     gen_subscription_txt()

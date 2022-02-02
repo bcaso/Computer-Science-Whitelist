@@ -18,18 +18,18 @@
 │
 ├───whitelists
 │       annotations.xml
+│       bbs.txt
+│       blogs.txt
 │       cse.xml
 │       cse_FacetLabels.xml
 │       domain_name.txt
+│       library.txt
+│       repository.txt
+│       software.txt
+│       videos.txt
 │       whitelist.txt
 │       whitelists_combined.txt
 │       wiki.txt
-│       仓库.txt
-│       博客.txt
-│       文库.txt
-│       视频.txt
-│       论坛.txt
-│       软件下载站.txt
 │
 ├───whitelist_dics
 │   │   bbs.py
@@ -38,7 +38,7 @@
 │   │   library.py
 │   │   videos.py
 │   │   repository.py
-│   │   software_download.py
+│   │   software.py
 │   │   wiki.py
 │   │   __init__.py
 ```
@@ -98,7 +98,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 这两个标签下的所有 Annotation 都以这个为排序，每个 Annotation 可以多个 Label。
 
-经过测试，发现，当 Rewrite 中有内容且没有任何网址拥有这些标签时，对应的 Label 的 mode 只能选 BOOST，不然无结果
+经过测试，发现，当 Rewrite 中有内容且没有任何网址拥有这些标签时，对应的 Label 的 mode 只能选 BOOST，不然搜索结果中，该标签下不会有结果
 
 <b>二级排序(标签内部微调):</b>
 
@@ -111,7 +111,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 <Annotations start="0" num="84" total="84">
   <Annotation about="*.uptodown.com/*" score="0.8" timestamp="0x0005d6b5044e8329" href="ChAqLnVwdG9kb3duLmNvbS8qEKmGuqLQ1vUC">
     <Label name="_include_"/>
-    <Label name="softwaredownload"/>
+    <Label name="software"/>
     <AdditionalData attribute="original_url" value="*.uptodown.com/*"/>
     <AdditionalData attribute="file" value="annotations.xml"/>
   </Annotation>
@@ -146,7 +146,7 @@ cse.xml 中的 CustomSearchEngine 的属性，只有 language, encoding, enable_
 
 annotations.xml 中的 Annotations 的属性 start, num, total, 也是会自动生成，手动加上方便查看。timestamp, href, 是系统生成的，不需要手动添加。
 
-<b>如果一个 url 不是通过上传 annotations.xml 所添加，那么在高级选项中下删除 annotations.xml 也不会将这个 url 删除</b>
+<b>如果一个 url 不是通过上传 annotations.xml 所添加，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>
 
 
 ## uBlacklist
@@ -232,25 +232,24 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 再分类订阅:
 
 1. <a href="https://iorate.github.io/ublacklist/subscribe?name=wiki&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/wiki.txt">wiki</a>
-2. <a href="https://iorate.github.io/ublacklist/subscribe?name=仓库&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E4%BB%93%E5%BA%93.txt">仓库</a>
-3. <a href="https://iorate.github.io/ublacklist/subscribe?name=博客&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E5%8D%9A%E5%AE%A2.txt">博客</a>
-4. <a href="https://iorate.github.io/ublacklist/subscribe?name=论坛&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E8%AE%BA%E5%9D%9B.txt">论坛</a>
-5. <a href="https://iorate.github.io/ublacklist/subscribe?name=软件下载站&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E7%AB%99.txt">软件下载站</a>
-6. <a href="https://iorate.github.io/ublacklist/subscribe?name=文库&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E6%96%87%E5%BA%93.txt">文库</a>
-7. <a href="https://iorate.github.io/ublacklist/subscribe?name=视频&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/%E8%A7%86%E9%A2%91.txt">视频</a>
+2. <a href="https://iorate.github.io/ublacklist/subscribe?name=仓库&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/repository.txt">仓库</a>
+3. <a href="https://iorate.github.io/ublacklist/subscribe?name=博客&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/blogs.txt">博客</a>
+4. <a href="https://iorate.github.io/ublacklist/subscribe?name=论坛&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/bbs.txt">论坛</a>
+5. <a href="https://iorate.github.io/ublacklist/subscribe?name=软件下载站&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/software.txt">软件下载站</a>
+6. <a href="https://iorate.github.io/ublacklist/subscribe?name=文库&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/library.txt">文库</a>
+7. <a href="https://iorate.github.io/ublacklist/subscribe?name=视频&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/videos.txt">视频</a>
 
 或者不分类，直接订阅总列表: <a href="https://iorate.github.io/ublacklist/subscribe?name=whitelists_combined&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists_combined.txt">汇总列表</a>
 
 分类订阅比订阅总列表的可控度高，根据内容需要，可在搜索前只启用一部分：
 
-<img src="uBlacklist.png" width="90%" height="90%">
+<img src="uBlacklist.png" width="80%" height="80%">
 
 
 
 ## 其他使用方式
 
 <a href="./whitelists/domain_name.txt">./whitelists/domain_name.txt</a> 是域名列表，可以用在油猴脚本中，或许要改下代码来读取。
-
 
 
 
@@ -262,4 +261,4 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 
 [Google Custom Search Engines | Sourcing https://www.youtube.com/watch?v=t1szVhH5dIo ](https://www.youtube.com/watch?v=t1szVhH5dIo)
 
-<a href="https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist" target="_blank">uBlacklist 黑名单规则 https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist</a>
+<a href="https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist" target="_blank">uBlacklist 黑名单规则 github.com/cobaltdisco/Google-Chinese-Results-Blocklist</a>

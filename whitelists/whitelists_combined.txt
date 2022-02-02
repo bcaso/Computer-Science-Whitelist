@@ -83,6 +83,6 @@
 @*://*.doc88.com/p-*
 @*://*.taodocs.com/p-*
 @https://www.bilibili.com/video*
-@https://www.youtube.com/*
 @https://open.163.com/*
 @*://*.icourse163.org/*
+@https://www.youtube.com/watch?v=*
