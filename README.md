@@ -26,7 +26,7 @@
 │       library.txt
 │       repository.txt
 │       software.txt
-│       videos.txt
+│       video.txt
 │       whitelist.txt
 │       whitelists_combined.txt
 │       wiki.txt
@@ -36,7 +36,7 @@
 │   │   blogs.py
 │   │   blogs_blacklist.py
 │   │   library.py
-│   │   videos.py
+│   │   video.py
 │   │   repository.py
 │   │   software.py
 │   │   wiki.py
