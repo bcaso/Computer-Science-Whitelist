@@ -7,7 +7,7 @@ import whitelist_dics.repository, \
         whitelist_dics.bbs, \
         whitelist_dics.software, \
         whitelist_dics.library, \
-        whitelist_dics.videos
+        whitelist_dics.video
 
 # https://magic.iswbm.com/c03/c03_02.html
 # for python 3.9:
@@ -17,7 +17,7 @@ whitelist_dics = { 'repository':whitelist_dics.repository.Whitelist } | \
         {'bbs':whitelist_dics.bbs.Whitelist} | \
         {'software':whitelist_dics.software.Whitelist} | \
         {'library':whitelist_dics.library.Whitelist} | \
-        {'videos':whitelist_dics.videos.Whitelist} 
+        {'video':whitelist_dics.video.Whitelist} 
 
 # }}}
 
@@ -276,7 +276,6 @@ def gen_cse_xml():
 
 # generate annotations.xml {{{
 # https://vae-0118.github.io/2017/11/06/Python%E4%B8%ADXML%E7%9A%84%E8%AF%BB%E5%86%99%E6%80%BB%E7%BB%93/
-# TODO
 def gen_annotations_xml():
     total_length = 0
 
@@ -297,19 +296,19 @@ def gen_annotations_xml():
             element = ET.Element('Annotation') # 子节点
             element.set('about', each[0])      # about 存 url pattern
             element.set('score', each[1])
-            # element.text = 'default'         # 节点中的文本内容
 
             Label = ET.SubElement(element, 'Label')
             Label.set('name', '_include_')
             Label = ET.SubElement(element, 'Label')
-            Label.set('name', facet_items['wiki']['Label_name'])
+            Label.set('name', facet_items[k]['Label_name'])
 
             root.append(element)               # 放到根节点下
+            ...
 
-    total_length += len(lis)
-    
-    print(lis, len(lis), end='\n')
-    lis.clear()
+        total_length += len(lis)
+        
+        print(lis, len(lis), end='\n')
+        lis.clear()
 
     # }}}
 
