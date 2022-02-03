@@ -1,4 +1,18 @@
+# Table of contents
+- <a href="#introduction">Introduction</a>
+- <a href="#google-programmable-search-engine">programmablesearchengine.google.com</a>
+    - <a href="#sort">sort</a>
+    - <a href="#configuration">configuration</a>
+- <a href="#ublacklist">uBlacklist</a>
+    - <a href="#introduction-of-ublacklist">introduction of uBlacklist</a>
+    - <a href="#whitelist-mode">whitelist mode</a>
+    - <a href="#subscription-rules">subscription rules</a>
+- <a href="#other-ways-of-using-it">other ways of using it</a>
+- <a href="#reference">reference</a>
+
 # Google-Chinese-Results-Whitelist
+
+## introduction
 
 垃圾站点越来越多，而黑名单是无限的，白名单可以是有限的，以有限的精力去维护有限的白名单，于是这个白名单就这么出来了。
 
@@ -43,7 +57,7 @@
 │   │   __init__.py
 ```
 
-## cse.google.com
+## google programmable search engine
 
 <a href="./whitelists/cse.xml">./whitelists/cse.xml</a> 是配置项。
 
@@ -58,7 +72,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 测试：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
 
 
-### 排序
+### sort
 
 <b>一级排序：</b>
 
@@ -138,7 +152,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 > 经过测试发现，当 score <= 0 时，不会出现在结果中，所以最小也应该设置为 0.01
 
-### 配置项
+### configuration
 
 cse.xml 中的 CustomSearchEngine 的属性，只有 language, encoding, enable_promotions, autocompletions 是需要根据个人需要进行修改。
 
@@ -149,9 +163,9 @@ annotations.xml 中的 Annotations 的属性 start, num, total, 也是会自动�
 <b>如果一个 url 不是通过上传 annotations.xml 所添加，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>
 
 
-## uBlacklist
+## ublacklist
 
-### 简介
+### introduction of ublacklist
 
 PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 
@@ -167,7 +181,7 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
   * Bing 下，常出现 3~5 个不在名单中的网站，以及视频卡片，新闻卡片，相关搜索，可通过油猴插件写脚本进行过滤。
 
 
-### 白名单使用方式：
+### whitelist mode
 
 插件本是针对垃圾网站进行过滤，也就是黑名单模式，修改下使用方式就能实现白名单过滤。
 
@@ -178,7 +192,7 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 添加：`@:*//前缀.域名.后缀`(如 `@:*//*.github.com/*`, 区分大小写) 取消对某个网站的过滤。
 
 规则举例：
-```
+```python
 # 有前缀
 @:*//*.github.com/*
 
@@ -223,7 +237,7 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 > 浏览器插件 <a href="https://chrome.google.com/webstore/detail/uautopagerize/kdplapeciagkkjoignnkfpbfkebcfbpb" target="_blank">uAutoPagerize</a>, 以及油猴脚本 <a href="https://greasyfork.org/en/scripts/438684-pagetual">东方永动机</a> 支持在自动翻页的同时过滤搜索结果。
 
 
-### 规则添加
+### subscription rules
 
 为保证白名单生效，先订阅 whitelist.txt
 
@@ -247,13 +261,12 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 
 
 
-## 其他使用方式
+## other ways of using it
 
 <a href="./whitelists/domain_name.txt">./whitelists/domain_name.txt</a> 是域名列表，可以用在油猴脚本中，或许要改下代码来读取。
 
 
-
-# 参考
+# reference
 
 [Google I/O 2009 - Advanced Custom Search Configuration https://www.youtube.com/watch?v=fIUHTFvIt9c ](https://www.youtube.com/watch?v=fIUHTFvIt9c)
 
