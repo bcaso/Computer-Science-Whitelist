@@ -10,6 +10,7 @@ Whitelist = {
         'cnblogs':['www','com','0.65'],            # 博客园，加上 www 是为了过滤 https://recomm.cnblogs.com/ 这个地址
         'ruanyifeng':['','com','0.65'],            # 阮一峰的网络日志
         'liaoxuefeng':['','com/wiki','0.5'],       # 廖雪峰的官方网站
+        'cnblogs':['kb','com/page','0.5'],         # cnblogs 博客园知识库
         'coolshell':['','cn/articles','0.5'],      # 酷壳
-        '': ['','edu','0.07'],                      # 所有以 edu 结尾的域名(学校)
+        '': ['','edu','0.07'],                     # 所有以 edu 结尾的域名(学校)
 }

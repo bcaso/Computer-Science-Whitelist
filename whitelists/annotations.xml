@@ -32,6 +32,10 @@
 		<Label name="_include_" />
 		<Label name="wiki" />
 	</Annotation>
+	<Annotation about="*.readthedocs.io/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
 	<Annotation about="*.shuxuele.com/*" score="0.7">
 		<Label name="_include_" />
 		<Label name="wiki" />
@@ -60,11 +64,7 @@
 		<Label name="_include_" />
 		<Label name="wiki" />
 	</Annotation>
-	<Annotation about="*.kb.cnblogs.com/page*" score="0.55">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.cisco.com/c/zh_cn/support/docs*" score="0.3">
+	<Annotation about="*.cisco.com/c/zh_cn/support/docs*" score="0.2">
 		<Label name="_include_" />
 		<Label name="wiki" />
 	</Annotation>
@@ -92,7 +92,7 @@
 		<Label name="_include_" />
 		<Label name="blogs" />
 	</Annotation>
-	<Annotation about="https://www.cnblogs.com/*" score="0.65">
+	<Annotation about="*.kb.cnblogs.com/page*" score="0.5">
 		<Label name="_include_" />
 		<Label name="blogs" />
 	</Annotation>

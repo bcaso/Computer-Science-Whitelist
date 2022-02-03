@@ -6,6 +6,7 @@
 @*://*.autohotkey.com/docs*
 @*://*.developer.mozilla.org/*
 @*://*.gitbooks.io/*
+@*://*.readthedocs.io/*
 @*://*.shuxuele.com/*
 @*://*.mathsisfun.com/*
 @*://*.math001.com/*
@@ -13,7 +14,6 @@
 @*://*.zh.wikihow.com/*
 @*://*.programcreek.com/*
 @*://*.runoob.com/*
-@*://*.kb.cnblogs.com/page*
 @*://*.cisco.com/c/zh_cn/support/docs*
 @*://*.medium.com/*
 @*://*.groovypost.com/howto*
@@ -21,7 +21,7 @@
 @*://*.github.io/*
 @*://*.gitee.io/*
 @*://*.zhuanlan.zhihu.com/*
-@https://www.cnblogs.com/*
+@*://*.kb.cnblogs.com/page*
 @*://*.ruanyifeng.com/*
 @*://*.liaoxuefeng.com/wiki*
 @*://*.coolshell.cn/articles*

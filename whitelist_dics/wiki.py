@@ -3,13 +3,13 @@ Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一�
         'autohotkey':['','com/docs','0.8'],            # auto hotkey 文档
         'mozilla':['developer','org','0.7'],           # MDN Web Docs
         'gitbooks':['','io','0.7'],                    # gitbook
+        'readthedocs':['','io','0.7'],                 # gitbook
         'shuxuele':['','com','0.7'],                   # 数学乐
         'mathsisfun':['','com','0.7'],                 # 数学乐, 英文版
         'math001':['','com','0.7'],                    # 数学网站
-        'biancheng':['c','net','0.65'],                 # C 语言中文网，各方面的编程文档都有
+        'biancheng':['c','net','0.65'],                # C 语言中文网，各方面的编程文档都有
         'wikihow':['zh','com','0.6'],                  # wikihow, about health
         'programcreek':['','com','0.6'],               # 函数代码示例
         'runoob':['','com','0.6'],                     # 菜鸟教程
-        'cnblogs':['kb','com/page','0.55'],             # cnblogs 博客园知识库
-        'cisco':['','com/c/zh_cn/support/docs','0.3'], # cisco 中文文档
+        'cisco':['','com/c/zh_cn/support/docs','0.2'], # cisco 中文文档
 }
