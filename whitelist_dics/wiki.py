@@ -1,4 +1,6 @@
 Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一关键词给出了多个不同语言版的结果占用了太多搜索结果(zh.wikipedia.org/wiki, zh.wikipedia.org/zh-tw ...)，所以后缀改为 org/wiki
+        'oi-wiki':['','org','0.8'],                    # 编程竞赛（competitive programming） 知识整合站点
+        'ctf-wiki':['','org','0.8'],                   # CTF（Capture The Flag，夺旗赛）网络安全竟赛
         'python':['','org','0.8'],                     # python 官方, 文档
         'mozilla':['developer','org','0.7'],           # MDN Web Docs
         'gitbooks':['','io','0.7'],                    # gitbooks

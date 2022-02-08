@@ -2,6 +2,8 @@
 @*://*.pypi.org/*
 @*://*.gitee.com/*
 @*://*.wikipedia.org/wiki*
+@*://*.oi-wiki.org/*
+@*://*.ctf-wiki.org/*
 @*://*.python.org/*
 @*://*.developer.mozilla.org/*
 @*://*.gitbooks.io/*
