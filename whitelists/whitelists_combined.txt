@@ -20,6 +20,7 @@
 @*://*.medium.com/*
 @*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*
+@*://*.nowcoder.com/practice*
 @*://*.github.io/*
 @*://*.gitee.io/*
 @*://*.zhuanlan.zhihu.com/*
