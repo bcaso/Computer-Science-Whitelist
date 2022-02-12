@@ -3,9 +3,9 @@
 ## Table of contents
 - <a href="#introduction">Introduction</a>
 - <a href="#google-programmable-search-engine">programmablesearchengine.google.com</a>
-    - <a href="#sort">sort</a>
-    - <a href="#configuration">configuration</a>
-    - <a href="#ad-filtering">configuration</a>
+    - <a href="#sort">Sort</a>
+    - <a href="#configuration">Configuration</a>
+    - <a href="#ad-filtering">Ad filtering</a>
     - <a href="#focus-on-input-box">Focus on input box</a>
 - <a href="#ublacklist">uBlacklist</a>
     - <a href="#introduction-of-ublacklist">introduction of uBlacklist</a>
