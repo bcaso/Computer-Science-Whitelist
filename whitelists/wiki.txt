@@ -6,6 +6,7 @@
 @*://*.gitbooks.io/*
 @*://*.gitbook.io/*
 @*://*.readthedocs.io/*
+@*://*.nbviewer.org/*
 @*://*.shuxuele.com/*
 @*://*.mathsisfun.com/*
 @*://*.math001.com/*

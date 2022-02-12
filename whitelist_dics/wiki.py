@@ -6,6 +6,7 @@ Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一�
         'gitbooks':['','io','0.7'],                    # gitbooks
         'gitbook':['','io','0.7'],                     # gitbook
         'readthedocs':['','io','0.7'],                 # gitbook
+        'nbviewer':['','org','0.7'],                   # Jupyter notebook 渲染器
         'shuxuele':['','com','0.7'],                   # 数学乐
         'mathsisfun':['','com','0.7'],                 # 数学乐, 英文版
         'math001':['','com','0.7'],                    # 数学网站

@@ -4,7 +4,7 @@ Whitelist = {
         'groovypost':['','com/howto','0.8'],       # 电脑技术问题
 
         'leetcode-cn':['','com/problems','0.8'],   # 乐扣试题区
-        'nowcoder':['','com/practice','0.8'],      # 牛客试题区
+        'nowcoder':['','com/practice','0.8'],      # 牛客试题区, 与乐扣试题相似，但搜不到
         'github': ['','io','0.8'],                 # 没法 用 @://github.*/* 来表示 .com 和 .io，因为这条规则是有问题的
         'gitee':['','io','0.7'],
         'zhihu':['zhuanlan','com','0.7'],          # 知乎专栏

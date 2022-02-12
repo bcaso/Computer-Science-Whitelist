@@ -1,8 +1,12 @@
-# Table of contents
+# Computer-Science-Whitelist
+
+## Table of contents
 - <a href="#introduction">Introduction</a>
 - <a href="#google-programmable-search-engine">programmablesearchengine.google.com</a>
     - <a href="#sort">sort</a>
     - <a href="#configuration">configuration</a>
+    - <a href="#ad-filtering">configuration</a>
+    - <a href="#focus-on-input-box">Focus on input box</a>
 - <a href="#ublacklist">uBlacklist</a>
     - <a href="#introduction-of-ublacklist">introduction of uBlacklist</a>
     - <a href="#whitelist-mode">whitelist mode</a>
@@ -10,13 +14,26 @@
 - <a href="#other-ways-of-using-it">other ways of using it</a>
 - <a href="#reference">reference</a>
 
-# Google-Chinese-Results-Whitelist
 
 ## introduction
 
 垃圾站点越来越多，而黑名单是无限的，白名单可以是有限的，以有限的精力去维护有限的白名单，于是这个白名单就这么出来了。
 
-这个名单专注收集<b>问答论坛</b>，和具有 wiki 性质的高质量内容网站，类型偏向电脑技术。 
+这个名单只收集<b>问答论坛</b>，和类似 wiki 的高质量内容网站。
+
+名单整理，用字典比较方便，example:
+
+```py
+Whitelist = {
+        # 'domain_name': ['prefix', 'suffix', 'score'],
+        'baidu':['wenku','com/view','0.4'],    # 百度文库
+        'docin':['','com/p-','0.4'],           # 豆丁文库
+        'doc88':['','com/p-','0.4'],           # 道客巴巴
+        'taodocs':['','com/p-','0.4'],         # 淘豆网
+}
+```
+
+`main.py` 处理名单(python 字典格式)，并生成对应的 txt、xml，到 whitelists/.
 
 目录结构:
 
@@ -59,20 +76,26 @@
 
 ## google programmable search engine
 
-<a href="./whitelists/cse.xml">./whitelists/cse.xml</a> 是配置项。
+配置: <a href="./whitelists/cse.xml">./whitelists/cse.xml</a> 
 
-<a href="./whitelists/annotations.xml">./whitelists/annotations.xml</a> 是名单列表。
+名单: <a href="./whitelists/annotations.xml">./whitelists/annotations.xml</a>
 
-可以在高级选项中上传。
+在高级选项中上传:
 
 <img src="cse_google.jpg" width="70%">
 
 cse.xml 可设项有些多，在网页上修改比较简单。
 
-测试：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
+测试链接：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
 
 
 ### sort
+
+只给 Annotation 添加 score 属性就可以对其排序，value from -1.0 to 1.0
+
+可以在 socre 的基础上给 Label 标签排序，使用 weight 字段，value from -1.0 to 1.0
+ 
+weight > score
 
 <b>一级排序：</b>
 
@@ -112,7 +135,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 这两个标签下的所有 Annotation 都以这个为排序，每个 Annotation 可以多个 Label。
 
-经过测试，发现，当 Rewrite 中有内容且没有任何网址拥有这些标签时，对应的 Label 的 mode 只能选 BOOST，不然搜索结果中，该标签下不会有结果
+当 Rewrite 中有内容且没有任何网址拥有这些标签时，对应的 Label 的 mode 只能选 BOOST，不然搜索结果中，该标签下不会有结果
 
 <b>二级排序(标签内部微调):</b>
 
@@ -150,7 +173,9 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 </Annotations>
 ```
 
-> 经过测试发现，当 score <= 0 时，不会出现在结果中，所以最小也应该设置为 0.01
+当 score <= 0 时，该地址可能不会出现在结果中，所以最小也应该设置为 0.01
+
+
 
 ### configuration
 
@@ -162,6 +187,37 @@ annotations.xml 中的 Annotations 的属性 start, num, total, 也是会自动�
 
 <b>如果一个 url 不是通过上传 annotations.xml 所添加，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>
 
+
+### ad filtering
+
+```css
+.gsc-adBlock {display:none !important}
+```
+
+### focus on input box
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Search Engine</title>
+  <script type="text/javascript">
+    function focusFieldOne() {
+      document.querySelector('input[name="search"]').focus()
+    }
+  </script>
+  <style>
+    /*  Google Adsense  */
+    .gsc-adBlock {display:none !important}
+  </style>
+</head>
+<body onload="focusFieldOne()">
+  <script async src="https://cse.google.com/cse.js?cx=[Your search ID]"></script>
+  <div class="gcse-search"></div>
+</body>
+</html>
+```
 
 ## ublacklist
 
@@ -208,33 +264,29 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 @*://*.appinn.com/*
 ```
 
-可通过前后缀区分一个地址的类型。
+通过前后缀区分一个地址的类型。
 
-建议使用"最长前缀匹配规则"：
+使用"最长前缀匹配规则", 过滤奇怪的结果，或者不相关结果。
 
 规则是从左往右匹配的。
 
 如，脚本之家：
 
 ```
-手机脚本之家 https://m.jb51.net/
-电脑版脚之家 https://m.jb51.net/
-脚本之家脚本专栏 ：https://www.jb51.net/list/index_96.htm
-脚本之家的某个教程页：https://www.jb51.net/os/win11/808733.html
-脚本之家的某个软件下载页：https://www.jb51.net/softs/794768.html
+https://m.jb51.net/                               移动端
+https://m.jb51.net/                               电脑端
+https://www.jb51.net/list/index_96.htm          脚本专栏
+https://www.jb51.net/os/win11/808733.html     某个教程页
+https://www.jb51.net/softs/794768.html    某个软件下载页
 ```
 
-脚本之家的教程或他页面质量不好，但是它的软件下载页偶尔会用到，这时加上规则：`@*://*.jb51.net/softs*`，就能过滤掉除软件下载页的其他页面。
+只索引它的软件下载页, 规则：`@*://*.jb51.net/softs*`，就能过滤掉其他页面。
 
-同时支持后缀匹配的规则，如 `@*://*.edu/*`。
+后缀匹配的规则，如 `@*://*.edu/*`。
 
-如果网站变动地址怎么办？
+修改搜索设置，将搜索结果数调得尽可能大，白名单模式会使得每一搜索页中的内容变得特别少, 因为符合白名单的网站，可能不在结果的第一页。
 
-一般不会经常变动，这些网址多为论坛，软件下载，一定会有很多人在引用，他们不会轻意变动。
-
-> 注：uBlacklist 的白名单模式会使得每一搜索页中的内容变得特别少，因为符合白名单的网站，可能不在结果的第一页，因此，要在设置中，把每页搜索结果数调得尽可能大。
->
-> 浏览器插件 <a href="https://chrome.google.com/webstore/detail/uautopagerize/kdplapeciagkkjoignnkfpbfkebcfbpb" target="_blank">uAutoPagerize</a>, 以及油猴脚本 <a href="https://greasyfork.org/en/scripts/438684-pagetual">东方永动机</a> 支持在自动翻页的同时过滤搜索结果。
+自动翻页插件: <a href="https://chrome.google.com/webstore/detail/uautopagerize/kdplapeciagkkjoignnkfpbfkebcfbpb" target="_blank">uAutoPagerize</a>, 以及油猴脚本 <a href="https://greasyfork.org/en/scripts/438684-pagetual">东方永动机</a> 可以在自动翻页的同时过滤搜索结果。
 
 
 ### subscription rules
@@ -269,6 +321,8 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 # reference
 
 [Google I/O 2009 - Advanced Custom Search Configuration https://www.youtube.com/watch?v=fIUHTFvIt9c ](https://www.youtube.com/watch?v=fIUHTFvIt9c)
+
+[google cse documentation https://developers.google.com/custom-search/docs/overview ](https://developers.google.com/custom-search/docs/overview)
 
 [Gaga for Google Custom Search Engines https://www.youtube.com/watch?v=uX5nbIHRTAo ](https://www.youtube.com/watch?v=uX5nbIHRTAo)
 
