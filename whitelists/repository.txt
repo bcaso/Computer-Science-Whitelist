@@ -1,3 +1,4 @@
 @*://*.github.com/*
 @*://*.pypi.org/*
+@*://*.codeproject.com/*
 @*://*.gitee.com/*

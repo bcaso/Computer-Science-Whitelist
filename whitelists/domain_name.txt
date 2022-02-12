@@ -1,5 +1,6 @@
 *.github.com/*
 *.pypi.org/*
+*.codeproject.com/*
 *.gitee.com/*
 *.wikipedia.org/wiki*
 *.oi-wiki.org/*
@@ -27,7 +28,7 @@
 *.github.io/*
 *.gitee.io/*
 *.zhuanlan.zhihu.com/*
-*.kb.cnblogs.com/page*
+https://www.cnblogs.com/*
 *.ruanyifeng.com/*
 *.liaoxuefeng.com/wiki*
 *.coolshell.cn/articles*
