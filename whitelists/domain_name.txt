@@ -1,4 +1,5 @@
 *.github.com/*
+*.bitbucket.org/*
 *.pypi.org/*
 *.codeproject.com/*
 *.gitee.com/*
@@ -27,11 +28,12 @@
 *.nowcoder.com/practice*
 *.github.io/*
 *.gitee.io/*
-*.zhuanlan.zhihu.com/*
-https://www.cnblogs.com/*
+*.dev.to/*
 *.ruanyifeng.com/*
+*.zhuanlan.zhihu.com/*
 *.liaoxuefeng.com/wiki*
 *.coolshell.cn/articles*
+https://www.cnblogs.com/*
 *.edu/*
 *.stackoverflow.com/*
 *.stackexchange.com/*
@@ -43,13 +45,13 @@ https://www.cnblogs.com/*
 *.segmentfault.com/q*
 *.github.community/*
 *.quora.com/*
+*.reddit.com/*
 *.zhihu.com/question*
 *.leetcode-cn.com/circle/discuss*
 *.nowcoder.com/questionTerminal*
 *.math.org.cn/forum.php?mod=viewthread*
 *.autoahk.com/archives*
 *.autohotkey.com/boards*
-*.reddit.com/*
 *.meta.appinn.net/*
 *.v2ex.com/*
 *.bbs.ikuai8.com/*

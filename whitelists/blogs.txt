@@ -4,9 +4,10 @@
 @*://*.nowcoder.com/practice*
 @*://*.github.io/*
 @*://*.gitee.io/*
-@*://*.zhuanlan.zhihu.com/*
-@https://www.cnblogs.com/*
+@*://*.dev.to/*
 @*://*.ruanyifeng.com/*
+@*://*.zhuanlan.zhihu.com/*
 @*://*.liaoxuefeng.com/wiki*
 @*://*.coolshell.cn/articles*
+@https://www.cnblogs.com/*
 @*://*.edu/*

@@ -8,13 +8,13 @@
 @*://*.segmentfault.com/q*
 @*://*.github.community/*
 @*://*.quora.com/*
+@*://*.reddit.com/*
 @*://*.zhihu.com/question*
 @*://*.leetcode-cn.com/circle/discuss*
 @*://*.nowcoder.com/questionTerminal*
 @*://*.math.org.cn/forum.php?mod=viewthread*
 @*://*.autoahk.com/archives*
 @*://*.autohotkey.com/boards*
-@*://*.reddit.com/*
 @*://*.meta.appinn.net/*
 @*://*.v2ex.com/*
 @*://*.bbs.ikuai8.com/*

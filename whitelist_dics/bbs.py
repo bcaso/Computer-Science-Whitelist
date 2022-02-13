@@ -9,13 +9,13 @@ Whitelist = {
         'segmentfault':['','com/q','0.7'],     # 思否，国内版 stackoverflow
         'github':['','community','0.7'],       # github 社区
         'quora':['','com','0.7'],              # quora 类似知乎
+        'reddit':['','com','0.7'],             # reddit, 类似 quora, 知乎
         'zhihu':['','com/question','0.7'],     # 知乎
         'leetcode-cn':['','com/circle/discuss','0.7'],                # 乐扣问答区
         'nowcoder':['','com/questionTerminal','0.7'],                 # 牛客网试题问答区
         'math':['','org.cn/forum.php?mod=viewthread','0.7'],          # 博士数学家园
         'autoahk':['','com/archives','0.6'],   # AutoHotkey 中文社区
         'autohotkey':['','com/boards','0.6'],  # AutoHotkey 官方论坛
-        'reddit':['','com','0.55'],            # reddit, 类似 quora, 知乎
         'appinn':['meta','net','0.5'],         # 小众论坛
         'v2ex':['','com','0.4'],               # v2ex社区，经常无法打开
         'ikuai8':['bbs','com','0.4'],          # iKuai 路由器论坛
