@@ -15,6 +15,7 @@ Whitelist = {
         'math':['','org.cn/forum.php?mod=viewthread','0.7'],          # 博士数学家园
         'autoahk':['','com/archives','0.6'],   # AutoHotkey 中文社区
         'autohotkey':['','com/boards','0.6'],  # AutoHotkey 官方论坛
+        'reddit':['','com','0.55'],            # reddit, 类似 quora, 知乎
         'appinn':['meta','net','0.5'],         # 小众论坛
         'v2ex':['','com','0.4'],               # v2ex社区，经常无法打开
         'ikuai8':['bbs','com','0.4'],          # iKuai 路由器论坛
