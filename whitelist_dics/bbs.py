@@ -19,6 +19,7 @@ Whitelist = {
         'appinn':['meta','net','0.5'],         # 小众论坛
         'v2ex':['','com','0.4'],               # v2ex社区，经常无法打开
         'ikuai8':['bbs','com','0.4'],          # iKuai 路由器论坛
+        'cskaoyan':['','com/thread-','0.4'],   # 王道论坛
         '52pojie':['','cn','0.4'],             # 吾爱论坛
         'letitfly':['bbs','me','0.4'],         # Android 刷机，现在也有电脑方面的内容
         'cisco':['community','com','0.3'],     # cisco 社区

@@ -55,6 +55,7 @@
 @*://*.meta.appinn.net/*
 @*://*.v2ex.com/*
 @*://*.bbs.ikuai8.com/*
+@*://*.cskaoyan.com/thread-*
 @*://*.52pojie.cn/*
 @*://*.bbs.letitfly.me/*
 @*://*.community.cisco.com/*
