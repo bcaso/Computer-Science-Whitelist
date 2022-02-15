@@ -2,6 +2,7 @@
 @*://*.oi-wiki.org/*
 @*://*.ctf-wiki.org/*
 @*://*.python.org/*
+@*://*.docs4dev.com/*
 @*://*.developer.mozilla.org/*
 @*://*.gitbooks.io/*
 @*://*.gitbook.io/*

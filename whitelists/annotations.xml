@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="101" total="101">
+<Annotations start="0" num="102" total="102">
 	<Annotation about="*.github.com/*" score="0.8">
 		<Label name="_include_" />
 		<Label name="repository" />
@@ -33,6 +33,10 @@
 		<Label name="wiki" />
 	</Annotation>
 	<Annotation about="*.python.org/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.docs4dev.com/*" score="0.75">
 		<Label name="_include_" />
 		<Label name="wiki" />
 	</Annotation>
