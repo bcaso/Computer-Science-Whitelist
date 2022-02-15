@@ -15,5 +15,6 @@
 @*://*.zh.wikihow.com/*
 @*://*.programcreek.com/*
 @*://*.runoob.com/*
+@*://*.books.google.com/*
 @*://*.china-ccie.com/*
 @*://*.cisco.com/c/zh_cn/support/docs*

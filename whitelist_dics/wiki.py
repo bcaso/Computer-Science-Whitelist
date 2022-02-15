@@ -15,6 +15,7 @@ Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一�
         'wikihow':['zh','com','0.6'],                  # wikihow, about health
         'programcreek':['','com','0.6'],               # 函数代码示例
         'runoob':['','com','0.6'],                     # 菜鸟教程
+        'google':['books','com','0.6'],                # Google 图书
         'china-ccie':['','com','0.3'],                 # CCIE 资料库
         'cisco':['','com/c/zh_cn/support/docs','0.2'], # cisco 中文文档
 }
