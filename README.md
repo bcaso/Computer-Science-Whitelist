@@ -74,6 +74,12 @@ Whitelist = {
 │   │   __init__.py
 ```
 
+使用与调试：
+
+先用自定义搜索，如果添加了自定义实体，那结果将会被严格限制，如，添加 `Computer Science`，在搜索 "辱骂" 一词时给出的也多为 "辱骂检测技术"，不会显示社会热点。
+
+如果没有想要的结果，再点击页面最下方的 `Search for [关键词] on Google`，使用 uBlacklist 的白名单对 Google 的搜索结果进行过滤，如果还没有想要的结果，点击 Show 显示被过滤的网站，找到比较不错的网站，再添加到白名单中。
+
 ## google programmable search engine
 
 配置: <a href="./whitelists/cse.xml">./whitelists/cse.xml</a> 
@@ -88,6 +94,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 测试链接：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
 
+使用的知识实体为：`Stack Exchange`, `Mathematics`, `Computer Science`, 'network`, `Software development`
 
 ### sort
 
@@ -266,14 +273,14 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 
 通过前后缀区分一个地址的类型。
 
-使用"最长前缀匹配规则", 过滤奇怪的结果，或者不相关结果。
+<b>使用"最长前缀匹配规则", 过滤奇怪的结果，或者不相关结果。</b>
 
 规则是从左往右匹配的。
 
 如，脚本之家：
 
 ```
-https://m.jb51.net/                               移动端
+https://www.jb51.net/                             移动端
 https://m.jb51.net/                               电脑端
 https://www.jb51.net/list/index_96.htm          脚本专栏
 https://www.jb51.net/os/win11/808733.html     某个教程页
@@ -315,7 +322,7 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 
 ## other ways of using it
 
-<a href="./whitelists/domain_name.txt">./whitelists/domain_name.txt</a> 是域名列表，可以用在油猴脚本中，或许要改下代码来读取。
+域名列表: <a href="./whitelists/domain_name.txt">./whitelists/domain_name.txt</a> ，在油猴脚本中改下判断规则代码就可以使用。
 
 
 # reference
