@@ -94,7 +94,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 测试链接：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
 
-使用的知识实体为：`Stack Exchange`, `Mathematics`, `Computer Science`, 'network`, `Software development`
+使用的知识实体为：`Stack Exchange`, `Mathematics`, `Computer Science`, `network`, `Software development`。
 
 ### sort
 
