@@ -57,9 +57,11 @@
 @*://*.meta.appinn.net/*
 @*://*.v2ex.com/*
 @*://*.bbs.ikuai8.com/*
+@*://*.right.com.cn/forum*
 @*://*.cskaoyan.com/thread-*
 @*://*.52pojie.cn/*
 @*://*.bbs.letitfly.me/*
+@*://*.txrjy.com/asktech/question*
 @*://*.community.cisco.com/*
 @*://*.sourceforge.net/*
 @*://*.softonic.com/*

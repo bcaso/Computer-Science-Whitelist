@@ -16,11 +16,13 @@ Whitelist = {
         'math':['','org.cn/forum.php?mod=viewthread','0.7'],          # 博士数学家园
         'autoahk':['','com/archives','0.6'],   # AutoHotkey 中文社区
         'autohotkey':['','com/boards','0.6'],  # AutoHotkey 官方论坛
-        'appinn':['meta','net','0.5'],         # 小众论坛
+        'appinn':['meta','net','0.5'],         # 小众论坛，软件分享
         'v2ex':['','com','0.4'],               # v2ex社区，经常无法打开
         'ikuai8':['bbs','com','0.4'],          # iKuai 路由器论坛
-        'cskaoyan':['','com/thread-','0.4'],   # 王道论坛
-        '52pojie':['','cn','0.4'],             # 吾爱论坛
+        'right':['','com.cn/forum','0.4'],     # 恩山论坛，路由刷机
+        'cskaoyan':['','com/thread-','0.4'],   # 王道论坛，计算机考研
+        '52pojie':['','cn','0.4'],             # 吾爱论坛, 软件破解
         'letitfly':['bbs','me','0.4'],         # Android 刷机，现在也有电脑方面的内容
+        'txrjy':['','com/asktech/question','0.3'],    # 通信技术论坛
         'cisco':['community','com','0.3'],     # cisco 社区
 }
