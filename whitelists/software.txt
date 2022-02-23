@@ -8,6 +8,7 @@
 @*://*.msguides.com/*
 @*://*.software.informer.com/*
 @*://*.msdn.itellyou.cn/*
+@*://*.latest10.win/*
 @*://*.luochenzhimu.com/*
 @*://*.dayanzai.me/*
 @*://*.aixuefu.com/xiazai*

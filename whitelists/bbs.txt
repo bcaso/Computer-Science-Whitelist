@@ -15,6 +15,7 @@
 @*://*.math.org.cn/forum.php?mod=viewthread*
 @*://*.autoahk.com/archives*
 @*://*.autohotkey.com/boards*
+@*://*.discourse.jupyter.org/*
 @*://*.meta.appinn.net/*
 @*://*.v2ex.com/*
 @*://*.bbs.ikuai8.com/*

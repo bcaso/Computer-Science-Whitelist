@@ -9,7 +9,8 @@ Whitelist = {
         'cracksurl':['','com','0.7'],            # crack
         'msguides':['','com','0.7'],             # crack Microsoft software
         'informer':['software','com','0.7'],
-        'itellyou':['msdn','cn','0.7'],               # msdn, I tell you, 下载系统镜像
+        'itellyou':['msdn','cn','0.7'],          # msdn, I tell you, 下载系统镜像
+        'latest10':['','win','0.7'],             # 下载系统镜像
         'luochenzhimu':['','com','0.7'],         # 落尘之木, crack
         'dayanzai':['','me','0.7'],              # for download cracked exe program
         'aixuefu':['','com/xiazai','0.7'],       # 爱学府软件园 crack

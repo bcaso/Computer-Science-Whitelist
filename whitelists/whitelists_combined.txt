@@ -54,6 +54,7 @@
 @*://*.math.org.cn/forum.php?mod=viewthread*
 @*://*.autoahk.com/archives*
 @*://*.autohotkey.com/boards*
+@*://*.discourse.jupyter.org/*
 @*://*.meta.appinn.net/*
 @*://*.v2ex.com/*
 @*://*.bbs.ikuai8.com/*
@@ -73,6 +74,7 @@
 @*://*.msguides.com/*
 @*://*.software.informer.com/*
 @*://*.msdn.itellyou.cn/*
+@*://*.latest10.win/*
 @*://*.luochenzhimu.com/*
 @*://*.dayanzai.me/*
 @*://*.aixuefu.com/xiazai*
