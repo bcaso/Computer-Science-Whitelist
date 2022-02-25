@@ -23,5 +23,6 @@
 @*://*.cskaoyan.com/thread-*
 @*://*.52pojie.cn/*
 @*://*.bbs.letitfly.me/*
+@*://*.bbs.pediy.com/*
 @*://*.txrjy.com/asktech/question*
 @*://*.community.cisco.com/*

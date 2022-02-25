@@ -24,6 +24,7 @@ Whitelist = {
         'cskaoyan':['','com/thread-','0.4'],   # 王道论坛，计算机考研
         '52pojie':['','cn','0.4'],             # 吾爱论坛, 软件破解
         'letitfly':['bbs','me','0.4'],         # Android 刷机，现在也有电脑方面的内容
+        'pediy':['bbs','com','0.3'],           # 看雪论坛, 网络安全
         'txrjy':['','com/asktech/question','0.3'],    # 通信技术论坛
         'cisco':['community','com','0.3'],     # cisco 社区
 }
