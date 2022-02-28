@@ -5,8 +5,7 @@
 - <a href="#google-programmable-search-engine">programmablesearchengine.google.com</a>
     - <a href="#sort">Sort</a>
     - <a href="#configuration">Configuration</a>
-    - <a href="#ad-filtering">Ad filtering</a>
-    - <a href="#focus-on-input-box">Focus on input box</a>
+    - <a href="#html">Static web pages</a>
 - <a href="#ublacklist">uBlacklist</a>
     - <a href="#introduction-of-ublacklist">introduction of uBlacklist</a>
     - <a href="#whitelist-mode">whitelist mode</a>
@@ -63,20 +62,20 @@ Whitelist = {
 │       wiki.txt
 │
 ├───whitelist_dics
-│   │   bbs.py
-│   │   blogs.py
-│   │   blogs_blacklist.py
-│   │   library.py
-│   │   video.py
-│   │   repository.py
-│   │   software.py
-│   │   wiki.py
-│   │   __init__.py
+│       bbs.py
+│       blogs.py
+│       blogs_blacklist.py
+│       library.py
+│       video.py
+│       repository.py
+│       software.py
+│       wiki.py
+│       __init__.py
 ```
 
 使用与调试：
 
-先用自定义搜索，如果添加了自定义实体，那结果将会被严格限制，如，添加 `Computer Science`，在搜索 "辱骂" 一词时给出的也多为 "辱骂检测技术"，不会显示社会热点。
+先用自定义搜索，如果添加了知识实体，那结果将会被严格限制，如，添加 `Computer Science`，在搜索 "辱骂" 一词时给出的也多为 "辱骂检测技术"，不会显示社会热点。
 
 如果没有想要的结果，再点击页面最下方的 `Search for [关键词] on Google`，使用 uBlacklist 的白名单对 Google 的搜索结果进行过滤，如果还没有想要的结果，点击 Show 显示被过滤的网站，找到比较不错的网站，再添加到白名单中。
 
@@ -92,9 +91,11 @@ Whitelist = {
 
 cse.xml 可设项有些多，在网页上修改比较简单。
 
-测试链接：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080&q=</a>
+测试链接：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080</a>
 
 使用的知识实体为：`Stack Exchange`, `Mathematics`, `Computer Science`, `network`, `Software development`。
+
+搜索关键词，在链接最后加上 `&q=`, 如  https://cse.google.com/cse?cx=e9a1e480e37a86080&q=
 
 ### sort
 
@@ -194,14 +195,21 @@ annotations.xml 中的 Annotations 的属性 start, num, total, 也是会自动�
 
 <b>如果一个 url 不是通过上传 annotations.xml 所添加，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>
 
+### html
 
-### ad filtering
+（1）修改样式，默认样式太窄了
+
+（2）过滤广告
+
+（3）一些其他的设置
+
+<b>ad filtering</b>
 
 ```css
 .gsc-adBlock {display:none !important}
 ```
 
-### focus on input box
+<b>focus on input box</b>
 
 ```html
 <!DOCTYPE html>
@@ -225,6 +233,9 @@ annotations.xml 中的 Annotations 的属性 start, num, total, 也是会自动�
 </body>
 </html>
 ```
+
+app.netlify.com 可以部署 github 上的静态网页，效果：https://computer-science-whitelist.netlify.app
+
 
 ## ublacklist
 
@@ -280,8 +291,8 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 如，脚本之家：
 
 ```
-https://www.jb51.net/                             移动端
-https://m.jb51.net/                               电脑端
+https://www.jb51.net/                             电脑端
+https://m.jb51.net/                               移动端
 https://www.jb51.net/list/index_96.htm          脚本专栏
 https://www.jb51.net/os/win11/808733.html     某个教程页
 https://www.jb51.net/softs/794768.html    某个软件下载页
@@ -314,10 +325,11 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 
 或者不分类，直接订阅总列表: <a href="https://iorate.github.io/ublacklist/subscribe?name=whitelists_combined&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists_combined.txt">汇总列表</a>
 
+以上链接会自动打开 chrome 上的 uBlacklist 插件，同时添加订阅。
+
 分类订阅比订阅总列表的可控度高，根据内容需要，可在搜索前只启用一部分：
 
 <img src="uBlacklist.png" width="80%" height="80%">
-
 
 
 ## other ways of using it

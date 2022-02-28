@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <title>Custom Search Engine</title>
   <script type="text/javascript">
-    function focusFieldOne() {
-      document.querySelector('input[name="search"]').focus()
+    function myFunction(){
+      focusFieldOne()
+      openInNewTab()
+    }
+    function openInNewTab(){
+      setInterval(()=>{
+        document.body.querySelectorAll('a').forEach(el=>el.setAttribute('target', '_blank'))
+      },1000)
     }
   </script>
   <style>
@@ -16,7 +22,7 @@
 
   </style>
 </head>
-<body onload="focusFieldOne()">
+<body onload="myFunction()">
   <script async src="https://cse.google.com/cse.js?cx=e9a1e480e37a86080"></script>
   <div class="gcse-search"></div>
 </body>
