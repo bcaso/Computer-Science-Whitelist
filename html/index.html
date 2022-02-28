@@ -8,6 +8,9 @@
       focusFieldOne()
       openInNewTab()
     }
+
+    function focusFieldOne(){ document.querySelector('input[name="search"]').focus() }
+
     function openInNewTab(){
       setInterval(()=>{
         document.body.querySelectorAll('a').forEach(el=>el.setAttribute('target', '_blank'))
