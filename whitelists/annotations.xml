@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="107" total="107">
+<Annotations start="0" num="108" total="108">
 	<Annotation about="*.github.com/*" score="0.8">
 		<Label name="_include_" />
 		<Label name="repository" />
@@ -36,7 +36,7 @@
 		<Label name="_include_" />
 		<Label name="wiki" />
 	</Annotation>
-	<Annotation about="*.docs4dev.com/*" score="0.75">
+	<Annotation about="*.wangdoc.com/*" score="0.7">
 		<Label name="_include_" />
 		<Label name="wiki" />
 	</Annotation>
@@ -81,6 +81,10 @@
 		<Label name="wiki" />
 	</Annotation>
 	<Annotation about="*.zh.wikihow.com/*" score="0.6">
+		<Label name="_include_" />
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.docs4dev.com/*" score="0.6">
 		<Label name="_include_" />
 		<Label name="wiki" />
 	</Annotation>

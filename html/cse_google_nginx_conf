@@ -4,9 +4,9 @@
 # 重启 nginx: sudo nginx -s reload
 
 server {
-#listen 80 default;
-listen 65534;
-server_name 127.0.0.1;
+    #listen 80 default;
+    listen 65534;
+    server_name 127.0.0.1;
     # root 设置cse.google.com 网页的目录
     # 假设 index.html 的位置是：/home/pi/cse/index.html
     location /{

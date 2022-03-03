@@ -2,7 +2,7 @@ Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一�
         'oi-wiki':['','org','0.8'],                    # 编程竞赛（competitive programming） 知识整合站点
         'ctf-wiki':['','org','0.8'],                   # CTF（Capture The Flag，夺旗赛）网络安全竟赛
         'python':['','org','0.8'],                     # python 官方, 文档
-        'docs4dev':['','com','0.75'],                  # 各类机翻文档，github: https://github.com/docs4dev/docs4dev
+        'wangdoc':['','com','0.7'],                    # 网道，开源文档，github: https://github.com/wangdoc
         'mozilla':['developer','org','0.7'],           # MDN Web Docs
         'gitbooks':['','io','0.7'],                    # gitbooks
         'gitbook':['','io','0.7'],                     # gitbook
@@ -14,6 +14,7 @@ Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一�
         'autohotkey':['','com/docs','0.7'],            # auto hotkey 文档
         'biancheng':['c','net','0.65'],                # C 语言中文网，各方面的编程文档都有
         'wikihow':['zh','com','0.6'],                  # wikihow, about health
+        'docs4dev':['','com','0.6'],                   # 各类机翻文档，github: https://github.com/docs4dev/docs4dev
         'programcreek':['','com','0.6'],               # 函数代码示例
         'runoob':['','com','0.6'],                     # 菜鸟教程
         'google':['books','com','0.6'],                # Google 图书

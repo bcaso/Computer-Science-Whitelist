@@ -7,7 +7,7 @@
 *.oi-wiki.org/*
 *.ctf-wiki.org/*
 *.python.org/*
-*.docs4dev.com/*
+*.wangdoc.com/*
 *.developer.mozilla.org/*
 *.gitbooks.io/*
 *.gitbook.io/*
@@ -19,6 +19,7 @@
 *.autohotkey.com/docs*
 *.c.biancheng.net/*
 *.zh.wikihow.com/*
+*.docs4dev.com/*
 *.programcreek.com/*
 *.runoob.com/*
 *.books.google.com/*
