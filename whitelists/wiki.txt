@@ -2,6 +2,7 @@
 @*://*.oi-wiki.org/*
 @*://*.ctf-wiki.org/*
 @*://*.python.org/*
+@*://*.wangchujiang.com/linux-command*
 @*://*.wangdoc.com/*
 @*://*.developer.mozilla.org/*
 @*://*.gitbooks.io/*

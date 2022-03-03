@@ -2,6 +2,7 @@ Whitelist = {'wikipedia':['','org/wiki','0.8'],        # 维基，由于同一�
         'oi-wiki':['','org','0.8'],                    # 编程竞赛（competitive programming） 知识整合站点
         'ctf-wiki':['','org','0.8'],                   # CTF（Capture The Flag，夺旗赛）网络安全竟赛
         'python':['','org','0.8'],                     # python 官方, 文档
+        'wangchujiang':['','com/linux-command','0.7'], # linux 命令手册，开源文档，github: https://github.com/jaywcjlove/linux-command
         'wangdoc':['','com','0.7'],                    # 网道，开源文档，github: https://github.com/wangdoc
         'mozilla':['developer','org','0.7'],           # MDN Web Docs
         'gitbooks':['','io','0.7'],                    # gitbooks
