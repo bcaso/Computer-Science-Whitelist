@@ -18,6 +18,8 @@
 @*://*.discourse.jupyter.org/*
 @*://*.meta.appinn.net/*
 @*://*.chaoli.club/*
+@*://*.kuing.orzweb.net/*
+@*://*.bbs.emath.ac.cn/*
 @*://*.v2ex.com/*
 @*://*.bbs.ikuai8.com/*
 @*://*.right.com.cn/forum*
