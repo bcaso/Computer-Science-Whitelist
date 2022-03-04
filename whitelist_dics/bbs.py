@@ -27,4 +27,5 @@ Whitelist = {
         'pediy':['bbs','com','0.3'],           # 看雪论坛, 网络安全
         'txrjy':['','com/asktech/question','0.3'],    # 通信技术论坛
         'cisco':['community','com','0.3'],     # cisco 社区
+        'ld246':['','com','0.3'],              # 链滴社区，原名 黑客派(hacpai.com), https://ld246.com/article/1599662780208
 }

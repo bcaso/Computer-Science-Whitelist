@@ -67,6 +67,7 @@ https://www.cnblogs.com/*
 *.bbs.pediy.com/*
 *.txrjy.com/asktech/question*
 *.community.cisco.com/*
+*.ld246.com/*
 *.sourceforge.net/*
 *.softonic.com/*
 *.portablesoft.org/*

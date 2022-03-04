@@ -37,40 +37,39 @@ Whitelist = {
 目录结构:
 
 ```
-│   .gitignore
-│   main.py
-│   README.md
-│   uBlacklist.png
-│
-├───html
-│       cse_google_nginx_conf
-│       index.html
-│
-├───whitelists
-│       annotations.xml
-│       bbs.txt
-│       blogs.txt
-│       cse.xml
-│       cse_FacetLabels.xml
-│       domain_name.txt
-│       library.txt
-│       repository.txt
-│       software.txt
-│       video.txt
-│       whitelist.txt
-│       whitelists_combined.txt
-│       wiki.txt
-│
-├───whitelist_dics
-│       bbs.py
-│       blogs.py
-│       blogs_blacklist.py
-│       library.py
-│       video.py
-│       repository.py
-│       software.py
-│       wiki.py
-│       __init__.py
+.
+├── html
+│   ├── cse_google_nginx_conf
+│   └── index.html
+├── main.py
+├── README.md
+├── whitelist_dics
+│   ├── __init__.py
+│   ├── bbs.py
+│   ├── bbs_blacklist.py
+│   ├── blogs.py
+│   ├── blogs_blacklist.py
+│   ├── library.py
+│   ├── repository.py
+│   ├── software.py
+│   ├── video.py
+│   └── wiki.py
+└── whitelists
+    ├── annotations.xml
+    ├── bbs.txt
+    ├── blogs.txt
+    ├── cse.xml
+    ├── cse_FacetLabels.xml
+    ├── domain_name.txt
+    ├── library.txt
+    ├── repository.txt
+    ├── software.txt
+    ├── video.txt
+    ├── whitelist.txt
+    ├── whitelists_combined.txt
+    └── wiki.txt
+
+3 directories, 27 files
 ```
 
 使用与调试：
@@ -157,26 +156,18 @@ weight > score
   <Annotation about="*.uptodown.com/*" score="0.8" timestamp="0x0005d6b5044e8329" href="ChAqLnVwdG9kb3duLmNvbS8qEKmGuqLQ1vUC">
     <Label name="_include_"/>
     <Label name="software"/>
-    <AdditionalData attribute="original_url" value="*.uptodown.com/*"/>
-    <AdditionalData attribute="file" value="annotations.xml"/>
   </Annotation>
   <Annotation about="*.wenku.baidu.com/view*" score="0.7" timestamp="0x0005d6b5044e82a2" href="ChcqLndlbmt1LmJhaWR1LmNvbS92aWV3KhCihbqi0Nb1Ag">
     <Label name="_include_"/>
     <Label name="library"/>
-    <AdditionalData attribute="original_url" value="*.wenku.baidu.com/view*"/>
-    <AdditionalData attribute="file" value="annotations.xml"/>
   </Annotation>
   <Annotation about="*.edu/*" score="0.3" timestamp="0x0005d6b5044e829f" href="CgcqLmVkdS8qEJ-FuqLQ1vUC">
     <Label name="_include_"/>
     <Label name="blogs"/>
-    <AdditionalData attribute="original_url" value="*.edu/*"/>
-    <AdditionalData attribute="file" value="annotations.xml"/>
   </Annotation>
   <Annotation about="*.liaoxuefeng.com/wiki*" score="0.5" timestamp="0x0005d6b5044e8292" href="ChcqLmxpYW94dWVmZW5nLmNvbS93aWtpKhCShbqi0Nb1Ag">
     <Label name="_include_"/>
     <Label name="blogs"/>
-    <AdditionalData attribute="original_url" value="*.liaoxuefeng.com/wiki*"/>
-    <AdditionalData attribute="file" value="annotations.xml"/>
   </Annotation>
 </Annotations>
 ```

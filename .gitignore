@@ -14,3 +14,7 @@ Session.vim
 
 # 忽略 python 临时文件
 __pycache__/
+
+# tree
+tree.sh
+tree.txt

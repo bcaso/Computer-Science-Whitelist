@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="109" total="109">
+<Annotations start="0" num="110" total="110">
 	<Annotation about="*.github.com/*" score="0.8">
 		<Label name="_include_" />
 		<Label name="repository" />
@@ -273,6 +273,10 @@
 		<Label name="bbs" />
 	</Annotation>
 	<Annotation about="*.community.cisco.com/*" score="0.3">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.ld246.com/*" score="0.3">
 		<Label name="_include_" />
 		<Label name="bbs" />
 	</Annotation>
