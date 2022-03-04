@@ -18,6 +18,7 @@ Whitelist = {
         'autohotkey':['','com/boards','0.6'],  # AutoHotkey 官方论坛
         'jupyter':['discourse','org','0.5'],   # Jupyter 官方论坛
         'appinn':['meta','net','0.5'],         # 小众论坛，软件分享
+        'chaoli':['','club','0.5'],            # 超理论坛，数学，物理，化学，生物，技术
         'v2ex':['','com','0.4'],               # v2ex社区，经常无法打开
         'ikuai8':['bbs','com','0.4'],          # iKuai 路由器论坛
         'right':['','com.cn/forum','0.4'],     # 恩山论坛，路由刷机

@@ -58,6 +58,7 @@ https://www.cnblogs.com/*
 *.autohotkey.com/boards*
 *.discourse.jupyter.org/*
 *.meta.appinn.net/*
+*.chaoli.club/*
 *.v2ex.com/*
 *.bbs.ikuai8.com/*
 *.right.com.cn/forum*
