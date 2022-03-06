@@ -5,6 +5,7 @@ Whitelist = {
         'serverfault':['','com','0.8'],        # stack exchange 关于 network 的子站
         'askubuntu':['','com','0.8'],          # stack exchange 关于 ubuntu 的子站
         'mathoverflow':['','net','0.8'],       # stack exchange 关于 math 的子站
+        'nixcraft':['','com','0.7'],           # Linux 论坛, homepage:https://github.com/nixcraft
         'xda-developers':['forum','com','0.7'],# Mobile phone flashing forum
         'segmentfault':['','com/q','0.7'],     # 思否，国内版 stackoverflow
         'github':['','community','0.7'],       # github 社区

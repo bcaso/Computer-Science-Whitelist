@@ -32,6 +32,7 @@
 *.nowcoder.com/practice*
 *.github.io/*
 *.gitee.io/*
+*.cyberciti.biz/*
 *.dev.to/*
 *.ruanyifeng.com/*
 *.zhuanlan.zhihu.com/*
@@ -45,6 +46,7 @@ https://www.cnblogs.com/*
 *.serverfault.com/*
 *.askubuntu.com/*
 *.mathoverflow.net/*
+*.nixcraft.com/*
 *.forum.xda-developers.com/*
 *.segmentfault.com/q*
 *.github.community/*

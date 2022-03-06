@@ -4,6 +4,7 @@
 @*://*.serverfault.com/*
 @*://*.askubuntu.com/*
 @*://*.mathoverflow.net/*
+@*://*.nixcraft.com/*
 @*://*.forum.xda-developers.com/*
 @*://*.segmentfault.com/q*
 @*://*.github.community/*

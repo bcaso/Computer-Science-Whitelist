@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="113" total="113">
+<Annotations start="0" num="115" total="115">
 	<Annotation about="*.github.com/*" score="0.8">
 		<Label name="_include_" />
 		<Label name="repository" />
@@ -136,6 +136,10 @@
 		<Label name="_include_" />
 		<Label name="blogs" />
 	</Annotation>
+	<Annotation about="*.cyberciti.biz/*" score="0.7">
+		<Label name="_include_" />
+		<Label name="blogs" />
+	</Annotation>
 	<Annotation about="*.dev.to/*" score="0.7">
 		<Label name="_include_" />
 		<Label name="blogs" />
@@ -185,6 +189,10 @@
 		<Label name="bbs" />
 	</Annotation>
 	<Annotation about="*.mathoverflow.net/*" score="0.8">
+		<Label name="_include_" />
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.nixcraft.com/*" score="0.7">
 		<Label name="_include_" />
 		<Label name="bbs" />
 	</Annotation>

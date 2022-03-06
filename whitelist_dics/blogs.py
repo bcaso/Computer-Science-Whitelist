@@ -7,6 +7,7 @@ Whitelist = {
         'nowcoder':['','com/practice','0.8'],      # 牛客试题区, 与乐扣试题相似，但搜不到
         'github': ['','io','0.8'],                 # 没法 用 @://github.*/* 来表示 .com 和 .io，因为这条规则是有问题的
         'gitee':['','io','0.7'],
+        'cyberciti':['','biz','0.7'],              # linux blogs, homepage:https://github.com/nixcraft
         'dev':['','to','0.7'],                     # dev
         'ruanyifeng':['','com','0.65'],            # 阮一峰的网络日志
         'zhihu':['zhuanlan','com','0.6'],          # 知乎专栏
