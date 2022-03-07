@@ -6,6 +6,7 @@
 @*://*.bicfic.com/*
 @*://*.cracksurl.com/*
 @*://*.msguides.com/*
+@*://*.nirsoft.net/*
 @*://*.software.informer.com/*
 @*://*.msdn.itellyou.cn/*
 @*://*.latest10.win/*

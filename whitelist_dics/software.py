@@ -2,12 +2,13 @@ Whitelist = {
         # PC
         'sourceforge':['','net','0.8'],          # 全球最大开源软件开发平台和仓库
         'softonic':['','com','0.8'],             #
-        'portablesoft':['','org','0.8'],               # 绿色便携软件
+        'portablesoft':['','org','0.8'],         # 绿色便携软件
         'portableapps':['','com/apps','0.8'],    # 便携软件
         'getintopc':['','com','0.7'],            # crack
         'bicfic':['','com','0.7'],               # crack
         'cracksurl':['','com','0.7'],            # crack
         'msguides':['','com','0.7'],             # crack Microsoft software
+        'nirsoft':['','net','0.7'],              # 作者 NirSofer，一个超级勤奋（长达十多年不间断地制作和更新程序）的程序员, https://xkonglong.com/wscc/
         'informer':['software','com','0.7'],
         'itellyou':['msdn','cn','0.7'],          # msdn, I tell you, 下载系统镜像
         'latest10':['','win','0.7'],             # 下载系统镜像

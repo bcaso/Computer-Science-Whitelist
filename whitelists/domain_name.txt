@@ -23,8 +23,8 @@
 *.docs4dev.com/*
 *.programcreek.com/*
 *.runoob.com/*
-*.books.google.com/*
 *.china-ccie.com/*
+*.books.google.com/*
 *.cisco.com/c/zh_cn/support/docs*
 *.medium.com/*
 *.groovypost.com/howto*
@@ -81,6 +81,7 @@ https://www.cnblogs.com/*
 *.bicfic.com/*
 *.cracksurl.com/*
 *.msguides.com/*
+*.nirsoft.net/*
 *.software.informer.com/*
 *.msdn.itellyou.cn/*
 *.latest10.win/*
