@@ -49,63 +49,6 @@ for i in range(len(table_name_list)):
         
     
 
-#print(whitelist_dics)
-
-
-cursor.close()  # 关闭Cursor:
-conn.commit()   # 提交事务:
-conn.close()    # 关闭Connection:
-
-# }}}
-
-# 读取数据库并存入 whitelist_dics {{{
-# whitelist_dics = {table_name_list[i]:{key_domain:(prefix, suffix, score, description)}}
-
-conn = sqlite3.connect('whitelists.db')   # 如果文件不存在，会自动在当前目录创建:
-cursor = conn.cursor()                    # 创建一个Cursor:
-
-
-# get all table_name from database and save it to the variable {table_name_list} {{{
-table_name_list = []
-
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-table_names = cursor.fetchall()    
-# print(table_names)   # [('wiki',), ('blogs',), ('library',), ('software',), ('video',), ('repository',), ('bbs',)]
-for _ in table_names:
-    table_name_list.append(_[0])
-
-print(table_name_list)
-# }}}
-
-
-whitelist_dics = {} # {table_name_list[i]:{key_domain:(prefix, suffix, score, description)}}
-
-for i in range(len(table_name_list)):
-    sq = f"select * from {table_name_list[i]};"
-    cursor.execute(sq)
-    data_all = cursor.fetchall()
-    
-    #print(data_all)    #[(1,2,3,4,5),(1,2,3,4,5),]
-
-    # 存入 whitelist_dics {{{
-    tmp_dic = {}
-
-    key_domain = ''
-    tmp_lis = []
-
-
-    for data in data_all:
-        key_domain = data[0]
-        tmp_lis = data[1:]
-
-        tmp_dic[key_domain] = tmp_lis
-
-    whitelist_dics[table_name_list[i]] = tmp_dic
-
-    # }}}
-        
-    
-
 print(whitelist_dics)
 
 
@@ -114,7 +57,6 @@ conn.commit()   # 提交事务:
 conn.close()    # 关闭Connection:
 
 # }}}
-
 
 lis = []          # 临时列表
 lis_total = []    # 总列表，递增添加所有名单，不减少
