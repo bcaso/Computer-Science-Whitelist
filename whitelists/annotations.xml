@@ -1,467 +1,583 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Annotations start="0" num="116" total="116">
-	<Annotation about="*.github.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="repository" />
-	</Annotation>
-	<Annotation about="*.bitbucket.org/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="repository" />
-	</Annotation>
-	<Annotation about="*.pypi.org/*" score="0.75">
-		<Label name="_include_" />
-		<Label name="repository" />
-	</Annotation>
-	<Annotation about="*.codeproject.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="repository" />
-	</Annotation>
-	<Annotation about="*.gitee.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="repository" />
-	</Annotation>
-	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.oi-wiki.org/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.ctf-wiki.org/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.python.org/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.wangchujiang.com/linux-command*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.wangdoc.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.developer.mozilla.org/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.gitbooks.io/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.gitbook.io/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.readthedocs.io/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.nbviewer.org/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.shuxuele.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.mathsisfun.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.math001.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.autohotkey.com/docs*" score="0.7">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.c.biancheng.net/*" score="0.65">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.zh.wikihow.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.docs4dev.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.programcreek.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.runoob.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.china-ccie.com/*" score="0.4">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.books.google.com/*" score="0.3">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
-	<Annotation about="*.cisco.com/c/zh_cn/support/docs*" score="0.2">
-		<Label name="_include_" />
-		<Label name="wiki" />
-	</Annotation>
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
+		<Comment>国外博客</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.groovypost.com/howto*" score="0.8">
 		<Label name="_include_" />
+		<Comment>电脑技术问题</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.leetcode-cn.com/problems*" score="0.8">
 		<Label name="_include_" />
+		<Comment>乐扣试题区</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.nowcoder.com/practice*" score="0.8">
 		<Label name="_include_" />
+		<Comment>牛客试题区, 与乐扣试题相似，但搜不到</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.github.io/*" score="0.8">
 		<Label name="_include_" />
+		<Comment>github io</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.gitee.io/*" score="0.7">
 		<Label name="_include_" />
+		<Comment>gitee io</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.cyberciti.biz/*" score="0.7">
 		<Label name="_include_" />
+		<Comment>linux blogs, homepage:https://github.com/nixcraft</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.dev.to/*" score="0.7">
 		<Label name="_include_" />
+		<Comment>dev</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.ruanyifeng.com/*" score="0.65">
 		<Label name="_include_" />
+		<Comment>阮一峰的网络日志</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.zhuanlan.zhihu.com/*" score="0.6">
 		<Label name="_include_" />
+		<Comment>知乎专栏</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.liaoxuefeng.com/wiki*" score="0.5">
 		<Label name="_include_" />
+		<Comment>廖雪峰的官方网站</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.coolshell.cn/articles*" score="0.5">
 		<Label name="_include_" />
+		<Comment>酷壳</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="https://www.cnblogs.com/*" score="0.4">
 		<Label name="_include_" />
+		<Comment>博客园，加上 www 是为了过滤 https://recomm.cnblogs.com/ 这个地址</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.edu/*" score="0.05">
 		<Label name="_include_" />
+		<Comment>所有以 edu 结尾的域名(学校)</Comment>
 		<Label name="blogs" />
-	</Annotation>
-	<Annotation about="*.stackoverflow.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.stackexchange.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.superuser.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.serverfault.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.askubuntu.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.mathoverflow.net/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.nixcraft.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.forum.xda-developers.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.segmentfault.com/q*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.github.community/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.quora.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.reddit.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.zhihu.com/question*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.leetcode-cn.com/circle/discuss*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.nowcoder.com/questionTerminal*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.math.org.cn/forum.php?mod=viewthread*" score="0.7">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.autoahk.com/archives*" score="0.6">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.autohotkey.com/boards*" score="0.6">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.discourse.jupyter.org/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.meta.appinn.net/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.chaoli.club/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.kuing.orzweb.net/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.bbs.emath.ac.cn/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.v2ex.com/*" score="0.4">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.bbs.ikuai8.com/*" score="0.4">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.right.com.cn/forum*" score="0.4">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.cskaoyan.com/thread-*" score="0.4">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.52pojie.cn/*" score="0.4">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.bbs.letitfly.me/*" score="0.4">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.bbs.pediy.com/*" score="0.3">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.txrjy.com/asktech/question*" score="0.3">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.community.cisco.com/*" score="0.3">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.ld246.com/*" score="0.3">
-		<Label name="_include_" />
-		<Label name="bbs" />
-	</Annotation>
-	<Annotation about="*.sourceforge.net/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.softonic.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.portablesoft.org/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.portableapps.com/apps*" score="0.8">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.getintopc.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.bicfic.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.cracksurl.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.msguides.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.nirsoft.net/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.software.informer.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.msdn.itellyou.cn/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.latest10.win/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.luochenzhimu.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.dayanzai.me/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.aixuefu.com/xiazai*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.xiazaigang.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.zdfans.com/html*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.mpyit.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.ys168.com/*" score="0.7">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.xkonglong.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.appinn.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.xingkbjm.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.iemblog.com/?p=*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.liulanmi.com/dl*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.j9p.com/down*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.jb51.net/softs*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.apprcn.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.shenzjd.com/*" score="0.6">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.nruan.com/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.ghxi.com/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.iplaysoft.com/*" score="0.5">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.apkpure.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="software" />
-	</Annotation>
-	<Annotation about="*.uptodown.com/*" score="0.8">
-		<Label name="_include_" />
-		<Label name="software" />
 	</Annotation>
 	<Annotation about="*.wenku.baidu.com/view*" score="0.4">
 		<Label name="_include_" />
+		<Comment>百度文库</Comment>
 		<Label name="library" />
 	</Annotation>
 	<Annotation about="*.docin.com/p-*" score="0.4">
 		<Label name="_include_" />
+		<Comment>豆丁文库</Comment>
 		<Label name="library" />
 	</Annotation>
 	<Annotation about="*.doc88.com/p-*" score="0.4">
 		<Label name="_include_" />
+		<Comment>道客巴巴</Comment>
 		<Label name="library" />
 	</Annotation>
 	<Annotation about="*.taodocs.com/p-*" score="0.4">
 		<Label name="_include_" />
+		<Comment>淘豆网</Comment>
 		<Label name="library" />
+	</Annotation>
+	<Annotation about="*.github.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>github 仓库</Comment>
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.bitbucket.org/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>BitBucket</Comment>
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.pypi.org/*" score="0.75">
+		<Label name="_include_" />
+		<Comment>python 仓库</Comment>
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.codeproject.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>文章和问题</Comment>
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.gitee.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>码云</Comment>
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.sourceforge.net/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>全球最大开源软件开发平台和仓库</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.softonic.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>softonic</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.portablesoft.org/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>绿色便携软件</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.portableapps.com/apps*" score="0.8">
+		<Label name="_include_" />
+		<Comment>便携软件</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.getintopc.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>crack</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.bicfic.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>crack</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.cracksurl.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>crack</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.msguides.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>crack Microsoft software</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.nirsoft.net/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>作者 NirSofer，一个超级勤奋（长达十多年不间断地制作和更新程序）的程序员, https://xkonglong.com/wscc/</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.software.informer.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>informer</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.msdn.itellyou.cn/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>msdn, I tell you, 下载系统镜像</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.latest10.win/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>下载系统镜像</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.luochenzhimu.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>落尘之木, crack</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.dayanzai.me/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>for download cracked exe program</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.aixuefu.com/xiazai*" score="0.7">
+		<Label name="_include_" />
+		<Comment>爱学府软件园 crack</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.xiazaigang.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>软件下载港</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.zdfans.com/html*" score="0.7">
+		<Label name="_include_" />
+		<Comment>zd423</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.mpyit.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>老殁</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.ys168.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>永硕盘，常被用作软件分享，如98五笔资源库</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.xkonglong.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>小恐龙</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.appinn.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>小众软件</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.xingkbjm.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>星空软件共享园地</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.iemblog.com/?p=*" score="0.6">
+		<Label name="_include_" />
+		<Comment>爱易默博客</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.liulanmi.com/dl*" score="0.6">
+		<Label name="_include_" />
+		<Comment>浏览迷，浏览器下载</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.j9p.com/down*" score="0.6">
+		<Label name="_include_" />
+		<Comment>精品下载</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.jb51.net/softs*" score="0.6">
+		<Label name="_include_" />
+		<Comment>脚本之家，只有软件</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.apprcn.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>反斗软件</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.shenzjd.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>siy 汉化博客</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.nruan.com/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>N 软网</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.ghxi.com/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>果核剥壳</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.iplaysoft.com/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>异次元软件</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.apkpure.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>for download xxx apk</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.uptodown.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>updown 全平台下载</Comment>
+		<Label name="software" />
 	</Annotation>
 	<Annotation about="https://www.bilibili.com/video*" score="0.45">
 		<Label name="_include_" />
+		<Comment>blibili</Comment>
 		<Label name="video" />
 	</Annotation>
 	<Annotation about="https://open.163.com/*" score="0.4">
 		<Label name="_include_" />
+		<Comment>163 公开课</Comment>
 		<Label name="video" />
 	</Annotation>
 	<Annotation about="*.icourse163.org/*" score="0.4">
 		<Label name="_include_" />
+		<Comment>中国大学</Comment>
 		<Label name="video" />
 	</Annotation>
 	<Annotation about="https://www.youtube.com/watch?v=*" score="0.3">
 		<Label name="_include_" />
+		<Comment>Youtube</Comment>
 		<Label name="video" />
+	</Annotation>
+	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
+		<Label name="_include_" />
+		<Comment>维基，由于同一关键词给出了多个不同语言版的结果占用了太多搜索结果(zh.wikipedia.org/wiki, zh.wikipedia.org/zh-tw ...)，所以后缀改为 org/wiki</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.oi-wiki.org/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>编程竞赛（competitive programming） 知识整合站点</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.ctf-wiki.org/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>CTF（Capture The Flag，夺旗赛）网络安全竟赛</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.python.org/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>python 官方, 文档</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.wangchujiang.com/linux-command*" score="0.7">
+		<Label name="_include_" />
+		<Comment>linux 命令手册，开源文档，github: https://github.com/jaywcjlove/linux-command</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.wangdoc.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>网道，开源文档，github: https://github.com/wangdoc</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.developer.mozilla.org/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>MDN Web Docs</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.gitbooks.io/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>gitbooks</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.gitbook.io/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>gitbook</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.readthedocs.io/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>gitbook</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.nbviewer.org/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>Jupyter notebook 渲染器</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.shuxuele.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>数学乐</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.mathsisfun.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>数学乐, 英文版</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.math001.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>数学网站</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.autohotkey.com/docs*" score="0.7">
+		<Label name="_include_" />
+		<Comment>auto hotkey 文档</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.c.biancheng.net/*" score="0.65">
+		<Label name="_include_" />
+		<Comment>C 语言中文网，各方面的编程文档都有</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.zh.wikihow.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>wikihow, about health</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.docs4dev.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>各类机翻文档，github: https://github.com/docs4dev/docs4dev</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.programcreek.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>函数代码示例</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.runoob.com/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>菜鸟教程</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.china-ccie.com/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>CCIE 资料库</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.books.google.com/*" score="0.3">
+		<Label name="_include_" />
+		<Comment>Google 图书</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.cisco.com/c/zh_cn/support/docs*" score="0.2">
+		<Label name="_include_" />
+		<Comment>cisco 中文文档</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.stackoverflow.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>StackOverflow</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.stackexchange.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>stack exchange</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.superuser.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>stack exchange 子站</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.serverfault.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>stack exchange 关于 network 的子站</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.askubuntu.com/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>stack exchange 关于 ubuntu 的子站</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.mathoverflow.net/*" score="0.8">
+		<Label name="_include_" />
+		<Comment>stack exchange 关于 math 的子站</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.nixcraft.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>Linux 论坛, homepage:https://github.com/nixcraft</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.forum.xda-developers.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>Mobile phone flashing forum</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.segmentfault.com/q*" score="0.7">
+		<Label name="_include_" />
+		<Comment>思否，国内版 stackoverflow</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.github.community/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>github 社区</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.quora.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>quora 类似知乎</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.reddit.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>reddit, 类似 quora, 知乎</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.zhihu.com/question*" score="0.7">
+		<Label name="_include_" />
+		<Comment>知乎</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.leetcode-cn.com/circle/discuss*" score="0.7">
+		<Label name="_include_" />
+		<Comment>乐扣问答区</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.nowcoder.com/questionTerminal*" score="0.7">
+		<Label name="_include_" />
+		<Comment>牛客网试题问答区</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.math.org.cn/forum.php?mod=viewthread*" score="0.7">
+		<Label name="_include_" />
+		<Comment>博士数学家园</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.autoahk.com/archives*" score="0.6">
+		<Label name="_include_" />
+		<Comment>AutoHotkey 中文社区</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.autohotkey.com/boards*" score="0.6">
+		<Label name="_include_" />
+		<Comment>AutoHotkey 官方论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.discourse.jupyter.org/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>Jupyter 官方论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.meta.appinn.net/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>小众论坛，软件分享</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.chaoli.club/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>超理论坛，数学，物理，化学，生物，技术</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.kuing.orzweb.net/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>悠闲数学娱乐论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.emath.ac.cn/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>数学研发论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.v2ex.com/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>v2ex社区，经常无法打开</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.ikuai8.com/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>iKuai 路由器论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.right.com.cn/forum*" score="0.4">
+		<Label name="_include_" />
+		<Comment>恩山论坛，路由刷机</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.cskaoyan.com/thread-*" score="0.4">
+		<Label name="_include_" />
+		<Comment>王道论坛，计算机考研</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.52pojie.cn/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>吾爱论坛, 软件破解</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.letitfly.me/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>Android 刷机，现在也有电脑方面的内容</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.pediy.com/*" score="0.3">
+		<Label name="_include_" />
+		<Comment>看雪论坛, 网络安全</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.txrjy.com/asktech/question*" score="0.3">
+		<Label name="_include_" />
+		<Comment>通信技术论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.community.cisco.com/*" score="0.3">
+		<Label name="_include_" />
+		<Comment>cisco 社区</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.ld246.com/*" score="0.3">
+		<Label name="_include_" />
+		<Comment>链滴社区，原名 黑客派(hacpai.com), https://ld246.com/article/1599662780208</Comment>
+		<Label name="bbs" />
 	</Annotation>
 </Annotations>

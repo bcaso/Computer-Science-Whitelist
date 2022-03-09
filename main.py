@@ -1,66 +1,151 @@
+import sqlite3
 import xml.etree.ElementTree as ET  # for xml
 
-# import whitelist_dics {{{
-import whitelist_dics.repository, \
-        whitelist_dics.wiki, \
-        whitelist_dics.blogs, \
-        whitelist_dics.bbs, \
-        whitelist_dics.software, \
-        whitelist_dics.library, \
-        whitelist_dics.video
+# 读取数据库并存入 whitelist_dics {{{
+# whitelist_dics = {table_name_list[i]:{key_domain:(prefix, suffix, score, description)}}
 
-# https://magic.iswbm.com/c03/c03_02.html
-# for python 3.9:
-whitelist_dics = { 'repository':whitelist_dics.repository.Whitelist } | \
-        {'wiki':whitelist_dics.wiki.Whitelist} | \
-        {'blogs':whitelist_dics.blogs.Whitelist} | \
-        {'bbs':whitelist_dics.bbs.Whitelist} | \
-        {'software':whitelist_dics.software.Whitelist} | \
-        {'library':whitelist_dics.library.Whitelist} | \
-        {'video':whitelist_dics.video.Whitelist} 
+conn = sqlite3.connect('whitelists.db')   # 如果文件不存在，会自动在当前目录创建:
+cursor = conn.cursor()                    # 创建一个Cursor:
+
+
+# get all table_name from database and save it to the variable {table_name_list} {{{
+table_name_list = []
+
+cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+table_names = cursor.fetchall()    
+# print(table_names)   # [('wiki',), ('blogs',), ('library',), ('software',), ('video',), ('repository',), ('bbs',)]
+for _ in table_names:
+    table_name_list.append(_[0])
+
+print(table_name_list)
+# }}}
+
+
+whitelist_dics = {} # {table_name_list[i]:{key_domain:(prefix, suffix, score, description)}}
+
+for i in range(len(table_name_list)):
+    sq = f"select * from {table_name_list[i]};"
+    cursor.execute(sq)
+    data_all = cursor.fetchall()
+    
+    #print(data_all)    #[(1,2,3,4,5),(1,2,3,4,5),]
+
+    # 存入 whitelist_dics {{{
+    tmp_dic = {}
+
+    key_domain = ''
+    tmp_lis = []
+
+
+    for data in data_all:
+        key_domain = data[0]
+        tmp_lis = data[1:]
+
+        tmp_dic[key_domain] = tmp_lis
+
+    whitelist_dics[table_name_list[i]] = tmp_dic
+
+    # }}}
+        
+    
+
+#print(whitelist_dics)
+
+
+cursor.close()  # 关闭Cursor:
+conn.commit()   # 提交事务:
+conn.close()    # 关闭Connection:
 
 # }}}
+
+# 读取数据库并存入 whitelist_dics {{{
+# whitelist_dics = {table_name_list[i]:{key_domain:(prefix, suffix, score, description)}}
+
+conn = sqlite3.connect('whitelists.db')   # 如果文件不存在，会自动在当前目录创建:
+cursor = conn.cursor()                    # 创建一个Cursor:
+
+
+# get all table_name from database and save it to the variable {table_name_list} {{{
+table_name_list = []
+
+cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+table_names = cursor.fetchall()    
+# print(table_names)   # [('wiki',), ('blogs',), ('library',), ('software',), ('video',), ('repository',), ('bbs',)]
+for _ in table_names:
+    table_name_list.append(_[0])
+
+print(table_name_list)
+# }}}
+
+
+whitelist_dics = {} # {table_name_list[i]:{key_domain:(prefix, suffix, score, description)}}
+
+for i in range(len(table_name_list)):
+    sq = f"select * from {table_name_list[i]};"
+    cursor.execute(sq)
+    data_all = cursor.fetchall()
+    
+    #print(data_all)    #[(1,2,3,4,5),(1,2,3,4,5),]
+
+    # 存入 whitelist_dics {{{
+    tmp_dic = {}
+
+    key_domain = ''
+    tmp_lis = []
+
+
+    for data in data_all:
+        key_domain = data[0]
+        tmp_lis = data[1:]
+
+        tmp_dic[key_domain] = tmp_lis
+
+    whitelist_dics[table_name_list[i]] = tmp_dic
+
+    # }}}
+        
+    
+
+print(whitelist_dics)
+
+
+cursor.close()  # 关闭Cursor:
+conn.commit()   # 提交事务:
+conn.close()    # 关闭Connection:
+
+# }}}
+
 
 lis = []          # 临时列表
 lis_total = []    # 总列表，递增添加所有名单，不减少
 
 
 # generate urls_list {{{
-'''
-uBlacklist whitelist rule:
-    with prefix
-        @*://*.prefix.domain_name.suffix/*
-    no prefix
-        @*://*.domain_name.suffix/*
-    no prefix and no domain name, only the suffix
-        @*://*.suffix/*
 
-cse whitelist rule:
-    with prefix
-        *.prefix.domain_name.suffix/*
-        https://prefix.domain_name.suffix/*
-
-    no prefix
-        *.domain_name.suffix/*
-    no prefix and no domain name, only the suffix
-        *.suffix/*
-'''
 def gen_urls_list(whitelist_dic, startwith_at=False):
-    if not startwith_at :
+    if not startwith_at : # @ 符号是 uBlacklist 的白名单的前缀
+        '''
+            uBlacklist whitelist rule:
+                with prefix
+                    @*://*.prefix.domain_name.suffix/*
+                no prefix
+                    @*://*.domain_name.suffix/*
+                no prefix and no domain name, only the suffix
+                    @*://*.suffix/*
+        '''
+        # k,v 即 domain:[prefix, suffix, score, description]
+        # 将内容存到临时列表 lis = [url, url,,,], url='@*://prefix.domain_name.suffix'
         for k,v in whitelist_dic.items(): 
             url = '@*://*.'
-            # 前缀
+            # 加前缀
             if v[0] != '':
-                if v[0].startswith('http://') or v[0].startswith('https://'):   # http(s)://www.cnblogs.com/*
-                    url = '@'+v[0]+'.'            # uBlacklist suppot rules like "@https://www.cnblogs.com/*"
-                    ...
+                if v[0].startswith('http://') or v[0].startswith('https://'):
+                    url = '@'+v[0]+'.'        # uBlacklist suppot rules like "@https://www.cnblogs.com/*"
+            
                 elif v[0].startswith('www'): # www.cnblogs.com/*
                     # 在 cse.google.com 中，"*.www.cnblogs.com/*" 不会匹配 https://www.cnblogs.com/*
                     #              但是     "*.my.oschina.net/*"  能匹配到 https://my.oschina.net/*
-                    # 没有更好的方法处理 http 或 https，全都改为 https://www.
-                    # 如果是以 http 开头，就写到前缀中，这里处理不了
                     url = "@https://"+v[0]+'.'
-                    ...
                 else:
                     url+=v[0] + '.'
             # 加域名
@@ -69,11 +154,11 @@ def gen_urls_list(whitelist_dic, startwith_at=False):
             else:
                 url = url[:-1]   # change url('@*://*.') to '@*://*', 为了添加指定后缀的域名，如 @*://*.edu
 
-            # 后缀
+            # 加后缀
             if v[1] != '':    
-                # 添加不完全后缀, @*://*.docin.com/p-* , 多数文库的文章以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
+                #  @*://*.docin.com/p-* , 后缀以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
                 if '/' in v[1]:
-                    url+='.'+v[1]+'*'
+                    url+='.'+v[1]+'*'  # 这个可以取代下面的写法
                 # 添加完全后缀, @*://*.mathsisfun.com/*
                 else: 
                     url+='.'+v[1]+'/*'
@@ -82,22 +167,29 @@ def gen_urls_list(whitelist_dic, startwith_at=False):
             lis.append(url)
             lis_total.append(url)
     else:
+        # for google cse annotations
+        # lis = [[url,score,description], [url,score,description],,, ]
+        '''
+        cse whitelist rule:
+            with prefix
+                *.prefix.domain_name.suffix/*
+                https://prefix.domain_name.suffix/*
+
+            no prefix
+                *.domain_name.suffix/*
+            no prefix and no domain name, only the suffix
+                *.suffix/*
+        '''
         for k,v in whitelist_dic.items(): 
-            if(len(v) != 3):
-                print('-------------','k is',k, 'v is ', v)
             url = '*.'
-            # 前缀
+            # 加前缀
             if v[0] != '':
                 if v[0].startswith('http://') or v[0].startswith('https://'):   # http(s)://www
                     url = v[0]+'.'             
-                    ...
                 elif v[0].startswith('www'): # www.cnblogs.com/*
                     # 在 cse.google.com 中，"*.www.cnblogs.com/*" 不会匹配 https://www.cnblogs.com/*
                     #              但是     "*.my.oschina.net/*"  能匹配到 https://my.oschina.net/*
-                    # 没有更好的方法处理 http 或 https，全都改为 https://www.
-                    # 如果是以 http 开头，就写到前缀中，这里处理不了
                     url = "https://"+v[0]+'.'
-                    ...
                 else:
                     url+=v[0] + '.'
             # 加域名
@@ -106,9 +198,8 @@ def gen_urls_list(whitelist_dic, startwith_at=False):
             else:
                 url = url[:-1]   # 为了添加指定后缀的域名，如 *.edu
 
-            # 后缀
+            # 加后缀, *.docin.com/p-* , 后缀以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
             if v[1] != '':    
-                # 添加不完全后缀, *.docin.com/p-* , 多数文库的文章以 "p-" 开头，如 “https://www.docin.com/p-1706944942.html”
                 if '/' in v[1]:
                     url+='.'+v[1]+'*'
                 # 添加完全后缀, *.mathsisfun.com/*
@@ -116,12 +207,13 @@ def gen_urls_list(whitelist_dic, startwith_at=False):
                     url+='.'+v[1]+'/*'
 
             #print(url)
-            lis.append([url, v[2]]) # [url, score]
+            # annotations.xml 中的 score 是字符串格式： https://developers.google.com/custom-search/docs/annotations
+            lis.append([url, str(v[2]), v[3]]) # lis = [[url,str(score),description], [url,str(score),description],,, ]
             lis_total.append(url)
         ...
 # }}}
 
-# generate subscription txt {{{
+# uBlacklist txt subscription txt {{{
 def gen_subscription_txt():
     # generate whitelist rule text
     with open('whitelists/whitelist.txt', 'w') as f:
@@ -130,7 +222,6 @@ def gen_subscription_txt():
     for k,v in whitelist_dics.items():
         #print(k, v)
         gen_urls_list(v)
-        #gen_txt(k + '.txt', lis)
         filename = 'whitelists/' + k + '.txt'
         with open(filename, 'w') as f:
             for each in lis:
@@ -152,11 +243,9 @@ def gen_domain_name_txt():
         for each in lis_total:
             if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
                 f.write(each[1:]+'\n')    # http(s)://www.cnblogs.com/*
-                ...
             else:
                 f.write(each[5:]+'\n') # *.prefix.domain_name.suffix
                 #print(each[5:])
-                ...
 
 # }}}
 
@@ -286,28 +375,34 @@ def gen_annotations_xml():
 
     # whitelists 总字典  { 'bbs':{'':[],'':[]}, 'blogs':{} }
     for k,v in whitelist_dics.items():
-        # print(k, v)
-        # 将 k 对应的字典转为 list
+        print('k = {}, v={}'.format(k, v)) # 'wiki':{'domain':(prefix,suffix,score,description)}
+        # 将 k 对应的字典转为存储到临时列表 lis
         gen_urls_list(v, True)
+        # print(lis) # [[url, score, description], ['*.stackoverflow.com/*', '0.8', description]]
 
         # 遍历列表
         for each in lis:
             # each 的属性，权重
             element = ET.Element('Annotation') # 子节点
             element.set('about', each[0])      # about 存 url pattern
-            element.set('score', each[1])
+            element.set('score', each[1])      # str(score)
 
             Label = ET.SubElement(element, 'Label')
             Label.set('name', '_include_')
+            Comment = ET.SubElement(element, 'Comment')
+            Comment.text = each[2]             # description
+
+            # 添加标签，如 <Label name="bbs"/>
             Label = ET.SubElement(element, 'Label')
             Label.set('name', facet_items[k]['Label_name'])
 
             root.append(element)               # 放到根节点下
-            ...
 
-        total_length += len(lis)
+
         
-        print(lis, len(lis), end='\n')
+        # 每次处理一张表, total_length 是递增的
+        #print(lis, len(lis), end='\n')
+        total_length += len(lis)
         lis.clear()
 
     # }}}
@@ -329,8 +424,6 @@ def main():
     # BackgroundLabels 下的 Lables 只能有两个，且是两种(_include_ 和 _exclude_)
     gen_cse_xml()
     gen_annotations_xml()
-
-    ...
 
 
 if __name__ == '__main__':

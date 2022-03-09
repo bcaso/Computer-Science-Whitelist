@@ -20,19 +20,31 @@
 
 这个名单只收集<b>问答论坛</b>，和类似 wiki 的高质量内容网站。
 
-名单整理，用字典比较方便，example:
+名单整理，用数据库(sqlite3)比较方便，从数据据中读取所有的表。合并成一个字典。然后使用这个字典生成 txt, xml 到 whitelists/.
 
-```py
-Whitelist = {
-        # 'domain_name': ['prefix', 'suffix', 'score'],
-        'baidu':['wenku','com/view','0.4'],    # 百度文库
-        'docin':['','com/p-','0.4'],           # 豆丁文库
-        'doc88':['','com/p-','0.4'],           # 道客巴巴
-        'taodocs':['','com/p-','0.4'],         # 淘豆网
+```sql
+# 表结构：
+
+CREATE TABLE "table_name_1" ( "domain" TEXT NOT NULL,
+  "prefix" TEXT NOT NULL DEFAULT '',
+  "suffix" TEXT NOT NULL DEFAULT '',
+  "score" integer NOT NULL DEFAULT 0.3,
+  "description" TEXT NOT NULL DEFAULT '',
+  PRIMARY KEY ("domain")
+);
+
+# 最外面的字典看作是数据库，其中每一个键值对就是一张表
+whitelist_dics{ 
+    table_name_1:{
+        domain_name_1: [prefix, suffix, score, description],
+        domain_name_2: [prefix, suffix, score, description],
+    },
+    table_name_2:{
+        domain_name_1: [prefix, suffix, score, description],
+        domain_name_2: [prefix, suffix, score, description],
+    },
 }
 ```
-
-`main.py` 处理名单(python 字典格式)，并生成对应的 txt、xml，到 whitelists/.
 
 目录结构:
 
@@ -43,33 +55,23 @@ Whitelist = {
 │   └── index.html
 ├── main.py
 ├── README.md
-├── whitelist_dics
-│   ├── __init__.py
-│   ├── bbs.py
-│   ├── bbs_blacklist.py
-│   ├── blogs.py
-│   ├── blogs_blacklist.py
-│   ├── library.py
-│   ├── repository.py
-│   ├── software.py
-│   ├── video.py
-│   └── wiki.py
-└── whitelists
-    ├── annotations.xml
-    ├── bbs.txt
-    ├── blogs.txt
-    ├── cse.xml
-    ├── cse_FacetLabels.xml
-    ├── domain_name.txt
-    ├── library.txt
-    ├── repository.txt
-    ├── software.txt
-    ├── video.txt
-    ├── whitelist.txt
-    ├── whitelists_combined.txt
-    └── wiki.txt
+├── whitelists
+│   ├── annotations.xml
+│   ├── bbs.txt
+│   ├── blogs.txt
+│   ├── cse.xml
+│   ├── cse_FacetLabels.xml
+│   ├── domain_name.txt
+│   ├── library.txt
+│   ├── repository.txt
+│   ├── software.txt
+│   ├── video.txt
+│   ├── whitelist.txt
+│   ├── whitelists_combined.txt
+│   └── wiki.txt
+└── whitelists.db
 
-3 directories, 27 files
+2 directories, 18 files
 ```
 
 使用与调试：
@@ -177,6 +179,18 @@ weight > score
 
 
 ### configuration
+
+annotations.xml 文件说明：https://developers.google.com/custom-search/docs/annotations
+
+annotations.xml 层级结构：
+
+```
+Annotations (root element)
+    Annotation
+        Label
+        Comment (optional)
+
+```
 
 cse.xml 中的 CustomSearchEngine 的属性，只有 language, encoding, enable_promotions, autocompletions 是需要根据个人需要进行修改。
 
