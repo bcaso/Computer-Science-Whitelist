@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="118" total="118">
+<Annotations start="0" num="119" total="119">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -418,6 +418,11 @@
 	<Annotation about="*.cisco.com/c/zh_cn/support/docs*" score="0.2">
 		<Label name="_include_" />
 		<Comment>cisco 中文文档</Comment>
+		<Label name="wiki" />
+	</Annotation>
+	<Annotation about="*.wuli.wiki/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>小时百科，github: https://github.com/MacroUniverse/PhysWiki-log</Comment>
 		<Label name="wiki" />
 	</Annotation>
 	<Annotation about="*.stackoverflow.com/*" score="0.8">

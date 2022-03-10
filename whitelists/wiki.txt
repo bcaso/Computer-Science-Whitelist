@@ -21,3 +21,4 @@
 @*://*.china-ccie.com/*
 @*://*.books.google.com/*
 @*://*.cisco.com/c/zh_cn/support/docs*
+@*://*.wuli.wiki/*

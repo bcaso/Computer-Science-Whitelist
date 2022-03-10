@@ -82,6 +82,7 @@ https://www.youtube.com/watch?v=*
 *.china-ccie.com/*
 *.books.google.com/*
 *.cisco.com/c/zh_cn/support/docs*
+*.wuli.wiki/*
 *.stackoverflow.com/*
 *.stackexchange.com/*
 *.superuser.com/*
