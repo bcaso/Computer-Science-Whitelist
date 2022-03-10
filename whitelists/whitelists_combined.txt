@@ -114,3 +114,4 @@
 @*://*.txrjy.com/asktech/question*
 @*://*.community.cisco.com/*
 @*://*.ld246.com/*
+@*://*.emacs-china.org/*
