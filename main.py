@@ -1,3 +1,4 @@
+import os
 import sqlite3
 import xml.etree.ElementTree as ET  # for xml
 
@@ -158,13 +159,13 @@ def gen_urls_list(whitelist_dic, startwith_at=False):
 # uBlacklist txt subscription txt {{{
 def gen_subscription_txt():
     # generate whitelist rule text
-    with open('whitelists/whitelist.txt', 'w') as f:
+    with open( output + '/whitelist.txt', 'w') as f:
         f.write(r'*://*/*')
 
     for k,v in whitelist_dics.items():
         #print(k, v)
         gen_urls_list(v)
-        filename = 'whitelists/' + k + '.txt'
+        filename = output + '/' + k + '.txt'
         with open(filename, 'w') as f:
             for each in lis:
                 f.write(each+'\n')
@@ -175,13 +176,13 @@ def gen_subscription_txt():
 # 汇总 txt {{{
 # 汇总列表，for uBlacklist
 def gen_subscription_combined_txt():
-    with open('whitelists/whitelists_combined.txt', 'w') as f:
+    with open(output + '/whitelists_combined.txt', 'w') as f:
         for each in lis_total:
             f.write(each+'\n')
 
 # 汇总域名列表，for other ways："cse.google.com"，油猴插件
 def gen_domain_name_txt():
-    with open('whitelists/domain_name.txt', 'w') as f:
+    with open(output + '/domain_name.txt', 'w') as f:
         for each in lis_total:
             if each.startswith('@http'):  # @http(s)://www.cnblogs.com/*
                 f.write(each[1:]+'\n')    # http(s)://www.cnblogs.com/*
@@ -300,7 +301,7 @@ def gen_cse_xml():
         root.append(FacetItem)               # 放到根节点下
 
     __indent(root)          # 增加换行符
-    tree.write('whitelists/cse_FacetLabels.xml', encoding='utf-8', xml_declaration=True)
+    tree.write(output + '/cse_FacetLabels.xml', encoding='utf-8', xml_declaration=True)
     ...
 
 # }}}
@@ -355,11 +356,17 @@ def gen_annotations_xml():
     root.set('total', str(total_length))
 
     __indent(root)          # 增加换行符
-    tree.write('whitelists/annotations.xml', encoding='utf-8', xml_declaration=True)
+    tree.write(output + '/annotations.xml', encoding='utf-8', xml_declaration=True)
 # }}} 
 
 
 def main():
+    # txt, xml 的输出目录
+    global output
+    output = './whitelists'
+    if not os.path.exists(output):
+        os.mkdir(output)
+
     gen_subscription_txt()
     gen_subscription_combined_txt()
     gen_domain_name_txt()
