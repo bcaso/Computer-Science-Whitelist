@@ -21,6 +21,7 @@ https://www.cnblogs.com/*
 *.pypi.org/*
 *.codeproject.com/*
 *.gitee.com/*
+*.gitlab.com/*
 *.sourceforge.net/*
 *.softonic.com/*
 *.portablesoft.org/*

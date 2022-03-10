@@ -3,3 +3,4 @@
 @*://*.pypi.org/*
 @*://*.codeproject.com/*
 @*://*.gitee.com/*
+@*://*.gitlab.com/*
