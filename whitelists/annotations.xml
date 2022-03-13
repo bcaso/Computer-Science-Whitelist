@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="119" total="119">
+<Annotations start="0" num="121" total="121">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -68,6 +68,11 @@
 	<Annotation about="*.edu/*" score="0.05">
 		<Label name="_include_" />
 		<Comment>所有以 edu 结尾的域名(学校)</Comment>
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.leetcode.com/problems*" score="0.8">
+		<Label name="_include_" />
+		<Comment>乐扣试题区（英文）</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.wenku.baidu.com/view*" score="0.4">
@@ -593,6 +598,11 @@
 	<Annotation about="*.emacs-china.org/*" score="0.3">
 		<Label name="_include_" />
 		<Comment>emacs 中文社区</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.leetcode.com/discuss*" score="0.7">
+		<Label name="_include_" />
+		<Comment>乐扣问答区（英文）</Comment>
 		<Label name="bbs" />
 	</Annotation>
 </Annotations>

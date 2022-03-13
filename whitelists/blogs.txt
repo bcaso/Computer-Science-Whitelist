@@ -12,3 +12,4 @@
 @*://*.coolshell.cn/articles*
 @https://www.cnblogs.com/*
 @*://*.edu/*
+@*://*.leetcode.com/problems*

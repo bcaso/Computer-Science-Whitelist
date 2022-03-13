@@ -12,6 +12,7 @@
 *.coolshell.cn/articles*
 https://www.cnblogs.com/*
 *.edu/*
+*.leetcode.com/problems*
 *.wenku.baidu.com/view*
 *.docin.com/p-*
 *.doc88.com/p-*
@@ -117,3 +118,4 @@ https://www.youtube.com/watch?v=*
 *.community.cisco.com/*
 *.ld246.com/*
 *.emacs-china.org/*
+*.leetcode.com/discuss*

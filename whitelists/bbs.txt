@@ -32,3 +32,4 @@
 @*://*.community.cisco.com/*
 @*://*.ld246.com/*
 @*://*.emacs-china.org/*
+@*://*.leetcode.com/discuss*
