@@ -120,3 +120,8 @@ https://www.youtube.com/watch?v=*
 *.emacs-china.org/*
 *.leetcode.com/discuss*
 *.guanggai.org/*
+*.forum.suse.org.cn/*
+*.forums.debiancn.org/*
+*.ask.fedoraproject.org/*
+*.forum.ubuntu.org.cn/*
+*.archlinuxcn.org/*

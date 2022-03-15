@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="122" total="122">
+<Annotations start="0" num="127" total="127">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -608,6 +608,31 @@
 	<Annotation about="*.guanggai.org/*" score="0.3">
 		<Label name="_include_" />
 		<Comment>老周光改日记网，论坛，光猫</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.forum.suse.org.cn/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>openSUSE 中文论坛，Linux</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.forums.debiancn.org/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>debian 中文论坛，Linux</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.ask.fedoraproject.org/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>fedora 论坛，Linux</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.forum.ubuntu.org.cn/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>ubuntu 中文论坛，Linux</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.archlinuxcn.org/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>arch 中文论坛，Linux</Comment>
 		<Label name="bbs" />
 	</Annotation>
 </Annotations>
