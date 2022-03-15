@@ -188,11 +188,11 @@ Search features -> Advanced -> Results sorting
 
 当点击 Add key 按钮时，在弹出的窗口中填入两个字段，Key 和 Label。其中 Key 是排序的代码，带有星号的 Label 是显示出的提示文字。
 
-|key|label| description |
-|:-:|:-:| :-:|
-|date| Date | 以日期降序排序，默认就有的 key |
-| |relevance| 以相关性排序，key 是 relevance，但必须留空，默认就有的 key |
-|date:a:w|old first| 以日期升序排序 |
+|key|label  | description |
+|:-:|:-:    | :-|
+|date       | Date | 以日期降序排序，默认就有的 key |
+|           |relevance| 以相关性排序，key 是 relevance，但必须留空，默认就有的 key |
+|`date:a:w` |old first| 以日期升序排序 |
 
 <a href="https://developers.google.com/custom-search/docs/structured_search">其他的一些可选 key</a> 
 
