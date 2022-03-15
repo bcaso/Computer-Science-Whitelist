@@ -119,3 +119,4 @@
 @*://*.ld246.com/*
 @*://*.emacs-china.org/*
 @*://*.leetcode.com/discuss*
+@*://*.guanggai.org/*

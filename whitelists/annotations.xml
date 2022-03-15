@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="121" total="121">
+<Annotations start="0" num="122" total="122">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -603,6 +603,11 @@
 	<Annotation about="*.leetcode.com/discuss*" score="0.7">
 		<Label name="_include_" />
 		<Comment>乐扣问答区（英文）</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.guanggai.org/*" score="0.3">
+		<Label name="_include_" />
+		<Comment>老周光改日记网，论坛，光猫</Comment>
 		<Label name="bbs" />
 	</Annotation>
 </Annotations>

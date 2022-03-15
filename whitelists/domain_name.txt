@@ -119,3 +119,4 @@ https://www.youtube.com/watch?v=*
 *.ld246.com/*
 *.emacs-china.org/*
 *.leetcode.com/discuss*
+*.guanggai.org/*
