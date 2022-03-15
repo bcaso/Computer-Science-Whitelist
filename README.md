@@ -4,6 +4,7 @@
 - <a href="#introduction">Introduction</a>
 - <a href="#google-programmable-search-engine">programmablesearchengine.google.com</a>
     - <a href="#sort">Sort</a>
+    - <a href="#sort-by-key">Sort by key</a>
     - <a href="#configuration">Configuration</a>
     - <a href="#html">Static web pages</a>
 - <a href="#ublacklist">uBlacklist</a>
@@ -100,6 +101,8 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 ### sort
 
+根据分数或权重排序：
+
 只给 Annotation 添加 score 属性就可以对其排序，value from -1.0 to 1.0
 
 可以在 socre 的基础上给 Label 标签排序，使用 weight 字段，value from -1.0 to 1.0
@@ -176,6 +179,22 @@ weight > score
 
 当 score <= 0 时，该地址可能不会出现在结果中，所以最小也应该设置为 0.01
 
+
+### sort by key
+
+用于搜索结果的右侧下拉框。
+
+Search features -> Advanced -> Results sorting
+
+当点击 Add key 按钮时，在弹出的窗口中填入两个字段，Key 和 Label。其中 Key 是排序的代码，带有星号的 Label 是显示出的提示文字。
+
+|key|label| description |
+|:-:|:-:| :-:|
+|date| Date | 以日期降序排序，默认就有的 key |
+| |relevance| 以相关性排序，key 是 relevance，但必须留空，默认就有的 key |
+|date:a:w|old first| 以日期升序排序 |
+
+<a href="https://developers.google.com/custom-search/docs/structured_search">其他的一些可选 key</a> 
 
 
 ### configuration
