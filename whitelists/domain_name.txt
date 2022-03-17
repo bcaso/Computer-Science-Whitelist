@@ -125,3 +125,4 @@ https://www.youtube.com/watch?v=*
 *.ask.fedoraproject.org/*
 *.forum.ubuntu.org.cn/*
 *.archlinuxcn.org/*
+*.52asus.com/*

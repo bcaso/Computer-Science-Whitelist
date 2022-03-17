@@ -125,3 +125,4 @@
 @*://*.ask.fedoraproject.org/*
 @*://*.forum.ubuntu.org.cn/*
 @*://*.archlinuxcn.org/*
+@*://*.52asus.com/*
