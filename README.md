@@ -190,16 +190,16 @@ Search features -> Advanced -> Results sorting
 
 |key|label  | description |
 |:-:|:-:    | :-|
-|date       | Date | 以日期降序排序，默认就有的 key |
+|date       | Date               | date descending 以日期降序排序，默认就有的 key |
 |           |relevance| 以相关性排序，key 是 relevance，但必须留空，默认就有的 key |
-|`date-sdate:a` | date 强升序| date 是排序方式，sdate 是网页中实际使用的用来描述 date 的变量名，`:a` ascending 升序，默认是 hard |
-|`date:a:w` |old first| 以日期软升序排序 ascending weak |
-|`date:a`   |old first (hard) | 强制以日期升序排序 ascending (hard default) |
+|`date-sdate:a` | date ascending | date 是排序方式，sdate 是网页中实际使用的用来描述 date 的变量名，`:a` ascending 升序，默认是 hard sort |
+|`date:a:w` |date ascending weak | 以日期软升序排序 ascending weak |
+|`date:a`   |date ascending hard | 强制以日期升序排序 ascending (hard default) |
 |`question-answercount:d:w`  | question answercount descending weak | 问题回答数量 descending weak |
-|`question-datecreated:d`    | question datecreated descending hard | 问题创建软日期 descending (hard default) |
+|`question-datecreated:d`    | question datecreated descending hard | 问题创建日期 descending (hard default) |
 |`answer-upvotecount:d`      | answer upvotecount descending hard   | 回答赞同数量 descending (hard default)，每个回答都有点赞数和踩数，不知道具体用哪一个 |
 
-问题-回答数（弱降序），问题-赞同数(强降序) 适用于知乎等问答论坛。
+问题-回答数（弱降序），问题-赞同数(强降序) 适用于知乎, Stack Exchange 等问答论坛。
 
 <b>使用 structured data 字段排序</b>
 
