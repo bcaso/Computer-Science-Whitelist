@@ -56,6 +56,7 @@
 @*://*.iplaysoft.com/*
 @*://*.apkpure.com/*
 @*://*.uptodown.com/*
+@*://*.rclone.org/*
 @https://www.bilibili.com/video*
 @https://open.163.com/*
 @*://*.icourse163.org/*

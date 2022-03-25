@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="128" total="128">
+<Annotations start="0" num="129" total="129">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -288,6 +288,11 @@
 	<Annotation about="*.uptodown.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>updown 全平台下载</Comment>
+		<Label name="software" />
+	</Annotation>
+	<Annotation about="*.rclone.org/*" score="0.3">
+		<Label name="_include_" />
+		<Comment>rclone 开源网盘挂载软件，https://github.com/rclone/rclone</Comment>
 		<Label name="software" />
 	</Annotation>
 	<Annotation about="https://www.bilibili.com/video*" score="0.45">

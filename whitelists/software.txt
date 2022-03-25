@@ -31,3 +31,4 @@
 @*://*.iplaysoft.com/*
 @*://*.apkpure.com/*
 @*://*.uptodown.com/*
+@*://*.rclone.org/*
