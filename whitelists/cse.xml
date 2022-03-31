@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomSearchEngine language="en" encoding="UTF-8" enable_promotions="true" autocompletions="true">
+  <!--搜索引擎名称-->
   <Title>My Search</Title>
   <Context>
     <Facet>
       <FacetItem>
         <Label name="wiki" mode="FILTER" weight="0.9" enable_for_facet_search="true">
           <Rewrite />
+          <!--用来限制 wiki 标签的结果的一些实体，mid 对应的代码是实体名称，不知道怎么对应的，这文件是从高级选项中导出的-->
           <entities>
             <entity mid="/m/01mf_" />
             <entity mid="/m/05z1_" />
@@ -71,7 +73,9 @@
         <Title>software</Title>
       </FacetItem>
       <FacetItem>
+        <!--由于 pdf 这个标签并没有被任何 url 所使用，所以过滤模式改为 BOOST，不限制搜索结果的网址 -->
         <Label name="pdf" mode="BOOST" weight="0.5" enable_for_facet_search="false">
+          <!--Rewrite 中的内容用来限制搜索的范围，使用这个标签搜索 C语言 时，等同于在用 google 搜索 "C语言 filetype:pdf" -->
           <Rewrite>filetype:pdf</Rewrite>
           <entities />
         </Label>
@@ -95,7 +99,9 @@
       </FacetItem>
     </Facet>
     <BackgroundLabels>
+      <!-- _include_ 是白名单,包含这个标签的 annotation 都在白名单内,name 可以改，后面的 FILTER 表示白名单 -->
       <Label name="_include_" mode="FILTER"/>
+      <!-- _exclude_ 是黑名单,包含这个标签的 annotation 都在黑名单内 -->
       <Label name="_exclude_" mode="ELIMINATE"/>
     </BackgroundLabels>
   </Context>
@@ -108,17 +114,34 @@
   </LookAndFeel>
   <ImageSearchSettings layout="2"/>
   <autocomplete_settings source="1"/>
-  <sort_by_keys label="Relevance" key=""/>
-  <sort_by_keys label="Date" key="date"/>
+  <!--右侧下拉框的排序-->
+  <sort_by_keys label="date ascending weak" key="date:a:w"/>
+  <sort_by_keys label="date descending hard" key="date:d"/>
+  <sort_by_keys label="date ascending hard" key="date:a"/>
+  <sort_by_keys label="question-answercount decending weak" key="question-answercount:d:w"/>
+  <sort_by_keys label="question date datecreated descending hard" key="question-datecreated:d"/>
+  <sort_by_keys label="answer-upvotecount desceding" key="answer-upvotecount:d"/>
+  <sort_by_keys label="answer-upvotecount decending weak" key="answer-upvotecount:d:w"/>
+  <sort_by_keys label="question-answercount descending hard" key="question-answercount:d"/>
+  <sort_by_keys label="date descending weak" key="date:d:w"/>
+  <sort_by_keys label="relevance" key=""/>
   <cse_advance_settings>
     <custom_search_control_options no_results_string="Sorry, I didn’t find anything, please try different keywords."/>
-    <web_search_options result_set_size="20" enable_history="true">
+    <!--每页最多显示 20 个结果，result_set_size -->
+    <!--在搜索结果中显示结构化数据，show_structured_data=true -->
+    <web_search_options result_set_size="20" enable_history="true" show_structured_data="true">
       <search_restrict_args lr="" filter="1"/>
     </web_search_options>
+    <!--在新标签页打开，但还是有些问题，因为不是 _blank，可以通过 js 解决-->
     <search_options link_target="blank"/>
     <image_advanced_options/>
   </cse_advance_settings>
+  <!--实体用来限制 All results 标签的结果-->
   <entities>
-    <entity mid="/m/01mf_"/>
+    <entity mid="/m/0c42hc9"/>
+    <entity mid="/m/04rjg"/>
+    <entity mid="/m/01mkq"/>
+    <entity mid="/g/122ds8r8"/>
+    <entity mid="/m/025sbhf"/>
   </entities>
 </CustomSearchEngine>

@@ -380,6 +380,16 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 
 域名列表: <a href="./whitelists/domain_name.txt">./whitelists/domain_name.txt</a> ，在油猴脚本中改下判断规则代码就可以使用。
 
+这个文件中的名单规则也是 cse.google.com 的规则，可以批量添加，只有列表，没有分数排序，没有标签页分类，删除时最多只能一次删除10个。
+
+在 cse.google.com 在 Setup 下，复制该文件中的所有内容，粘贴到 Sites to search -> Add -> Include sites in bulk 的文本编辑框中。选择 Include just the specific pages I have entered. 然后点击保存。
+
+可以在导入名单后，在高级选项中导出 annotations.xml。然后慢慢清空所有的列表，再上传 annotations.xml，
+
+列表管理用 annotations.xml 更方便，<b>如果一个 url 不是通过上传 annotations.xml 所添加(手动添加)，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>，只能一点点的删除。
+
+可以上传多个 annotations.xml，所以可以通过文件分类。
+
 
 # reference
 
