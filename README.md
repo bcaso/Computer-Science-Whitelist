@@ -359,13 +359,13 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 
 再分类订阅:
 
-1. <a href="https://iorate.github.io/ublacklist/subscribe?name=wiki&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/wiki.txt">wiki</a>
-2. <a href="https://iorate.github.io/ublacklist/subscribe?name=仓库&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/repository.txt">仓库</a>
-3. <a href="https://iorate.github.io/ublacklist/subscribe?name=博客&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/blogs.txt">博客</a>
-4. <a href="https://iorate.github.io/ublacklist/subscribe?name=论坛&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/bbs.txt">论坛</a>
-5. <a href="https://iorate.github.io/ublacklist/subscribe?name=软件下载站&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/software.txt">软件下载站</a>
-6. <a href="https://iorate.github.io/ublacklist/subscribe?name=文库&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/library.txt">文库</a>
-7. <a href="https://iorate.github.io/ublacklist/subscribe?name=视频&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/video.txt">视频</a>
+1. <a href="https://iorate.github.io/ublacklist/subscribe?name=wiki&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/wiki.txt">wiki</a>
+2. <a href="https://iorate.github.io/ublacklist/subscribe?name=仓库&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/repository.txt">仓库</a>
+3. <a href="https://iorate.github.io/ublacklist/subscribe?name=博客&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/blogs.txt">博客</a>
+4. <a href="https://iorate.github.io/ublacklist/subscribe?name=论坛&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/bbs.txt">论坛</a>
+5. <a href="https://iorate.github.io/ublacklist/subscribe?name=软件下载站&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/software.txt">软件下载站</a>
+6. <a href="https://iorate.github.io/ublacklist/subscribe?name=文库&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/library.txt">文库</a>
+7. <a href="https://iorate.github.io/ublacklist/subscribe?name=视频&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/video.txt">视频</a>
 
 或者不分类，直接订阅总列表: <a href="https://iorate.github.io/ublacklist/subscribe?name=whitelists_combined&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists_combined.txt">汇总列表</a>
 
@@ -382,11 +382,9 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 
 这个文件中的名单规则也是 cse.google.com 的规则，可以批量添加，只有列表，没有分数排序，没有标签页分类，删除时最多只能一次删除10个。
 
-在 cse.google.com 在 Setup 下，复制该文件中的所有内容，粘贴到 Sites to search -> Add -> Include sites in bulk 的文本编辑框中。选择 Include just the specific pages I have entered. 然后点击保存。
+在 cse.google.com 的 Setup 下，复制该文件中的所有内容，粘贴到 Sites to search -> Add -> Include sites in bulk 的文本编辑框中。选择 Include just the specific pages I have entered. 然后点击保存。
 
-可以在导入名单后，在高级选项中导出 annotations.xml。然后慢慢清空所有的列表，再上传 annotations.xml，
-
-列表管理用 annotations.xml 更方便，<b>如果一个 url 不是通过上传 annotations.xml 所添加(手动添加)，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>，只能一点点的删除。
+可以在导入名单后，在高级选项中导出 annotations.xml。然后慢慢清空所有的列表，再上传 annotations.xml。列表管理用 annotations.xml 更方便，<b>如果一个 url 不是通过上传 annotations.xml 所添加(手动添加)，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>，只能一点点的删除。
 
 可以上传多个 annotations.xml，所以可以通过文件分类。
 
