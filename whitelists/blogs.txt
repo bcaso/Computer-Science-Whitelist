@@ -13,3 +13,4 @@
 @https://www.cnblogs.com/*
 @*://*.edu/*
 @*://*.leetcode.com/problems*
+@*://*.luogu.com.cn/problem*

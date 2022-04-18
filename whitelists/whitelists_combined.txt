@@ -13,6 +13,7 @@
 @https://www.cnblogs.com/*
 @*://*.edu/*
 @*://*.leetcode.com/problems*
+@*://*.luogu.com.cn/problem*
 @*://*.wenku.baidu.com/view*
 @*://*.docin.com/p-*
 @*://*.doc88.com/p-*
