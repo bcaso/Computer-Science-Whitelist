@@ -14,3 +14,4 @@
 @*://*.edu/*
 @*://*.leetcode.com/problems*
 @*://*.luogu.com.cn/problem*
+@*://*.matrix67.com/blog*

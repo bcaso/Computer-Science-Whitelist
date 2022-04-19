@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="130" total="130">
+<Annotations start="0" num="131" total="131">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -78,6 +78,11 @@
 	<Annotation about="*.luogu.com.cn/problem*" score="0.7">
 		<Label name="_include_" />
 		<Comment>洛谷试题区，与乐扣试题题相拟</Comment>
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.matrix67.com/blog*" score="0.55">
+		<Label name="_include_" />
+		<Comment>Matrix67 的数学博客</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.wenku.baidu.com/view*" score="0.4">
