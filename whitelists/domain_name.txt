@@ -25,6 +25,7 @@ https://www.cnblogs.com/*
 *.codeproject.com/*
 *.gitee.com/*
 *.gitlab.com/*
+*.docker.com/*
 *.sourceforge.net/*
 *.softonic.com/*
 *.portablesoft.org/*

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="131" total="131">
+<Annotations start="0" num="132" total="132">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -133,6 +133,11 @@
 	<Annotation about="*.gitlab.com/*" score="0.7">
 		<Label name="_include_" />
 		<Comment>gitlab 仓库</Comment>
+		<Label name="repository" />
+	</Annotation>
+	<Annotation about="*.docker.com/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>docker</Comment>
 		<Label name="repository" />
 	</Annotation>
 	<Annotation about="*.sourceforge.net/*" score="0.8">

@@ -4,3 +4,4 @@
 @*://*.codeproject.com/*
 @*://*.gitee.com/*
 @*://*.gitlab.com/*
+@*://*.docker.com/*
