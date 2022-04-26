@@ -367,7 +367,7 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 6. <a href="https://iorate.github.io/ublacklist/subscribe?name=文库&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/library.txt">文库</a>
 7. <a href="https://iorate.github.io/ublacklist/subscribe?name=视频&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/video.txt">视频</a>
 
-或者不分类，直接订阅总列表: <a href="https://iorate.github.io/ublacklist/subscribe?name=whitelists_combined&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists_combined.txt">汇总列表</a>
+或者不分类，直接订阅总列表: <a href="https://iorate.github.io/ublacklist/subscribe?name=whitelists_combined&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelists_combined.txt">汇总列表</a>
 
 以上链接会自动打开 chrome 上的 uBlacklist 插件，同时添加订阅。
 
@@ -387,6 +387,14 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 可以在导入名单后，在高级选项中导出 annotations.xml。然后慢慢清空所有的列表，再上传 annotations.xml。列表管理用 annotations.xml 更方便，<b>如果一个 url 不是通过上传 annotations.xml 所添加(手动添加)，那么在高级选项下删除 annotations.xml 也不会将这个 url 移除</b>，只能一点点的删除。
 
 可以上传多个 annotations.xml，所以可以通过文件分类。
+
+<hr>
+
+使用自定义搜索 google api，如果所建立的搜索引擎中多于 10 个站点，每天只可免费用 100 次，没有烦人的 google 机器人验证。
+
+但是需要动手写页面，因为调用的 api 返回的结果是 json，每次最多只能得到 10 个结果，且 github 上多数模板，都没有对标签页进行处理。
+
+
 
 
 # reference
