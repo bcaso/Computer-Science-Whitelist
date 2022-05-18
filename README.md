@@ -293,6 +293,8 @@ Features：
 
 问题：没有标签页分类
 
+![image](https://user-images.githubusercontent.com/32212684/169082099-b6db1e77-69b6-4bd6-a361-312d37e09239.png)
+
 
 ## ublacklist
 
@@ -401,7 +403,6 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 
 可以上传多个 annotations.xml，所以可以通过文件分类。
 
-<hr>
 # reference
 
 [Google I/O 2009 - Advanced Custom Search Configuration https://www.youtube.com/watch?v=fIUHTFvIt9c ](https://www.youtube.com/watch?v=fIUHTFvIt9c)
