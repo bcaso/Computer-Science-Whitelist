@@ -7,6 +7,7 @@
     - <a href="#sort-by-key">Sort by key</a>
     - <a href="#configuration">Configuration</a>
     - <a href="#html">Static web pages</a>
+    - <a href="#TinyGoogle">Search content by Google Custom Search API</a>
 - <a href="#ublacklist">uBlacklist</a>
     - <a href="#introduction-of-ublacklist">introduction of uBlacklist</a>
     - <a href="#whitelist-mode">whitelist mode</a>
@@ -280,6 +281,18 @@ annotations.xml 中的 Annotations 的属性 start, num, total, 也是会自动�
 
 app.netlify.com 可以部署 github 上的静态网页，效果：https://computer-science-whitelist.netlify.app
 
+### TinyGoogle
+
+https://github.com/bcaso/TinyGoogle
+
+Features：
+
+* Search content by Google Custom Search API
+* No annoying google captcha
+
+
+问题：没有标签页分类
+
 
 ## ublacklist
 
@@ -389,14 +402,6 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 可以上传多个 annotations.xml，所以可以通过文件分类。
 
 <hr>
-
-使用自定义搜索 google api，如果所建立的搜索引擎中多于 10 个站点，每天只可免费用 100 次，没有烦人的 google 机器人验证。
-
-但是需要动手写页面，因为调用的 api 返回的结果是 json，每次最多只能得到 10 个结果，且 github 上多数模板，都没有对标签页进行处理。
-
-
-
-
 # reference
 
 [Google I/O 2009 - Advanced Custom Search Configuration https://www.youtube.com/watch?v=fIUHTFvIt9c ](https://www.youtube.com/watch?v=fIUHTFvIt9c)
