@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="132" total="132">
+<Annotations start="0" num="133" total="133">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -545,7 +545,7 @@
 		<Comment>Jupyter 官方论坛</Comment>
 		<Label name="bbs" />
 	</Annotation>
-	<Annotation about="*.meta.appinn.net/*" score="0.5">
+	<Annotation about="*.meta.appinn.net/*" score="0.4">
 		<Label name="_include_" />
 		<Comment>小众论坛，软件分享</Comment>
 		<Label name="bbs" />
@@ -658,6 +658,11 @@
 	<Annotation about="*.52asus.com/*" score="0.3">
 		<Label name="_include_" />
 		<Comment>华硕路由刷机</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.discuss.python.org/*" score="0.6">
+		<Label name="_include_" />
+		<Comment>python 论坛</Comment>
 		<Label name="bbs" />
 	</Annotation>
 </Annotations>

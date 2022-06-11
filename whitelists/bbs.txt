@@ -40,3 +40,4 @@
 @*://*.forum.ubuntu.org.cn/*
 @*://*.archlinuxcn.org/*
 @*://*.52asus.com/*
+@*://*.discuss.python.org/*
