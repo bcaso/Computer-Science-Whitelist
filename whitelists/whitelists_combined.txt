@@ -104,7 +104,7 @@
 @*://*.leetcode-cn.com/circle/discuss*
 @*://*.nowcoder.com/questionTerminal*
 @*://*.math.org.cn/forum.php?mod=viewthread*
-@*://*.autoahk.com/archives*
+@*://*.autoahk.com/*
 @*://*.autohotkey.com/boards*
 @*://*.discourse.jupyter.org/*
 @*://*.meta.appinn.net/*

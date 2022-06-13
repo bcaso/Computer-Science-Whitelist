@@ -530,7 +530,7 @@
 		<Comment>博士数学家园</Comment>
 		<Label name="bbs" />
 	</Annotation>
-	<Annotation about="*.autoahk.com/archives*" score="0.6">
+	<Annotation about="*.autoahk.com/*" score="0.6">
 		<Label name="_include_" />
 		<Comment>AutoHotkey 中文社区</Comment>
 		<Label name="bbs" />
