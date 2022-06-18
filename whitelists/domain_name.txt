@@ -15,6 +15,7 @@ https://www.cnblogs.com/*
 *.leetcode.com/problems*
 *.luogu.com.cn/problem*
 *.matrix67.com/blog*
+*.pynote.net/*
 *.wenku.baidu.com/view*
 *.docin.com/p-*
 *.doc88.com/p-*
