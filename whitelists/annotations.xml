@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="135" total="135">
+<Annotations start="0" num="138" total="138">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -673,6 +673,21 @@
 	<Annotation about="*.discuss.python.org/*" score="0.6">
 		<Label name="_include_" />
 		<Comment>python 论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.chinafix.com/thread-*" score="0.3">
+		<Label name="_include_" />
+		<Comment>迅维网论坛，电子维修论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.luobotou.org/*" score="0.3">
+		<Label name="_include_" />
+		<Comment>萝卜头IT论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.mydigit.cn/thread-*" score="0.3">
+		<Label name="_include_" />
+		<Comment>数码之家论坛</Comment>
 		<Label name="bbs" />
 	</Annotation>
 </Annotations>

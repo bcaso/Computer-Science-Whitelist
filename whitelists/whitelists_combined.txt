@@ -133,3 +133,6 @@
 @*://*.archlinuxcn.org/*
 @*://*.52asus.com/*
 @*://*.discuss.python.org/*
+@*://*.chinafix.com/thread-*
+@*://*.bbs.luobotou.org/*
+@*://*.mydigit.cn/thread-*
