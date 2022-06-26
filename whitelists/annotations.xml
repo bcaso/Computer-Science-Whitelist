@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="138" total="138">
+<Annotations start="0" num="139" total="139">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -88,6 +88,11 @@
 	<Annotation about="*.pynote.net/*" score="0.5">
 		<Label name="_include_" />
 		<Comment>麦新杰的python笔记，可能于19年7月建立，可能不稳定</Comment>
+		<Label name="blogs" />
+	</Annotation>
+	<Annotation about="*.post.smzdm.com/p*" score="0.4">
+		<Label name="_include_" />
+		<Comment>什么值得买,文章</Comment>
 		<Label name="blogs" />
 	</Annotation>
 	<Annotation about="*.wenku.baidu.com/view*" score="0.4">

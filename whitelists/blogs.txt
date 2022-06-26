@@ -16,3 +16,4 @@
 @*://*.luogu.com.cn/problem*
 @*://*.matrix67.com/blog*
 @*://*.pynote.net/*
+@*://*.post.smzdm.com/p*
