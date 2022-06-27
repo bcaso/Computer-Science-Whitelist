@@ -30,7 +30,7 @@
 CREATE TABLE "table_name_1" ( "domain" TEXT NOT NULL,
   "prefix" TEXT NOT NULL DEFAULT '',
   "suffix" TEXT NOT NULL DEFAULT '',
-  "score" integer NOT NULL DEFAULT 0.3,
+  "score" NUMERIC NOT NULL DEFAULT 0.3,
   "description" TEXT NOT NULL DEFAULT '',
   PRIMARY KEY ("domain")
 );
@@ -96,7 +96,7 @@ cse.xml 可设项有些多，在网页上修改比较简单。
 
 测试链接：<a href="https://cse.google.com/cse?cx=e9a1e480e37a86080&q=">https://cse.google.com/cse?cx=e9a1e480e37a86080</a>
 
-使用的知识实体为：`Stack Exchange`, `Mathematics`, `Computer Science`, `network`, `Software development`。
+使用的知识实体为：`Stack Exchange`, `Mathematics`, `Computer Science`, `Software development`, `Electronic engineering`。
 
 搜索关键词，在链接最后加上 `&q=`, 如  https://cse.google.com/cse?cx=e9a1e480e37a86080&q=
 
@@ -159,19 +159,19 @@ weight > score
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Annotations start="0" num="84" total="84">
-  <Annotation about="*.uptodown.com/*" score="0.8" timestamp="0x0005d6b5044e8329" href="ChAqLnVwdG9kb3duLmNvbS8qEKmGuqLQ1vUC">
+  <Annotation about="*.uptodown.com/*" score="0.8">
     <Label name="_include_"/>
     <Label name="software"/>
   </Annotation>
-  <Annotation about="*.wenku.baidu.com/view*" score="0.7" timestamp="0x0005d6b5044e82a2" href="ChcqLndlbmt1LmJhaWR1LmNvbS92aWV3KhCihbqi0Nb1Ag">
+  <Annotation about="*.wenku.baidu.com/view*" score="0.7">
     <Label name="_include_"/>
     <Label name="library"/>
   </Annotation>
-  <Annotation about="*.edu/*" score="0.3" timestamp="0x0005d6b5044e829f" href="CgcqLmVkdS8qEJ-FuqLQ1vUC">
+  <Annotation about="*.edu/*" score="0.3">
     <Label name="_include_"/>
     <Label name="blogs"/>
   </Annotation>
-  <Annotation about="*.liaoxuefeng.com/wiki*" score="0.5" timestamp="0x0005d6b5044e8292" href="ChcqLmxpYW94dWVmZW5nLmNvbS93aWtpKhCShbqi0Nb1Ag">
+  <Annotation about="*.liaoxuefeng.com/wiki*" score="0.5">
     <Label name="_include_"/>
     <Label name="blogs"/>
   </Annotation>
@@ -304,28 +304,20 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 
 <a href="https://github.com/iorate/uBlacklist" target="_blank">uBlacklist</a> 目前支持搜索引擎有 Google, Bing, DuckDuckgo, Ecosia, Startpage, Qwant
 
-* 访问速度: Bing 最快。
+可使用油猴本 <a href="https://www.ntaow.com/aboutscript.html" target="_blank">AC-重定向</a> 将搜索结果多列显示。
 
-* 样式: Bing 最好。
-  * 在使用油猴本 <a href="https://www.ntaow.com/aboutscript.html" target="_blank">AC-重定向</a> 将搜索结果多列显示时，Bing 的样式要比 Google 整齐。
-  * Bing 页面最底端没有搜索关键词对应的相关图片。
-
-* 拦截能力: 对 Google 的拦截效果最好。
-  * Bing 下，常出现 3~5 个不在名单中的网站，以及视频卡片，新闻卡片，相关搜索，可通过油猴插件写脚本进行过滤。
 
 
 ### whitelist mode
 
 插件本是针对垃圾网站进行过滤，也就是黑名单模式，修改下使用方式就能实现白名单过滤。
 
-黑名单规则总是优于白名单生效。
-
-所以可以先添加规则 `*://*/*` 以屏蔽所有网址。
+黑名单规则总是优于白名单生效，所以可以先添加规则 `*://*/*` 以屏蔽所有网址。
 
 添加：`@:*//前缀.域名.后缀`(如 `@:*//*.github.com/*`, 区分大小写) 取消对某个网站的过滤。
 
 规则举例：
-```python
+```text
 # 有前缀
 @:*//*.github.com/*
 
@@ -349,7 +341,7 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 
 如，脚本之家：
 
-```
+```text
 https://www.jb51.net/                             电脑端
 https://m.jb51.net/                               移动端
 https://www.jb51.net/list/index_96.htm          脚本专栏

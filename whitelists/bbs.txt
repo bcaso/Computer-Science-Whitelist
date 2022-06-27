@@ -44,3 +44,4 @@
 @*://*.chinafix.com/thread-*
 @*://*.bbs.luobotou.org/*
 @*://*.mydigit.cn/thread-*
+@*://*.linuxquestions.org/*

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="139" total="139">
+<Annotations start="0" num="140" total="140">
 	<Annotation about="*.medium.com/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>国外博客</Comment>
@@ -693,6 +693,11 @@
 	<Annotation about="*.mydigit.cn/thread-*" score="0.3">
 		<Label name="_include_" />
 		<Comment>数码之家论坛</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.linuxquestions.org/*" score="0.4">
+		<Label name="_include_" />
+		<Comment>linux 论坛</Comment>
 		<Label name="bbs" />
 	</Annotation>
 </Annotations>

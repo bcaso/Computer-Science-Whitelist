@@ -137,3 +137,4 @@ https://www.youtube.com/watch?v=*
 *.chinafix.com/thread-*
 *.bbs.luobotou.org/*
 *.mydigit.cn/thread-*
+*.linuxquestions.org/*
