@@ -45,3 +45,4 @@
 @*://*.bbs.luobotou.org/*
 @*://*.mydigit.cn/thread-*
 @*://*.linuxquestions.org/*
+@*://*.ithelp.ithome.com.tw/questions*
