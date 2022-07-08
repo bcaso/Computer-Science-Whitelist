@@ -70,6 +70,7 @@
 @*://*.mydigit.cn/thread-*
 @*://*.linuxquestions.org/*
 @*://*.ithelp.ithome.com.tw/questions*
+@*://*.learnku.com/*
 @*://*.medium.com/*
 @*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*
