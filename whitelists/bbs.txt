@@ -47,3 +47,4 @@
 @*://*.linuxquestions.org/*
 @*://*.ithelp.ithome.com.tw/questions*
 @*://*.learnku.com/*
+@*://*.prechin.net/forum.php*
