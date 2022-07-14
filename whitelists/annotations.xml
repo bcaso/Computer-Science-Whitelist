@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="143" total="143">
+<Annotations start="0" num="144" total="144">
 	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
 		<Label name="_include_" />
 		<Comment>维基，由于同一关键词给出了多个不同语言版的结果占用了太多搜索结果(zh.wikipedia.org/wiki, zh.wikipedia.org/zh-tw ...)，所以后缀改为 org/wiki</Comment>
@@ -488,6 +488,11 @@
 	<Annotation about="*.jb51.net/books*" score="0.5">
 		<Label name="_include_" />
 		<Comment>脚本之家电子书下载</Comment>
+		<Label name="library" />
+	</Annotation>
+	<Annotation about="*.cn1lib.org/*" score="0.7">
+		<Label name="_include_" />
+		<Comment>免费下载电子书，网站自2009年建立</Comment>
 		<Label name="library" />
 	</Annotation>
 	<Annotation about="*.github.com/*" score="0.8">

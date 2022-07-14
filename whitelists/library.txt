@@ -3,3 +3,4 @@
 @*://*.doc88.com/p-*
 @*://*.taodocs.com/p-*
 @*://*.jb51.net/books*
+@*://*.cn1lib.org/*
