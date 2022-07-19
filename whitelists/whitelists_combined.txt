@@ -142,3 +142,4 @@
 @https://open.163.com/*
 @*://*.icourse163.org/*
 @https://www.youtube.com/watch?v=*
+@*://*.coursera.org/*

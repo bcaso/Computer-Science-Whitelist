@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="144" total="144">
+<Annotations start="0" num="145" total="145">
 	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
 		<Label name="_include_" />
 		<Comment>维基，由于同一关键词给出了多个不同语言版的结果占用了太多搜索结果(zh.wikipedia.org/wiki, zh.wikipedia.org/zh-tw ...)，所以后缀改为 org/wiki</Comment>
@@ -718,6 +718,11 @@
 	<Annotation about="https://www.youtube.com/watch?v=*" score="0.3">
 		<Label name="_include_" />
 		<Comment>Youtube</Comment>
+		<Label name="video" />
+	</Annotation>
+	<Annotation about="*.coursera.org/*" score="0.5">
+		<Label name="_include_" />
+		<Comment>类似慕课</Comment>
 		<Label name="video" />
 	</Annotation>
 </Annotations>
