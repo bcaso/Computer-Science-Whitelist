@@ -312,9 +312,7 @@ PC 浏览器(Chrome, Firefox, Edge, Safair(支持移动端))插件。
 
 插件本是针对垃圾网站进行过滤，也就是黑名单模式，修改下使用方式就能实现白名单过滤。
 
-黑名单规则总是优于白名单生效，所以可以先添加规则 `*://*/*` 以屏蔽所有网址。
-
-添加：`@:*//前缀.域名.后缀`(如 `@:*//*.github.com/*`, 区分大小写) 取消对某个网站的过滤。
+黑名单规则总是优于白名单生效，所以可以先添加规则 `*://*/*` 以屏蔽所有网址，然后添加 `@:*//前缀.域名.后缀`(如 `@:*//*.github.com/*`, 区分大小写) 取消对某个网站的过滤。
 
 规则举例：
 ```text
@@ -362,7 +360,7 @@ https://www.jb51.net/softs/794768.html    某个软件下载页
 
 为保证白名单生效，先订阅 whitelist.txt
 
-<b>点击添加订阅</b>：<a href="https://iorate.github.io/ublacklist/subscribe?name=whitelist&url=https://raw.githubusercontent.com/bcaso/Google-Chinese-Results-Whitelist/main/whitelists/whitelist.txt">whitelist</a>
+<b>点击添加订阅</b>：<a href="https://iorate.github.io/ublacklist/subscribe?name=whitelist&url=https://raw.githubusercontent.com/bcaso/Computer-Science-Whitelist/main/whitelists/whitelist.txt">whitelist</a>
 
 再分类订阅:
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="146" total="146">
+<Annotations start="0" num="147" total="147">
 	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
 		<Label name="_include_" />
 		<Comment>维基，由于同一关键词给出了多个不同语言版的结果占用了太多搜索结果(zh.wikipedia.org/wiki, zh.wikipedia.org/zh-tw ...)，所以后缀改为 org/wiki</Comment>
@@ -373,6 +373,11 @@
 	<Annotation about="*.howtoforge.com/*" score="0.4">
 		<Label name="_include_" />
 		<Comment>Linux tutorials</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.bbs.elecfans.com/jishu_*" score="0.3">
+		<Label name="_include_" />
+		<Comment>电子发烧友论坛，问答区</Comment>
 		<Label name="bbs" />
 	</Annotation>
 	<Annotation about="*.medium.com/*" score="0.8">

@@ -73,6 +73,7 @@
 @*://*.learnku.com/*
 @*://*.prechin.net/forum.php*
 @*://*.howtoforge.com/*
+@*://*.bbs.elecfans.com/jishu_*
 @*://*.medium.com/*
 @*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*

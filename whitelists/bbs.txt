@@ -49,3 +49,4 @@
 @*://*.learnku.com/*
 @*://*.prechin.net/forum.php*
 @*://*.howtoforge.com/*
+@*://*.bbs.elecfans.com/jishu_*
