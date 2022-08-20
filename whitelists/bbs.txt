@@ -50,3 +50,4 @@
 @*://*.prechin.net/forum.php*
 @*://*.howtoforge.com/*
 @*://*.bbs.elecfans.com/jishu_*
+@*://*.bbs.archlinux.org/*
