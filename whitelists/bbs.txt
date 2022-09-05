@@ -51,3 +51,4 @@
 @*://*.howtoforge.com/*
 @*://*.bbs.elecfans.com/jishu_*
 @*://*.bbs.archlinux.org/*
+@*://*.forum.openwrt.org/*
