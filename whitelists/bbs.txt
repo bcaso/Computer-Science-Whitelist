@@ -52,4 +52,6 @@
 @*://*.bbs.elecfans.com/jishu_*
 @*://*.bbs.archlinux.org/*
 @*://*.forum.openwrt.org/*
-@*://*.python-forum.io/*
+@*://*.python-forum.io/thread-*
+@*://*.csharpforums.net/threads*
+@*://*.answers.unity.com/questions*
