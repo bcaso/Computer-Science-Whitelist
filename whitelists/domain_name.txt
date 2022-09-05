@@ -79,6 +79,7 @@
 *.python-forum.io/thread-*
 *.csharpforums.net/threads*
 *.answers.unity.com/questions*
+*.codeforum.org/threads*
 *.medium.com/*
 *.groovypost.com/howto*
 *.leetcode-cn.com/problems*
