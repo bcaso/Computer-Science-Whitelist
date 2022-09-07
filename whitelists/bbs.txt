@@ -56,3 +56,4 @@
 @*://*.csharpforums.net/threads*
 @*://*.answers.unity.com/questions*
 @*://*.codeforum.org/threads*
+@*://*.forum.micropython.org/viewtopic*
