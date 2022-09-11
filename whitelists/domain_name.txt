@@ -81,6 +81,7 @@
 *.answers.unity.com/questions*
 *.codeforum.org/threads*
 *.forum.micropython.org/viewtopic*
+*.forums.fast.ai/t*
 *.medium.com/*
 *.groovypost.com/howto*
 *.leetcode-cn.com/problems*
