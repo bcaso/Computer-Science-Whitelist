@@ -83,6 +83,7 @@
 @*://*.forum.micropython.org/viewtopic*
 @*://*.forums.fast.ai/t*
 @*://*.community.home-assistant.io/*
+@*://*.bbs.hassbian.com/thread-*
 @*://*.medium.com/*
 @*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*
