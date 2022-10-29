@@ -84,6 +84,7 @@
 @*://*.forums.fast.ai/t*
 @*://*.community.home-assistant.io/*
 @*://*.bbs.hassbian.com/thread-*
+@*://*.firprin.com/questions*
 @*://*.medium.com/*
 @*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*

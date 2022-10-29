@@ -60,3 +60,4 @@
 @*://*.forums.fast.ai/t*
 @*://*.community.home-assistant.io/*
 @*://*.bbs.hassbian.com/thread-*
+@*://*.firprin.com/questions*
