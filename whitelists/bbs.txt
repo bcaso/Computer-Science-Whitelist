@@ -61,3 +61,5 @@
 @*://*.community.home-assistant.io/*
 @*://*.bbs.hassbian.com/thread-*
 @*://*.firprin.com/questions*
+@*://*.rutracker.org/forum/viewtopic.php*
+@*://*.forum.huawei.com/forum/enterprise*
