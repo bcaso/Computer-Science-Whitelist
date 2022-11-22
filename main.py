@@ -19,7 +19,7 @@ table_names = cursor.fetchall()
 for _ in table_names:
     table_name_list.append(_[0])
 
-print(table_name_list)
+#print(table_name_list)
 # }}}
 
 
@@ -51,7 +51,7 @@ for i in range(len(table_name_list)):
         
     
 
-print(whitelist_dics)
+#print(whitelist_dics)
 
 
 cursor.close()  # 关闭Cursor:
@@ -319,7 +319,7 @@ def gen_annotations_xml():
 
     # whitelists 总字典  { 'bbs':{'':[],'':[]}, 'blogs':{} }
     for k,v in whitelist_dics.items():
-        print('k = {}, v={}'.format(k, v)) # 'wiki':{'domain':(prefix,suffix,score,description)}
+        #print('k = {}, v={}'.format(k, v)) # 'wiki':{'domain':(prefix,suffix,score,description)}
         # 将 k 对应的字典转为存储到临时列表 lis
         gen_urls_list(v, True)
         # print(lis) # [[url, score, description], ['*.stackoverflow.com/*', '0.8', description]]

@@ -22,3 +22,4 @@
 @*://*.books.google.com/*
 @*://*.cisco.com/c/zh_cn/support/docs*
 @*://*.wuli.wiki/*
+@*://*.support.huawei.com/enterprise*
