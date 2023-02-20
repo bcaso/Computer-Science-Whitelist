@@ -113,6 +113,7 @@ https://www.cnblogs.com/*
 *.taodocs.com/p-*
 *.jb51.net/books*
 *.cn1lib.org/*
+*.qb.zuoyebang.com/xfe-question/question*
 *.github.com/*
 *.bitbucket.org/*
 *.pypi.org/*
