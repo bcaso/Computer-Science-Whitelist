@@ -4,3 +4,4 @@
 @*://*.jb51.net/books*
 @*://*.cn1lib.org/*
 @*://*.qb.zuoyebang.com/xfe-question/question*
+@*://*.max.book118.com/html*
