@@ -63,3 +63,4 @@
 @*://*.firprin.com/questions*
 @*://*.rutracker.org/forum/viewtopic.php*
 @*://*.forum.huawei.com/forum/enterprise*
+@*://*.zhiliao.h3c.com/questions*
