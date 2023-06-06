@@ -64,3 +64,5 @@
 @*://*.rutracker.org/forum/viewtopic.php*
 @*://*.forum.huawei.com/forum/enterprise*
 @*://*.zhiliao.h3c.com/questions*
+@*://*.loj.ac/p*
+@*://*.acwing.com/problem/content*
