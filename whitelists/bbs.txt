@@ -66,3 +66,4 @@
 @*://*.zhiliao.h3c.com/questions*
 @*://*.loj.ac/p*
 @*://*.acwing.com/problem/content*
+@*://*.xiaomi.eu/community/threads*

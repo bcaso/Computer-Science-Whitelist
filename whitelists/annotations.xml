@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="165" total="165">
+<Annotations start="0" num="166" total="166">
 	<Annotation about="*.wikipedia.org/wiki*" score="0.8">
 		<Label name="_include_" />
 		<Comment>维基，由于同一关键词给出了多个不同语言版的结果占用了太多搜索结果(zh.wikipedia.org/wiki, zh.wikipedia.org/zh-tw ...)，所以后缀改为 org/wiki</Comment>
@@ -463,6 +463,11 @@
 	<Annotation about="*.acwing.com/problem/content*" score="0.5">
 		<Label name="_include_" />
 		<Comment>算法刷题网站</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.xiaomi.eu/community/threads*" score="0.3">
+		<Label name="_include_" />
+		<Comment>小米欧版系统论坛</Comment>
 		<Label name="bbs" />
 	</Annotation>
 	<Annotation about="*.medium.com/*" score="0.8">
