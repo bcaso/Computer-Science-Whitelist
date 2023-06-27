@@ -1,4 +1,4 @@
-@*://*.wikipedia.org/wiki*
+@*://*.wikipedia.org/*
 @*://*.oi-wiki.org/*
 @*://*.ctf-wiki.org/*
 @*://*.python.org/*
@@ -23,6 +23,8 @@
 @*://*.cisco.com/c/zh_cn/support/docs*
 @*://*.wuli.wiki/*
 @*://*.support.huawei.com/enterprise*
+@*://*.lambdageeks.com/*
+@*://*.libretexts.org/*
 @*://*.stackoverflow.com/*
 @*://*.stackexchange.com/*
 @*://*.superuser.com/*
@@ -92,6 +94,7 @@
 @*://*.loj.ac/p*
 @*://*.acwing.com/problem/content*
 @*://*.xiaomi.eu/community/threads*
+@*://*.kechuang.org/t*
 @*://*.medium.com/*
 @*://*.groovypost.com/howto*
 @*://*.leetcode-cn.com/problems*
@@ -111,6 +114,7 @@
 @*://*.matrix67.com/blog*
 @*://*.pynote.net/*
 @*://*.post.smzdm.com/p*
+@*://*.kechuang.org/m*
 @*://*.docin.com/p-*
 @*://*.doc88.com/p-*
 @*://*.taodocs.com/p-*

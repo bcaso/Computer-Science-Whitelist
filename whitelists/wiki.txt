@@ -1,4 +1,4 @@
-@*://*.wikipedia.org/wiki*
+@*://*.wikipedia.org/*
 @*://*.oi-wiki.org/*
 @*://*.ctf-wiki.org/*
 @*://*.python.org/*
@@ -23,3 +23,5 @@
 @*://*.cisco.com/c/zh_cn/support/docs*
 @*://*.wuli.wiki/*
 @*://*.support.huawei.com/enterprise*
+@*://*.lambdageeks.com/*
+@*://*.libretexts.org/*

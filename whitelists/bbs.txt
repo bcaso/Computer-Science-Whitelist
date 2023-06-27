@@ -67,3 +67,4 @@
 @*://*.loj.ac/p*
 @*://*.acwing.com/problem/content*
 @*://*.xiaomi.eu/community/threads*
+@*://*.kechuang.org/t*

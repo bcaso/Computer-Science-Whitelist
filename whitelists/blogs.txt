@@ -17,3 +17,4 @@
 @*://*.matrix67.com/blog*
 @*://*.pynote.net/*
 @*://*.post.smzdm.com/p*
+@*://*.kechuang.org/m*
