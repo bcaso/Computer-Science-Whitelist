@@ -115,6 +115,7 @@
 @*://*.pynote.net/*
 @*://*.post.smzdm.com/p*
 @*://*.kechuang.org/m*
+@*://*.mathcubic.org/article/article/index/id*
 @*://*.docin.com/p-*
 @*://*.doc88.com/p-*
 @*://*.taodocs.com/p-*
