@@ -116,6 +116,7 @@
 @*://*.post.smzdm.com/p*
 @*://*.kechuang.org/m*
 @*://*.mathcubic.org/article/article/index/id*
+@*://*.lanqi.org/*
 @*://*.docin.com/p-*
 @*://*.doc88.com/p-*
 @*://*.taodocs.com/p-*
