@@ -20,3 +20,4 @@
 @*://*.kechuang.org/m*
 @*://*.mathcubic.org/article/article/index/id*
 @*://*.lanqi.org/*
+@*://*.mathsgreat.com/*

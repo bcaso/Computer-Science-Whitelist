@@ -117,6 +117,7 @@
 @*://*.kechuang.org/m*
 @*://*.mathcubic.org/article/article/index/id*
 @*://*.lanqi.org/*
+@*://*.mathsgreat.com/*
 @*://*.docin.com/p-*
 @*://*.doc88.com/p-*
 @*://*.taodocs.com/p-*
