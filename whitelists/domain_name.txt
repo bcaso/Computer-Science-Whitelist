@@ -95,6 +95,7 @@
 *.acwing.com/problem/content*
 *.xiaomi.eu/community/threads*
 *.kechuang.org/t*
+*.mathchina.com/bbs/forum.php*
 *.medium.com/*
 *.groovypost.com/howto*
 *.leetcode-cn.com/problems*

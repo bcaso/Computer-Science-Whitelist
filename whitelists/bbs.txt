@@ -68,3 +68,4 @@
 @*://*.acwing.com/problem/content*
 @*://*.xiaomi.eu/community/threads*
 @*://*.kechuang.org/t*
+@*://*.mathchina.com/bbs/forum.php*

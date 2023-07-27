@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Annotations start="0" num="173" total="173">
+<Annotations start="0" num="174" total="174">
 	<Annotation about="*.wikipedia.org/*" score="0.8">
 		<Label name="_include_" />
 		<Comment>在谷歌可编程搜索引擎下进行搜索，会得到多个语言版本的wiki页面占据前排结果，可根据需要修改前缀或后缀过滤一些。</Comment>
@@ -483,6 +483,11 @@
 	<Annotation about="*.kechuang.org/t*" score="0.4">
 		<Label name="_include_" />
 		<Comment>科创网社区。</Comment>
+		<Label name="bbs" />
+	</Annotation>
+	<Annotation about="*.mathchina.com/bbs/forum.php*" score="0.5">
+		<Label name="_include_" />
+		<Comment>数学中国论坛</Comment>
 		<Label name="bbs" />
 	</Annotation>
 	<Annotation about="*.medium.com/*" score="0.8">
